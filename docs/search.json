@@ -441,11 +441,11 @@
     "text": "33 여러가지 프로그램, 여러가지 설치방법\n- 우분투자체의 프로그램\n\n우분투 자체의 프로그램 예시: git, quarto, python, R, anaconda, vi, ssh, wget, vscode\n우분투 자체의 프로그램은 다시 모든 유저가 영향을 받는 받는 프로그램과 그렇지 않은 프로그램이 있음\n우분투 자체의 프로그램을 설치하는 방법들\n\nsudo apt install git \nsudo apt-get install git \nsudo dpkg -i quarto-1.4.533-linux-amd64.deb \nbash Anaconda3-2019.03-Linux-x86_64.sh\nsudo gdebi rstudio-server-1.2.5033-amd64.deb\n# 기타 파일을 넣을 수 있는 모든 방법 (예를들면 압축파일 다운로드후 풀기) \n- 아나콘다(=base)에 종속된 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: conda, python, R, jupyter\n아나콘다에 종속된 프로그램은 anaconda3 폴더안에 있음.\n\n- 아나콘다환경(=py310)에 종속시킬 수 “있는” 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: python, R, jupyter\n아나콘다환경에 종속된 프로그램은 anaconda3/envs/py310 와 같은 형식의 폴더안에 있음.\n\n- 파이썬에 종속된 프로그램 (=파이썬패키지=파이썬라이브러리=파이썬모듈)\n\n파이썬에 종속된 프로그램 예시: numpy, pandas\n얘네들이 어디에 깔리는지는 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)\n\n- R에 종속된 프로그램 (=R패키지=R라이브러리)\n\nR에 종속된 프로그램의 예시: tidyverse\n얘들이 어디 깔리는지도 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)"
   },
   {
-    "objectID": "posts/day2.html#vscode",
-    "href": "posts/day2.html#vscode",
+    "objectID": "posts/day2.html#jupyterlab-desktop",
+    "href": "posts/day2.html#jupyterlab-desktop",
     "title": "Day2: 파이썬 버전확인하기 - ㄴㄴ",
-    "section": "34 vscode",
-    "text": "34 vscode"
+    "section": "34 jupyterlab-desktop",
+    "text": "34 jupyterlab-desktop\n- 주피터랩 app! (저는 좋더라고요)\n\nhttps://github.com/jupyterlab/jupyterlab-desktop\n\n- 굳이 로칼에 파이썬을 설치하진 않고 remote 로만 써요\n- 아래를 설정하는걸 좋아함. (취향차이??)"
   },
   {
     "objectID": "posts/day2.html#footnotes",
