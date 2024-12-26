@@ -9,7 +9,7 @@
 <meta name="author" content="최규빈">
 <meta name="dcterms.date" content="2024-12-27">
 
-<title>DSTBX2025 - Day2: 파이썬 버전확인하기 - ㄴㄴ</title>
+<title>DSTBX2025 - Day2: 파이썬 버전확인하기 - vscode</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -159,17 +159,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#파이썬-버전확인하기" id="toc-파이썬-버전확인하기" class="nav-link active" data-scroll-target="#파이썬-버전확인하기"><span class="header-section-number">1</span> 파이썬 버전확인하기</a></li>
   <li><a href="#base-판다스-버전확인" id="toc-base-판다스-버전확인" class="nav-link" data-scroll-target="#base-판다스-버전확인"><span class="header-section-number">2</span> <code>(base)</code> 판다스 버전확인</a></li>
   <li><a href="#first-pandas-x" id="toc-first-pandas-x" class="nav-link" data-scroll-target="#first-pandas-x"><span class="header-section-number">3</span> <code>(first)</code> – pandas X</a></li>
-  <li><a href="#py310_pip_pd생성" id="toc-py310_pip_pd생성" class="nav-link" data-scroll-target="#py310_pip_pd생성"><span class="header-section-number">4</span> <code>py310_pip_pd</code>생성</a></li>
+  <li><a href="#py310_pip_pd-생성" id="toc-py310_pip_pd-생성" class="nav-link" data-scroll-target="#py310_pip_pd-생성"><span class="header-section-number">4</span> <code>py310_pip_pd</code> – 생성</a></li>
   <li><a href="#py310_pip_pd-pandas-설치" id="toc-py310_pip_pd-pandas-설치" class="nav-link" data-scroll-target="#py310_pip_pd-pandas-설치"><span class="header-section-number">5</span> <code>py310_pip_pd</code>– <code>pandas</code> 설치</a></li>
-  <li><a href="#py310_pip_pd15생성-pandas1.5-설치" id="toc-py310_pip_pd15생성-pandas1.5-설치" class="nav-link" data-scroll-target="#py310_pip_pd15생성-pandas1.5-설치"><span class="header-section-number">6</span> <code>py310_pip_pd15</code>생성, <code>pandas==1.5</code> 설치</a></li>
-  <li><a href="#py310_conda_pd15생성-pandas1.5-설치" id="toc-py310_conda_pd15생성-pandas1.5-설치" class="nav-link" data-scroll-target="#py310_conda_pd15생성-pandas1.5-설치"><span class="header-section-number">7</span> <code>py310_conda_pd15</code>생성, <code>pandas==1.5</code> 설치</a></li>
+  <li><a href="#py310_pip_pd15" id="toc-py310_pip_pd15" class="nav-link" data-scroll-target="#py310_pip_pd15"><span class="header-section-number">6</span> <code>py310_pip_pd15</code></a></li>
+  <li><a href="#py310_conda_pd15" id="toc-py310_conda_pd15" class="nav-link" data-scroll-target="#py310_conda_pd15"><span class="header-section-number">7</span> <code>py310_conda_pd15</code></a></li>
   <li><a href="#conda-env-list" id="toc-conda-env-list" class="nav-link" data-scroll-target="#conda-env-list"><span class="header-section-number">8</span> <code>conda env list</code></a></li>
   <li><a href="#동일한-코드-다른결과-1" id="toc-동일한-코드-다른결과-1" class="nav-link" data-scroll-target="#동일한-코드-다른결과-1"><span class="header-section-number">9</span> 동일한 코드, 다른결과 (1)</a></li>
   <li><a href="#제-컴퓨터에서는-안돼요" id="toc-제-컴퓨터에서는-안돼요" class="nav-link" data-scroll-target="#제-컴퓨터에서는-안돼요"><span class="header-section-number">10</span> 제 컴퓨터에서는 안돼요</a></li>
   <li><a href="#가상환경-관리" id="toc-가상환경-관리" class="nav-link" data-scroll-target="#가상환경-관리"><span class="header-section-number">11</span> 가상환경 관리</a></li>
   <li><a href="#동일한-코드-다른결과-2" id="toc-동일한-코드-다른결과-2" class="nav-link" data-scroll-target="#동일한-코드-다른결과-2"><span class="header-section-number">12</span> 동일한 코드, 다른결과 (2)</a></li>
   <li><a href="#github-집단지성의-끝판왕" id="toc-github-집단지성의-끝판왕" class="nav-link" data-scroll-target="#github-집단지성의-끝판왕"><span class="header-section-number">13</span> Github – 집단지성의 끝판왕</a></li>
-  <li><a href="#일반유저-sudo-그룹유저-루트유저슈퍼유저" id="toc-일반유저-sudo-그룹유저-루트유저슈퍼유저" class="nav-link" data-scroll-target="#일반유저-sudo-그룹유저-루트유저슈퍼유저"><span class="header-section-number">14</span> 일반유저 &lt; sudo 그룹유저 &lt;&lt;&lt; 루트유저=슈퍼유저</a></li>
+  <li><a href="#일반sudo슈퍼-유저" id="toc-일반sudo슈퍼-유저" class="nav-link" data-scroll-target="#일반sudo슈퍼-유저"><span class="header-section-number">14</span> 일반/sudo/슈퍼 유저</a></li>
   <li><a href="#git-설치" id="toc-git-설치" class="nav-link" data-scroll-target="#git-설치"><span class="header-section-number">15</span> <code>git</code> 설치</a></li>
   <li><a href="#루트유저가-보는-세상" id="toc-루트유저가-보는-세상" class="nav-link" data-scroll-target="#루트유저가-보는-세상"><span class="header-section-number">16</span> 루트유저가 보는 세상</a></li>
   <li><a href="#ls의-이름바꾸기" id="toc-ls의-이름바꾸기" class="nav-link" data-scroll-target="#ls의-이름바꾸기"><span class="header-section-number">17</span> <code>ls</code>의 이름바꾸기</a></li>
@@ -186,9 +186,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#포트정리-lsof" id="toc-포트정리-lsof" class="nav-link" data-scroll-target="#포트정리-lsof"><span class="header-section-number">28</span> 포트정리 (<code>lsof</code>)</a></li>
   <li><a href="#r-전용-개발환경-만들기" id="toc-r-전용-개발환경-만들기" class="nav-link" data-scroll-target="#r-전용-개발환경-만들기"><span class="header-section-number">29</span> R 전용 개발환경 만들기</a></li>
   <li><a href="#r은-어디에-있음" id="toc-r은-어디에-있음" class="nav-link" data-scroll-target="#r은-어디에-있음"><span class="header-section-number">30</span> R은 어디에 있음?</a></li>
-  <li><a href="#base에서-renv에-있는-r-실행" id="toc-base에서-renv에-있는-r-실행" class="nav-link" data-scroll-target="#base에서-renv에-있는-r-실행"><span class="header-section-number">31</span> <code>(base)</code>에서 <code>(renv)</code>에 있는 R 실행</a></li>
+  <li><a href="#base에서-r-실행" id="toc-base에서-r-실행" class="nav-link" data-scroll-target="#base에서-r-실행"><span class="header-section-number">31</span> <code>(base)</code>에서 R 실행</a></li>
   <li><a href="#rstudio-사용하기" id="toc-rstudio-사용하기" class="nav-link" data-scroll-target="#rstudio-사용하기"><span class="header-section-number">32</span> Rstudio 사용하기</a></li>
-  <li><a href="#여러가지-프로그램-여러가지-설치방법" id="toc-여러가지-프로그램-여러가지-설치방법" class="nav-link" data-scroll-target="#여러가지-프로그램-여러가지-설치방법"><span class="header-section-number">33</span> 여러가지 프로그램, 여러가지 설치방법</a></li>
+  <li><a href="#여러가지-프로그램" id="toc-여러가지-프로그램" class="nav-link" data-scroll-target="#여러가지-프로그램"><span class="header-section-number">33</span> 여러가지 프로그램</a></li>
   <li><a href="#jupyterlab-desktop" id="toc-jupyterlab-desktop" class="nav-link" data-scroll-target="#jupyterlab-desktop"><span class="header-section-number">34</span> <code>jupyterlab-desktop</code></a></li>
   </ul>
 </nav>
@@ -198,7 +198,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Day2: 파이썬 버전확인하기 - ㄴㄴ</h1>
+<h1 class="title">Day2: 파이썬 버전확인하기 - vscode</h1>
 </div>
 
 
@@ -271,8 +271,8 @@ Important
 </div>
 </div>
 </section>
-<section id="py310_pip_pd생성" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="py310_pip_pd생성"><span class="header-section-number">4</span> <code>py310_pip_pd</code>생성</h2>
+<section id="py310_pip_pd-생성" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="py310_pip_pd-생성"><span class="header-section-number">4</span> <code>py310_pip_pd</code> – 생성</h2>
 <p><code>-</code> 새로운 환경 <code>py310_pip_pd</code>를 생성하자.</p>
 <div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">guebin@cgb3-desktop:~$</span> conda create <span class="at">-n</span> py310_pip_pd python=3.10</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">guebin@cgb3-desktop:~$</span> conda activate py310_pip_pd</span>
@@ -283,8 +283,8 @@ Important
 <p><code>-</code> 새로운 환경 <code>py310_pip_pd</code> 에 판다스를 설치하자. – 이상한곳에 깔지 마시고요.. <code>py310_pip_pd</code> 컴퓨터에 까세요</p>
 <p><code>-</code> 버전을 확인</p>
 </section>
-<section id="py310_pip_pd15생성-pandas1.5-설치" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="py310_pip_pd15생성-pandas1.5-설치"><span class="header-section-number">6</span> <code>py310_pip_pd15</code>생성, <code>pandas==1.5</code> 설치</h2>
+<section id="py310_pip_pd15" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="py310_pip_pd15"><span class="header-section-number">6</span> <code>py310_pip_pd15</code></h2>
 <p><code>-</code> 새로운 환경 <code>py310_pip_pd15</code> 을 생성하고 거기에서 판다스를 설치하자. 그런데, 버전은 <code>1.5</code> 로 고정하여서..</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">guebin@cgb3-desktop:~$</span> conda create <span class="at">-n</span> py310_pip_pd15 python=3.10</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">guebin@cgb3-desktop:~$</span> conda activate py310_pip_pd15</span>
@@ -292,8 +292,8 @@ Important
 <p><code>-</code> 파이썬과 판다스 버전을 확인</p>
 <p><code>-</code> 판다스 import 가능? (ㄴㄴ..)</p>
 </section>
-<section id="py310_conda_pd15생성-pandas1.5-설치" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="py310_conda_pd15생성-pandas1.5-설치"><span class="header-section-number">7</span> <code>py310_conda_pd15</code>생성, <code>pandas==1.5</code> 설치</h2>
+<section id="py310_conda_pd15" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="py310_conda_pd15"><span class="header-section-number">7</span> <code>py310_conda_pd15</code></h2>
 <p><code>-</code> 새로운 환경 <code>py310_pip_pd15</code> 을 생성하고 거기에서 판다스를 설치하자. 그런데, 버전은 <code>1.5</code> 로 고정하여서..</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">guebin@cgb3-desktop:~$</span> conda create <span class="at">-n</span> py310_conda_pd15 python=3.10</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">guebin@cgb3-desktop:~$</span> conda activate py310_conda_pd15</span>
@@ -446,8 +446,8 @@ Note
 <li><a href="https://github.com/huggingface/evaluate/pull/656" class="uri">https://github.com/huggingface/evaluate/pull/656</a></li>
 </ul>
 </section>
-<section id="일반유저-sudo-그룹유저-루트유저슈퍼유저" class="level2" data-number="14">
-<h2 data-number="14" class="anchored" data-anchor-id="일반유저-sudo-그룹유저-루트유저슈퍼유저"><span class="header-section-number">14</span> 일반유저 &lt; sudo 그룹유저 &lt;&lt;&lt; 루트유저=슈퍼유저</h2>
+<section id="일반sudo슈퍼-유저" class="level2" data-number="14">
+<h2 data-number="14" class="anchored" data-anchor-id="일반sudo슈퍼-유저"><span class="header-section-number">14</span> 일반/sudo/슈퍼 유저</h2>
 <p><code>-</code> <code>sudo</code> 아시죠?</p>
 <p><code>-</code> 3가지 종류의 유저가 있음</p>
 <ul>
@@ -797,8 +797,8 @@ Note
 </div>
 </div>
 </section>
-<section id="base에서-renv에-있는-r-실행" class="level2" data-number="31">
-<h2 data-number="31" class="anchored" data-anchor-id="base에서-renv에-있는-r-실행"><span class="header-section-number">31</span> <code>(base)</code>에서 <code>(renv)</code>에 있는 R 실행</h2>
+<section id="base에서-r-실행" class="level2" data-number="31">
+<h2 data-number="31" class="anchored" data-anchor-id="base에서-r-실행"><span class="header-section-number">31</span> <code>(base)</code>에서 R 실행</h2>
 <p><code>-</code> 원래는 불가능한 일이겠죠?</p>
 <p><code>-</code> 억지로 가능하게 하려면?</p>
 </section>
@@ -836,8 +836,8 @@ Note
 <li>어디서 실행해야 할까요?? base? renv?</li>
 </ul>
 </section>
-<section id="여러가지-프로그램-여러가지-설치방법" class="level2" data-number="33">
-<h2 data-number="33" class="anchored" data-anchor-id="여러가지-프로그램-여러가지-설치방법"><span class="header-section-number">33</span> 여러가지 프로그램, 여러가지 설치방법</h2>
+<section id="여러가지-프로그램" class="level2" data-number="33">
+<h2 data-number="33" class="anchored" data-anchor-id="여러가지-프로그램"><span class="header-section-number">33</span> 여러가지 프로그램</h2>
 <p><code>-</code> 우분투자체의 프로그램</p>
 <ul>
 <li>우분투 자체의 프로그램 예시: git, quarto, python, R, anaconda, vi, ssh, wget, vscode</li>
