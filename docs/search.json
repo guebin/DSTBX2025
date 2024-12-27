@@ -11,14 +11,14 @@
     "href": "posts/day2.html",
     "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
     "section": "",
-    "text": "- 기본명령\npython --version \n- 두 환경 (base), (first)에서 파이썬 버전을 확인하자.\n- 코랩의 파이썬 버전을 확인해보자."
+    "text": "https://drive.google.com/drive/folders/1Nde8iX3TEEKb1RxlULlTWuwhRYUlDKnK?usp=sharing"
   },
   {
     "objectID": "posts/day2.html#파이썬-버전확인하기",
     "href": "posts/day2.html#파이썬-버전확인하기",
     "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
-    "section": "",
-    "text": "- 기본명령\npython --version \n- 두 환경 (base), (first)에서 파이썬 버전을 확인하자.\n- 코랩의 파이썬 버전을 확인해보자."
+    "section": "1 파이썬 버전확인하기",
+    "text": "1 파이썬 버전확인하기\n- 기본명령\npython --version \n- 두 환경 (base), (first)에서 파이썬 버전을 확인하자.\n- 코랩의 파이썬 버전을 확인해보자."
   },
   {
     "objectID": "posts/day2.html#base-판다스-버전확인",
