@@ -4,7 +4,259 @@
     "href": "index.html",
     "title": "데이터과학 툴박스 (2025)",
     "section": "",
-    "text": "수업계획\n\n12월26일(화) – 10:00~16:30 day1 수업\n12월27일(수) – 10:00~16:30 day2 수업\n12월30일(목) – 10:00~16:30 day3 수업\n12월31일(금) – 10:00~16:30 day4 수업\n1월2일(월) – 10:00~16:30 Q&A\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nDec 27, 2024\n\n\nDay2: 파이썬 버전확인하기 - vscode\n\n\n최규빈 \n\n\n\n\nDec 26, 2024\n\n\nDay1: 터미널의 이해 - 학과서버셋팅\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
+    "text": "수업계획\n\n12월26일(화) – 10:00~16:30 day1 수업\n12월27일(수) – 10:00~16:30 day2 수업\n12월30일(목) – 10:00~16:30 day3 수업\n12월31일(금) – 10:00~16:30 day4 수업\n1월2일(월) – 10:00~16:30 Q&A\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nDec 27, 2024\n\n\nDay2: 파이썬 버전확인하기 - jupyterlab-desktop\n\n\n최규빈 \n\n\n\n\nDec 26, 2024\n\n\nDay1: 터미널의 이해 - 학과서버셋팅\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/day2.html",
+    "href": "posts/day2.html",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "",
+    "text": "- 기본명령\npython --version \n- 두 환경 (base), (first)에서 파이썬 버전을 확인하자.\n- 코랩의 파이썬 버전을 확인해보자."
+  },
+  {
+    "objectID": "posts/day2.html#파이썬-버전확인하기",
+    "href": "posts/day2.html#파이썬-버전확인하기",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "",
+    "text": "- 기본명령\npython --version \n- 두 환경 (base), (first)에서 파이썬 버전을 확인하자.\n- 코랩의 파이썬 버전을 확인해보자."
+  },
+  {
+    "objectID": "posts/day2.html#base-판다스-버전확인",
+    "href": "posts/day2.html#base-판다스-버전확인",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "2 (base) 판다스 버전확인",
+    "text": "2 (base) 판다스 버전확인\n- 우리의 무기1: pip list\npip list\n\n너무많죠? pip list | grep pandas 어때요?\n\n- 우리의 무기2: conda list\nconda list \n- 우릭의 무기3: 파이썬에서\nimport pandas as pd\npd.__version__"
+  },
+  {
+    "objectID": "posts/day2.html#first-pandas-x",
+    "href": "posts/day2.html#first-pandas-x",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "3 (first) – pandas X",
+    "text": "3 (first) – pandas X\n- first에 판다스가 설치되었는지 살펴보자.\n- 우리의 무기1: pip list\npip list\n- 우리의 무기2: conda list\nconda list \n- 우릭의 무기3: 파이썬에서..\nimport pandas as pd # 에러나겠죠?\n- 두 환경은 그냥 다른 컴퓨터라고 믿으세요 (못 믿겠다면?)\n\n\n\n\n\n\nImportant\n\n\n\n두 개의 환경을 바꿔가면서 컨트롤 할 수 있어야 합니다~"
+  },
+  {
+    "objectID": "posts/day2.html#py310_pip_pd-생성",
+    "href": "posts/day2.html#py310_pip_pd-생성",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "4 py310_pip_pd – 생성",
+    "text": "4 py310_pip_pd – 생성\n- 새로운 환경 py310_pip_pd를 생성하자.\n(base) guebin@cgb3-desktop:~$ conda create -n py310_pip_pd python=3.10\n(base) guebin@cgb3-desktop:~$ conda activate py310_pip_pd\n(py310_pip_pd) guebin@cgb3-desktop:~$ python --version"
+  },
+  {
+    "objectID": "posts/day2.html#py310_pip_pd-pandas-설치",
+    "href": "posts/day2.html#py310_pip_pd-pandas-설치",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "5 py310_pip_pd– pandas 설치",
+    "text": "5 py310_pip_pd– pandas 설치\n- 새로운 환경 py310_pip_pd 에 판다스를 설치하자. – 이상한곳에 깔지 마시고요.. py310_pip_pd 컴퓨터에 까세요\n- 버전을 확인"
+  },
+  {
+    "objectID": "posts/day2.html#py310_pip_pd15",
+    "href": "posts/day2.html#py310_pip_pd15",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "6 py310_pip_pd15",
+    "text": "6 py310_pip_pd15\n- 새로운 환경 py310_pip_pd15 을 생성하고 거기에서 판다스를 설치하자. 그런데, 버전은 1.5 로 고정하여서..\n(base) guebin@cgb3-desktop:~$ conda create -n py310_pip_pd15 python=3.10\n(base) guebin@cgb3-desktop:~$ conda activate py310_pip_pd15\n(py310_pip_pd15) guebin@cgb3-desktop:~$ pip install pandas==1.5\n- 파이썬과 판다스 버전을 확인\n- 판다스 import 가능? (ㄴㄴ..)"
+  },
+  {
+    "objectID": "posts/day2.html#py310_conda_pd15",
+    "href": "posts/day2.html#py310_conda_pd15",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "7 py310_conda_pd15",
+    "text": "7 py310_conda_pd15\n- 새로운 환경 py310_conda_pd15 을 생성하고 거기에서 판다스를 설치하자. 그런데, 버전은 1.5 로 고정하여서..\n(base) guebin@cgb3-desktop:~$ conda create -n py310_conda_pd15 python=3.10\n(base) guebin@cgb3-desktop:~$ conda activate py310_conda_pd15\n(py310_conda_pd15) guebin@cgb3-desktop:~$ conda install -c conda-forge pandas==1.5\n- 파이썬과 판다스 버전을 확인\n- 판다스 import 가능? (ㅇㅇ..)\n\n\n\n\n\n\nImportant\n\n\n\nconda install vs pip install 의 차이점을 느끼셔야 합니다!!\n\n관찰결과1: conda install 이 좀 더 느리다. (답답할때가 있음)\n관찰결과2: conda install 이 좀 더 충돌을 관리하면서 설치한다."
+  },
+  {
+    "objectID": "posts/day2.html#conda-env-list",
+    "href": "posts/day2.html#conda-env-list",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "8 conda env list",
+    "text": "8 conda env list\n- 지금까지 만든 환경을 보고 싶다면?\nconda env list"
+  },
+  {
+    "objectID": "posts/day2.html#동일한-코드-다른결과-1",
+    "href": "posts/day2.html#동일한-코드-다른결과-1",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "9 동일한 코드, 다른결과 (1)",
+    "text": "9 동일한 코드, 다른결과 (1)\n- 현재 아래의 env 중에서\n\npy310_pip_pd\npy310_pip_pd15\npy310_conda_pd15\n\n판다스를 쓸수있는 환경은 아래와 같다.\n\npy310_pip_pd\npy310_conda_pd15\n\n- 각각의 환경에서 아래의 코드를 실행한다.\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n- 어? (기억하고 싶지 않은 흑역사: https://guebin.github.io/DV2023/posts/13wk-2.html)\n- 어쩔까요?\npip install pandas -U # 이거 맞어?\n- 판다스버전만 올린거지.. 다른버전은 그대로..\n\npy310_conda_pd15 을 수정해서.. py310_pip_pd 와 동일한 코드결과를 얻었지만\n두 환경이 같다고 볼 수는 없다."
+  },
+  {
+    "objectID": "posts/day2.html#제-컴퓨터에서는-안돼요",
+    "href": "posts/day2.html#제-컴퓨터에서는-안돼요",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "10 제 컴퓨터에서는 안돼요",
+    "text": "10 제 컴퓨터에서는 안돼요\n- 학생들 질문: 제 컴퓨터에서는 안되는데요.. 어쩌죠?\n\n답변1: 코랩에서 하세요..\n\n- 학생들 질문2: pip install pandas 해도 안되는데요, 어쩌죠?\n\n답변1: 코랩해서 하세요..\n진짜 많이 겪는 상황: 저는 꼭 제 노트북으로 해야겠습니다.. -&gt; 아나콘다 쓰시나요? -&gt; 쓰긴쓰는데…….. -&gt; 환경분리해서 실습했어요? -&gt; ????? -&gt; 제가 볼게요.. (찾아보니까) base에 있음..\n답변2: 일단은 pip install pandas -U 해보세요\n\n- 답변2가 적절할까?\n- 가장 좋아하는 답변: 환경 새로 파세요\n- 최악의 상황\n\n일단 아나콘다는 깔아놓았음.\n잘 몰라서 (base) 상태에서 이것저것 깔기 시작함.\n교수랑 코드 “똑.같.이.” 쳤는데 내 컴퓨터에서는 안됨.\n교수가 맥이라서 그런가보다 하고 인터넷에서 해결책 찾기 시작함.\n뭐 하라는 대로 해서 이제까지 해결해 왔음. (버전은 점점 엉키기 시작함)\n안되는건 잘하는 선배찾아가서 물어봤는데 귀신같이 해결해줌. (하지만 버전은 점점 더 엉키고 있음)\n그런데 또 문제가 생겼고 이제는 해결못하겠음.\n교수한테 찾아감 -&gt; 교수가 해준다면서 (base)에서 새로운 환경 (py310_pip_pd)을 만들어서 이것저것 시도해 봄.\n성공하면 다행인데, 실패함1\n이건 방법이 없다며 아나콘다를 지우고 재설치 시도. 그런데 윈도우에서는 아나콘다 지우는게 까다로움. (먼가 설정이 자꾸 남아있단 말이에요)\n새로 계정만들어서 아나콘다 설치시도 -&gt; 실패\n교수도 사실 윈도우 잘 모른다고 하면서 회피.\n포맷\n1로 다시 돌아간 다음 아나콘다 깔고 1-13을 반복함.\n\n- 제발 (base)에 패키지 좀 설치하지 마세요..\n\n\n\n\n\n\nNote\n\n\n\n언제 pip install을 쓰고 언제 conda install을 써야할까? 답은없어요. 저는 대충 아래와 같이 합니다. (해보고 수틀리면 그냥 환경날리세여)\n\n만만한 패키지는 pip install 로 설치: numpy, pandas\n까다로운 패키지는 conda install 로 설치: torch, transformers, autogluon"
+  },
+  {
+    "objectID": "posts/day2.html#가상환경-관리",
+    "href": "posts/day2.html#가상환경-관리",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "11 가상환경 관리",
+    "text": "11 가상환경 관리\n- 가능하면 프로젝트별로 환경을 분리하는게 좋다.\n- 많은 종류의 패키지가 한 환경에 존재할수록, 그들을 조율하기는 점점 힘들어진다.\n- 하나의 환경에 모든 패키지를 때려밖아 설치하는건 패키지 충돌나라고 기도하는 꼴이다."
+  },
+  {
+    "objectID": "posts/day2.html#동일한-코드-다른결과-2",
+    "href": "posts/day2.html#동일한-코드-다른결과-2",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "12 동일한 코드, 다른결과 (2)",
+    "text": "12 동일한 코드, 다른결과 (2)\n- 십년감수: 저 진짜 식겁했어요..\n\nref: https://guebin.github.io/MP2024/posts/12wk-1.html\n\n- 지금!! (2024.12.27) 코랩에서 이거 해보세요 – 실행안됨\n!pip install evaluate\nimport numpy as np\nimport evaluate\nlogits = np.array(\n    [[ 2.7346244, -3.1177292],\n     [ 2.7103324, -3.1362345],\n     [ 2.7464483, -3.0521457],\n     [ 2.7195318, -3.122628 ],\n     [ 2.7138977, -3.1041346],\n     [ 2.7398622, -3.1098123],\n     [ 0.0657177, -0.0930362],\n     [-2.7668718,  3.0918367]]\n)\npredictions = logits.argmax(axis=1)\nreferences = labels = np.array([0,0,0,0,0,0,1,1])\nrec = evaluate.load(\"recall\")\nrec.compute(predictions = predictions, references = references)\n- 수업들을때 잘 되지 않았어요?"
+  },
+  {
+    "objectID": "posts/day2.html#github-집단지성의-끝판왕",
+    "href": "posts/day2.html#github-집단지성의-끝판왕",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "13 Github – 집단지성의 끝판왕",
+    "text": "13 Github – 집단지성의 끝판왕\n- 구글코랩처럼 비밀저장소를 만드는게 아니고 공개저장소를 만들면 개발자 입장에서는 뭐가 좋을까?\n\nhttps://github.com/huggingface/evaluate\nhttps://github.com/scikit-learn/scikit-learn ## 어우 큰일날뻔 했어요 진짜..\n\n- 해피엔딩? (전 엄청 보수적이라서요.. 별로 최신버전 쓰고싶진 않네요)\n\nhttps://github.com/huggingface/evaluate/pull/656"
+  },
+  {
+    "objectID": "posts/day2.html#일반sudo슈퍼-유저",
+    "href": "posts/day2.html#일반sudo슈퍼-유저",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "14 일반/sudo/슈퍼 유저",
+    "text": "14 일반/sudo/슈퍼 유저\n- sudo 아시죠?\n- 3가지 종류의 유저가 있음\n\n일반유저: sudo를 쓸 수 없는 유저\nsudo 그룹유저, sudo 유저: sudo를 쓸 수 있는 유저, 평소에는 일반유저인듯 보이지만 sudo를 쓰는 순간 슈퍼유저(=루트유저)의 권한을 써서 행동할 수 있다.\n슈퍼유저 = 루트유저: 모든 행동이 슈퍼유저의 권한으로 하는 행동임!!\n\n- 심술을 좀 부려볼까요?\n\n차상진 cktkdwls111\n이상민 gkem0222\n신다빈 teq040810"
+  },
+  {
+    "objectID": "posts/day2.html#git-설치",
+    "href": "posts/day2.html#git-설치",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "15 git 설치",
+    "text": "15 git 설치\n- 이 레포지토리 클론할수있어요?\n\nhttps://github.com/guebin/DSTBX2025\n\n- git이 없죠?\n- 설치할수있어요?\napt install git\n- 깔아줄까요?"
+  },
+  {
+    "objectID": "posts/day2.html#루트유저가-보는-세상",
+    "href": "posts/day2.html#루트유저가-보는-세상",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "16 루트유저가 보는 세상",
+    "text": "16 루트유저가 보는 세상\n/root\n\n루트사용자의 홈 디렉토리\nsudo로도 들어갈 수 없음\n\n/etc\n\n리눅스 시스템 전반적인 환경설정 파일들을 모은 디렉터리임.\n이 디렉터리의 모든 파일은 텍스트형식임.\n/etc/password 사용자 계정정보\n\n/home\n\n사용자의 홈 디렉터리\n\n/mnt\n\n다른 파일 시스템이 파일 시스템에 연결되거나 마운트 되는 위치\n\n/media\n\nCD, USB 장치가 파일 시스템에 연결되거나 마운트되는 위치임\n\n/bin\n\n시스템 부팅과 실행에 필요한 바이너리(=윈도도의 실행파일=macOS의 애플리케이션)들을 포함\n\n/lib\n\n시스템 프로그램에서 사용하는 공유 라이브러리가 저장. 윈도우즈의 DLL과 비슷한 것.\n\n/usr\n\n사용자가 사용하는 모든 프로그램과 지원파일들 (Program files + 프로그램들의 설정값)\n/usr/bin 리눅스 배포판이 설치한 실행 프로그램들이 있다. (여기에 R이 깔린다!!)\n\nhp-align, hp-check, hp-config_usb-printer …\nX11\nvi\ngcc\nsu, sudo\nsar\nssh, ssh-agent, ssh-keygen, ….\nnvidia-smi\n\n/usr/lib 여기에는 /usr/bin에 있는 프로그램들을 위한 공유라이브러리가 저장된다. 여기에 R folder가 있다. (R패키지는 여기말고 다른데 깔림)\n/usr/local/bin 소스코드로 컴파일된 파일, 보통 비어있음\n/usr/local/lib/R/site-library R패키지가 설치되어있음, 예를들면 tidyverse"
+  },
+  {
+    "objectID": "posts/day2.html#ls의-이름바꾸기",
+    "href": "posts/day2.html#ls의-이름바꾸기",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "17 ls의 이름바꾸기",
+    "text": "17 ls의 이름바꾸기\n- 루트유저는 생각보다 많은걸 할 수 있어요\n- 무섭죠? 그래서 그냥 sudo로 돌아가길 원합니다 보통은.."
+  },
+  {
+    "objectID": "posts/day2.html#컴퓨터란",
+    "href": "posts/day2.html#컴퓨터란",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "18 컴퓨터란?",
+    "text": "18 컴퓨터란?\n- 개념: 모든것은 파일과 폴더의 집합이다.\n- 183번 컴퓨터로 가보자.\n- 우분투컴퓨터에 guebin이라는 유저를 새롭게 추가했다 = /home/guebin/ 를 만듦\n- 우분투에서 깃을 설치했다 = 우분투에서 sudo apt-get install git을 실행했다. = /usr/bin/에 git이라는 파일이 생겼다. = /usr/bin/git 생성\n- ls는 우분투에 이미 내장되어있는 기능이다. = ls는 우분투에 이미 내장되어있는 명령파일이다. = 우분투를 설치하면 /usr/bin/에 ls라는 파일이 이미 있다.\n- 우분투에 guebin이라는 유저를 등록했다. 이후에 guebin이라는 유저가 아나콘다를 설치했다. = 우분투에 guebin이라는 유저를 등록했다. 이후에 guebin이라는 유저는 아나콘다를 이용하여 가상의 (base)환경을 만들었다. = /home/guebin/anaconda3/폴더가 만들어졌다는 의미.\n- 우분투에 guebin이라는 sudo유저를 등록했다. 이후에 guebin이라는 sudo유저가 루트권한을 이용하여 git을 설치했다. = /home/guebin/ 이 만들어짐 + /usr/bin/git 생성"
+  },
+  {
+    "objectID": "posts/day2.html#anaconda",
+    "href": "posts/day2.html#anaconda",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "19 Anaconda",
+    "text": "19 Anaconda\n- 아래를 실행하고 관찰해보자.\n(base) guebin@cgb3-desktop:~$ cd anaconda3/\n(base) guebin@cgb3-desktop:~/anaconda3$ ls\n- 이게 무엇인것 같나요?\n- 이제 다시 아래를 실행하고 관찰해봅시다.\n(base) guebin@cgb3-desktop:~$ cd anaconda3/\n(base) guebin@cgb3-desktop:~/anaconda3$ cd envs/\n(base) guebin@cgb3-desktop:~/anaconda3/envs$ cd first\n(base) guebin@cgb3-desktop:~/anaconda3/envs/first$ ls\n- 이건 뭐인것 같아요?"
+  },
+  {
+    "objectID": "posts/day2.html#git-설치하기",
+    "href": "posts/day2.html#git-설치하기",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "20 git 설치하기",
+    "text": "20 git 설치하기\n- 루트유저가 횡포를 부려서 다시 깃을 지웠습니다.\nsudo apt remove git\n- 치사해서 내가 깝니다\nconda create -n git\nconda activate git \nconda install -c conda-forge git\n- 나는 일반유저인 guebin 이지만 콘다환경 한정하여 루트유저급"
+  },
+  {
+    "objectID": "posts/day2.html#폴더의-레벨",
+    "href": "posts/day2.html#폴더의-레벨",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "21 폴더의 레벨",
+    "text": "21 폴더의 레벨\n- 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n- 영향력은 하위폴더에 행사할 수 있다."
+  },
+  {
+    "objectID": "posts/day2.html#난-어디에-깃을-설치했어",
+    "href": "posts/day2.html#난-어디에-깃을-설치했어",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "22 난 어디에 깃을 설치했어?",
+    "text": "22 난 어디에 깃을 설치했어?\n# 문제1: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래의 명령을 통하여 깃을 설치했다.\n(base) sudo apt-get install git \n깃은 어디에 설치되어있는가?\n\n정답은 1번입니다! 깃이 어디에 깔리는지를 생각하세요!\n\n#\n# 문제2: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래와 같이 깃을 설치했다.\n(py310) sudo apt-get install git \n깃은 어디에 설치되어있는가?\n\n정답은 1번입니다! 깃이 어디에 깔리는지를 생각하세요!\n\n#\n# 문제3: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래의 명령을 통하여 깃을 설치했다.\n(py310) conda install -c conda-forge git \n깃은 어디에 설치되어있는가?\n\n정답은 4번입니다!\n\n#\n# 문제4: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래와 같이 깃을 설치했다.\n(base) conda install -c conda-forge git \n## 문제를 위해서 만들긴 했는데요, 제발 (base)에 머 설치하지 좀 마세요\n깃은 어디에 설치되어있는가?\n\n정답은 3번 입니다!\n\n#\n\n\n\n\n\n\nNote\n\n\n\n우리가 예전에 만든 publish.sh 파일 있잖아요?\n\n이걸 프로그램이라고 해석할 수도 있죠? (그렇다고 칩시다)\n그럼 이 프로그램은 어떤 컴퓨터에 설치되었을까요?\n어떤 폴더에 이 파일을 넣느냐에 따라 다르겠죠.."
+  },
+  {
+    "objectID": "posts/day2.html#환경삭제",
+    "href": "posts/day2.html#환경삭제",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "23 환경삭제",
+    "text": "23 환경삭제\n- 이제 183컴퓨터를 떠날준비를 합시다.\n- 아나콘다 환경을 삭제하는 방법"
+  },
+  {
+    "objectID": "posts/day2.html#rpy2",
+    "href": "posts/day2.html#rpy2",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "24 rpy2",
+    "text": "24 rpy2\n- 186 컴퓨터 갑시다.\n\nsudo 유저도 아니고 슈퍼유저에요!!\n\n- 아래를 실행: R에 필요한 ubuntu-level의 프로그램\napt-get update\napt-get install -y \\\n    libxt6 \\\n    libxrender1 \\\n    libcairo2 \\\n    libx11-dev \\\n    libxt-dev \\\n    libxrender-dev \\\n    libcairo2-dev\n- 아래를 실행\n(base) conda create -n rpy2\n(base) conda activate rpy2\n(rpy2) conda install r::rpy2\n(rpy2) conda install -c conda-forge notebook\n(rpy2) pip install numpy\n- 아래를 실행.. (포트는 학번제외하고 하나 쓰세요)\njupyter lab --ip=\"0.0.0.0\" --port=12345 --no-browser --allow-root\n- 주피터에서 이걸 치고 코딩해보세요\nimport numpy as np\nimport rpy2\n%load_ext rpy2.ipython\n- 당장 이거 3개만 알면 쓸만해요\n\n%%R\n%R -i ???\n%R -o ???\n\n- 응용..\n%%R\nset.seed(123)\nx &lt;- 1:10\ny &lt;- 2.5 * x + rnorm(10, mean = 0, sd = 2)  # y = 2.5x + noise\nplot(x,y)\nmodel &lt;- lm(y ~ x)\nbeta &lt;- model$coef\nprint(beta)\n%R -o beta\n- 이거는 하나의 메모장에 두 개의 커널이 붙어있는 경우입니다.\n- R,Python의 여러패키지 조합은 맞추기 어려워서요.. 스스로 환경 계속 새로 파면서 노가다해봐야합니다"
+  },
+  {
+    "objectID": "posts/day2.html#주피터랩-2개-켜기",
+    "href": "posts/day2.html#주피터랩-2개-켜기",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "25 주피터랩 2개 켜기",
+    "text": "25 주피터랩 2개 켜기\n- first 에서 하나.. rpy2 에서 하나..\n- 매번 이런거 하기 어렵죠?"
+  },
+  {
+    "objectID": "posts/day2.html#tmux-이용하기",
+    "href": "posts/day2.html#tmux-이용하기",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "26 tmux 이용하기",
+    "text": "26 tmux 이용하기\n- tmux 가 뭔가?\n\npython 보다 ipython 이 좋잖아요?\n일반적인 terminal 보다 tmux가 좋아요!\n\n- 이것만 기억하세요\n\ntmux ls\ntmux, tmux new -t asdf\nctrl + b + d\ntmux attach -t 0, tmux attach -t asdf\nctrl + d"
+  },
+  {
+    "objectID": "posts/day2.html#주피터랩-평생-켜놓기",
+    "href": "posts/day2.html#주피터랩-평생-켜놓기",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "27 주피터랩 평생 켜놓기",
+    "text": "27 주피터랩 평생 켜놓기\n- 세 가지 방법이 있음\n\n백엔드에서 실행\nnohup을 이용\ntmux를 이용 (이것만 알면됩니다)"
+  },
+  {
+    "objectID": "posts/day2.html#포트정리-lsof",
+    "href": "posts/day2.html#포트정리-lsof",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "28 포트정리 (lsof)",
+    "text": "28 포트정리 (lsof)\n- 내가 어떤포트에 어떤환경의 주피터를 켰는지 헷갈린다면?\n- lsof 프로그램 설치\napt-get install lsof\napt install lsof \n- 1307 포트를 사용하는 프로그램이 있는지 파악\nlsof -i :1307\n결과는 아래와 같은 예시로 나옴\nCOMMAND      PID USER   FD   TYPE    DEVICE SIZE/OFF NODE NAME\njupyter-l 862165 root    6u  IPv4 383551982      0t0  TCP *:1307 (LISTEN)\njupyter-l 862165 root   12u  IPv4 383671448      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59663 (ESTABLISHED)\njupyter-l 862165 root   16u  IPv4 383628690      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59664 (ESTABLISHED)\njupyter-l 862165 root   29u  IPv4 383612831      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59720 (ESTABLISHED)\njupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59667 (ESTABLISHED)\n- 각자해볼것: ssh 접속시 사용하는 포트 제외하고 나머지 포트를 쓰고 있는 프로그램은 삭제\nkill {PID}\n위의 예시의 경우\nkill 862165\n- 주피터랩 평생켜놓기 + 끄기 (이거 자유자재로 할 수 있어야함)\n- PID를 조회하는 다른방법\nps aux | grep jupyter"
+  },
+  {
+    "objectID": "posts/day2.html#r-전용-개발환경-만들기",
+    "href": "posts/day2.html#r-전용-개발환경-만들기",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "29 R 전용 개발환경 만들기",
+    "text": "29 R 전용 개발환경 만들기\n- 아래를 실행\nconda create -n renv\nconda activate renv\nconda install r::r-essentials\n- 여기에서 conda install -c conda-forge r-essentials로 인하여 R, Python, Jupyter 가 모두 최신버전으로 설치된다.\n- 또한 R에는 이미 tidyverse, IRkernel 등의 패키지가 기본으로 깔려있다.\n- 아래를 실행.. (포트는 안겹치게)\njupyter lab --ip=\"0.0.0.0\" --port=12345 --no-browser --allow-root\n- R 노트북이 잘 열리는가?"
+  },
+  {
+    "objectID": "posts/day2.html#r은-어디에-있음",
+    "href": "posts/day2.html#r은-어디에-있음",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "30 R은 어디에 있음?",
+    "text": "30 R은 어디에 있음?\n- R이 설치된 경로를 찾아보자.\n\n수틀리면 이 R을 지우면 된다.\n\n\n\n\n\n\n\nNote\n\n\n\nR이 설치될 수 있는 3가지 시나리오\nsudo apt-get install r-base # r 공식홈페이지, 수틀리면 리눅스 포맷  \n(base) conda install -c conda-forge ... # 수틀리면 아나콘다 삭제해야함. \n(renv) conda install -c conda-forge ... # 수틀리면 가상환경 삭제"
+  },
+  {
+    "objectID": "posts/day2.html#base에서-r-실행",
+    "href": "posts/day2.html#base에서-r-실행",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "31 (base)에서 R 실행",
+    "text": "31 (base)에서 R 실행\n- 원래는 불가능한 일이겠죠?\n- 억지로 가능하게 하려면?"
+  },
+  {
+    "objectID": "posts/day2.html#rstudio-사용하기",
+    "href": "posts/day2.html#rstudio-사용하기",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "32 Rstudio 사용하기",
+    "text": "32 Rstudio 사용하기\n- 아래를 이용하여 Rstudio를 설치 // base환경에서 실행하든 renv환경에서 실행하든 상관없음 (왜?)\napt-get install gdebi-core\nwget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2022.12.0-353-amd64.deb\ngdebi rstudio-server-2022.12.0-353-amd64.deb\n- grst가 만든 rstudio-server-conda를 클론\ngit clone https://github.com/grst/rstudio-server-conda.git\n- ~/rstudio-server-conda/local/start_rstudio_server.sh 의 맨아래를 아래와 같이 수정\n\n\n~/rstudio-server-conda/local/start_rstudio_server.sh\n\n...\n/usr/lib/rstudio-server/bin/rserver --server-daemonize=0 \\\n  --www-port=12345 \\\n  --auth-minimum-user-id=0 \\\n  --secure-cookie-key-file=$COOKIE_KEY_PATH \\\n  --server-pid-file=\"$CWD/rstudio-server.pid\" \\\n  --server-data-dir=\"$CWD/rstudio-server\" \\\n  --rsession-which-r=$(which R) \\\n  --rsession-ld-library-path=$CONDA_PREFIX/lib \\\n  --rsession-path=\"$CWD/rsession.sh\" \\\n  --server-user $USER \\\n  --database-config-file \"$CWD/database.conf\" \\\n  $REVOCATION_LIST_PAR\n\n- start_rstudio_server.sh를 실행\n\n어디서 실행해야 할까요?? base? renv?\nR이 설치된 renv에서 해야함 (그래야 커널이랑 붙을테니까)"
+  },
+  {
+    "objectID": "posts/day2.html#여러가지-프로그램",
+    "href": "posts/day2.html#여러가지-프로그램",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "33 여러가지 프로그램",
+    "text": "33 여러가지 프로그램\n- 우분투자체의 프로그램\n\n우분투 자체의 프로그램 예시: git, quarto, python, R, anaconda, vi, ssh, wget, vscode\n우분투 자체의 프로그램은 다시 모든 유저가 영향을 받는 받는 프로그램과 그렇지 않은 프로그램이 있음\n우분투 자체의 프로그램을 설치하는 방법들\n\nsudo apt install git \nsudo apt-get install git \nsudo dpkg -i quarto-1.4.533-linux-amd64.deb \nbash Anaconda3-2019.03-Linux-x86_64.sh\nsudo gdebi rstudio-server-1.2.5033-amd64.deb\n# 기타 파일을 넣을 수 있는 모든 방법 (예를들면 압축파일 다운로드후 풀기) \n- 아나콘다(=base)에 종속된 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: conda, python, R, jupyter\n아나콘다에 종속된 프로그램은 anaconda3 폴더안에 있음.\n\n- 아나콘다환경(=py310)에 종속시킬 수 “있는” 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: python, R, jupyter\n아나콘다환경에 종속된 프로그램은 anaconda3/envs/py310 와 같은 형식의 폴더안에 있음.\n\n- 파이썬에 종속된 프로그램 (=파이썬패키지=파이썬라이브러리=파이썬모듈)\n\n파이썬에 종속된 프로그램 예시: numpy, pandas\n얘네들이 어디에 깔리는지는 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)\n\n- R에 종속된 프로그램 (=R패키지=R라이브러리)\n\nR에 종속된 프로그램의 예시: tidyverse\n얘들이 어디 깔리는지도 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)"
+  },
+  {
+    "objectID": "posts/day2.html#jupyterlab-desktop",
+    "href": "posts/day2.html#jupyterlab-desktop",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "34 jupyterlab-desktop",
+    "text": "34 jupyterlab-desktop\n- 주피터랩 app! (저는 좋더라고요)\n\nhttps://github.com/jupyterlab/jupyterlab-desktop\n\n- 굳이 로칼에 파이썬을 설치하진 않고 remote 로만 써요\n- 아래를 설정하는걸 좋아함. (취향차이??)"
+  },
+  {
+    "objectID": "posts/day2.html#footnotes",
+    "href": "posts/day2.html#footnotes",
+    "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\n4학년쯤에는 이미 (base) 가 손쓸 수 없는 상태로 깨져있는 경우가 허다함. 공부를 열심히 한 학생일수록 그러함. 이럴경우 소생가능성이 없음↩︎"
   },
   {
     "objectID": "posts/day1.html",
@@ -201,258 +453,6 @@
     "title": "Day1: 터미널의 이해 - 학과서버셋팅",
     "section": "27 폴더와 파일의 표현",
     "text": "27 폴더와 파일의 표현\n\n많이 쓰다보면 눈치껏 알게되는데요, 한번 정리하는게 좋습니다.\n\n- 아래가 의미하는것은?\n. \n.. \nasdf\nasdf/\n.asdf \n.asdf/\n~\n/\n- 응용편: 아래가 의미하는것은?\n./asdf/\n../asdf/ \nasdf/mysum.py\n.asdf/mysum.py\n\n\n\n\n\n\nImportant\n\n\n\n외우세요"
-  },
-  {
-    "objectID": "posts/day2.html",
-    "href": "posts/day2.html",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "",
-    "text": "- 기본명령\npython --version \n- 두 환경 (base), (first)에서 파이썬 버전을 확인하자.\n- 코랩의 파이썬 버전을 확인해보자."
-  },
-  {
-    "objectID": "posts/day2.html#파이썬-버전확인하기",
-    "href": "posts/day2.html#파이썬-버전확인하기",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "",
-    "text": "- 기본명령\npython --version \n- 두 환경 (base), (first)에서 파이썬 버전을 확인하자.\n- 코랩의 파이썬 버전을 확인해보자."
-  },
-  {
-    "objectID": "posts/day2.html#base-판다스-버전확인",
-    "href": "posts/day2.html#base-판다스-버전확인",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "2 (base) 판다스 버전확인",
-    "text": "2 (base) 판다스 버전확인\n- 우리의 무기1: pip list\npip list\n\n너무많죠? pip list | grep pandas 어때요?\n\n- 우리의 무기2: conda list\nconda list \n- 우릭의 무기3: 파이썬에서\nimport pandas as pd\npd.__version__"
-  },
-  {
-    "objectID": "posts/day2.html#first-pandas-x",
-    "href": "posts/day2.html#first-pandas-x",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "3 (first) – pandas X",
-    "text": "3 (first) – pandas X\n- first에 판다스가 설치되었는지 살펴보자.\n- 우리의 무기1: pip list\npip list\n- 우리의 무기2: conda list\nconda list \n- 우릭의 무기3: 파이썬에서..\nimport pandas as pd # 에러나겠죠?\n- 두 환경은 그냥 다른 컴퓨터라고 믿으세요 (못 믿겠다면?)\n\n\n\n\n\n\nImportant\n\n\n\n두 개의 환경을 바꿔가면서 컨트롤 할 수 있어야 합니다~"
-  },
-  {
-    "objectID": "posts/day2.html#py310_pip_pd-생성",
-    "href": "posts/day2.html#py310_pip_pd-생성",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "4 py310_pip_pd – 생성",
-    "text": "4 py310_pip_pd – 생성\n- 새로운 환경 py310_pip_pd를 생성하자.\n(base) guebin@cgb3-desktop:~$ conda create -n py310_pip_pd python=3.10\n(base) guebin@cgb3-desktop:~$ conda activate py310_pip_pd\n(py310_pip_pd) guebin@cgb3-desktop:~$ python --version"
-  },
-  {
-    "objectID": "posts/day2.html#py310_pip_pd-pandas-설치",
-    "href": "posts/day2.html#py310_pip_pd-pandas-설치",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "5 py310_pip_pd– pandas 설치",
-    "text": "5 py310_pip_pd– pandas 설치\n- 새로운 환경 py310_pip_pd 에 판다스를 설치하자. – 이상한곳에 깔지 마시고요.. py310_pip_pd 컴퓨터에 까세요\n- 버전을 확인"
-  },
-  {
-    "objectID": "posts/day2.html#py310_pip_pd15",
-    "href": "posts/day2.html#py310_pip_pd15",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "6 py310_pip_pd15",
-    "text": "6 py310_pip_pd15\n- 새로운 환경 py310_pip_pd15 을 생성하고 거기에서 판다스를 설치하자. 그런데, 버전은 1.5 로 고정하여서..\n(base) guebin@cgb3-desktop:~$ conda create -n py310_pip_pd15 python=3.10\n(base) guebin@cgb3-desktop:~$ conda activate py310_pip_pd15\n(py310_pip_pd15) guebin@cgb3-desktop:~$ pip install pandas==1.5\n- 파이썬과 판다스 버전을 확인\n- 판다스 import 가능? (ㄴㄴ..)"
-  },
-  {
-    "objectID": "posts/day2.html#py310_conda_pd15",
-    "href": "posts/day2.html#py310_conda_pd15",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "7 py310_conda_pd15",
-    "text": "7 py310_conda_pd15\n- 새로운 환경 py310_pip_pd15 을 생성하고 거기에서 판다스를 설치하자. 그런데, 버전은 1.5 로 고정하여서..\n(base) guebin@cgb3-desktop:~$ conda create -n py310_conda_pd15 python=3.10\n(base) guebin@cgb3-desktop:~$ conda activate py310_conda_pd15\n(py310_conda_pd15) guebin@cgb3-desktop:~$ conda install -c conda-forge pandas==1.5\n- 파이썬과 판다스 버전을 확인\n\n판다스는 그렇다치고..\n파이썬이 버전이 바뀌었네요?\n\n- 판다스 import 가능? (ㅇㅇ..)\n\n\n\n\n\n\nImportant\n\n\n\nconda install vs pip install 의 차이점을 느끼셔야 합니다!!\n\n관찰결과1: conda install 이 좀 더 느리다. (답답하고 짜증나)\n관찰결과2: conda install 이 좀 더 충돌을 관리하면서 설치한다."
-  },
-  {
-    "objectID": "posts/day2.html#conda-env-list",
-    "href": "posts/day2.html#conda-env-list",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "8 conda env list",
-    "text": "8 conda env list\n- 지금까지 만든 환경을 보고 싶다면?\nconda env list"
-  },
-  {
-    "objectID": "posts/day2.html#동일한-코드-다른결과-1",
-    "href": "posts/day2.html#동일한-코드-다른결과-1",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "9 동일한 코드, 다른결과 (1)",
-    "text": "9 동일한 코드, 다른결과 (1)\n- 현재 아래의 env 중에서\n\npy310_pip_pd\npy310_pip_pd15\npy310_conda_pd15\n\n판다스를 쓸수있는 환경은 아래와 같다.\n\npy310_pip_pd\npy310_conda_pd15\n\n- 각각의 환경에서 아래의 코드를 실행한다.\ndf = pd.DataFrame({'A':[2143,2143],'B':['-',3456]})\ndf.map(lambda x: 0 if x == '-' else x)\n- 어? (기억하고 싶지 않은 흑역사: https://guebin.github.io/DV2023/posts/13wk-2.html)\n- 어쩔까요?\npip install pandas -U # 이거 맞어?\n- 판다스버전만 올린거지.. 다른버전은 그대로..\n\npy310_conda_pd15 을 수정해서.. py310_pip_pd 와 동일한 코드결과를 얻었지만\n두 환경이 같다고 볼 수는 없다."
-  },
-  {
-    "objectID": "posts/day2.html#제-컴퓨터에서는-안돼요",
-    "href": "posts/day2.html#제-컴퓨터에서는-안돼요",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "10 제 컴퓨터에서는 안돼요",
-    "text": "10 제 컴퓨터에서는 안돼요\n- 학생들 질문: 제 컴퓨터에서는 안되는데요.. 어쩌죠?\n\n답변1: 코랩에서 하세요..\n\n- 학생들 질문2: pip install pandas 해도 안되는데요, 어쩌죠?\n\n답변1: 코랩해서 하세요..\n진짜 많이 겪는 상황: 저는 꼭 제 노트북으로 해야겠습니다.. -&gt; 아나콘다 쓰시나요? -&gt; 쓰긴쓰는데…….. -&gt; 환경분리해서 실습했어요? -&gt; ????? -&gt; 제가 볼게요.. (찾아보니까) base에 있음..\n답변2: 일단은 pip install pandas -U 해보세요\n\n- 답변2가 적절할까?\n- 가장 좋아하는 답변: 환경 새로 파세요\n- 최악의 상황\n\n일단 아나콘다는 깔아놓았음.\n잘 몰라서 (base) 상태에서 이것저것 깔기 시작함.\n교수랑 코드 “똑.같.이.” 쳤는데 내 컴퓨터에서는 안됨.\n교수가 맥이라서 그런가보다 하고 인터넷에서 해결책 찾기 시작함.\n뭐 하라는 대로 해서 이제까지 해결해 왔음. (버전은 점점 엉키기 시작함)\n안되는건 잘하는 선배찾아가서 물어봤는데 귀신같이 해결해줌. (하지만 버전은 점점 더 엉키고 있음)\n그런데 또 문제가 생겼고 이제는 해결못하겠음.\n교수한테 찾아감 -&gt; 교수가 해준다면서 (base)에서 새로운 환경 (py310_pip_pd)을 만들어서 이것저것 시도해 봄.\n성공하면 다행인데, 실패함1\n이건 방법이 없다며 아나콘다를 지우고 재설치 시도. 그런데 윈도우에서는 아나콘다 지우는게 까다로움. (먼가 설정이 자꾸 남아있단 말이에요)\n새로 계정만들어서 아나콘다 설치시도 -&gt; 실패\n교수도 사실 윈도우 잘 모른다고 하면서 회피.\n포맷\n1로 다시 돌아간 다음 아나콘다 깔고 1-13을 반복함.\n\n- 제발 (base)에 패키지 좀 설치하지 마세요..\n\n\n\n\n\n\nNote\n\n\n\n언제 pip install을 쓰고 언제 conda install을 써야할까? 답은없어요. 저는 대충 아래와 같이 합니다. (해보고 수틀리면 그냥 환경날리세여)\n\n만만한 패키지는 pip install 로 설치: numpy, pandas\n까다로운 패키지는 conda install 로 설치: torch, transformers, autogluon"
-  },
-  {
-    "objectID": "posts/day2.html#가상환경-관리",
-    "href": "posts/day2.html#가상환경-관리",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "11 가상환경 관리",
-    "text": "11 가상환경 관리\n- 가능하면 프로젝트별로 환경을 분리하는게 좋다.\n- 많은 종류의 패키지가 한 환경에 존재할수록, 그들을 조율하기는 점점 힘들어진다.\n- 하나의 환경에 모든 패키지를 때려밖아 설치하는건 패키지 충돌나라고 기도하는 꼴이다."
-  },
-  {
-    "objectID": "posts/day2.html#동일한-코드-다른결과-2",
-    "href": "posts/day2.html#동일한-코드-다른결과-2",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "12 동일한 코드, 다른결과 (2)",
-    "text": "12 동일한 코드, 다른결과 (2)\n- 십년감수: 저 진짜 식겁했어요..\n\nref: https://guebin.github.io/MP2024/posts/12wk-1.html\n\n- 지금!! (2024.12.27) 코랩에서 이거 해보실래요?\n!pip install evaluate\nimport numpy as np\nimport evaluate\nlogits = np.array(\n    [[ 2.7346244, -3.1177292],\n     [ 2.7103324, -3.1362345],\n     [ 2.7464483, -3.0521457],\n     [ 2.7195318, -3.122628 ],\n     [ 2.7138977, -3.1041346],\n     [ 2.7398622, -3.1098123],\n     [ 0.0657177, -0.0930362],\n     [-2.7668718,  3.0918367]]\n)\npredictions = logits.argmax(axis=1)\nreferences = labels = np.array([0,0,0,0,0,0,1,1])\nrec = evaluate.load(\"recall\")\nrec.compute(predictions = predictions, references = references)\n- 수업들을때 잘 되지 않았어요?"
-  },
-  {
-    "objectID": "posts/day2.html#github-집단지성의-끝판왕",
-    "href": "posts/day2.html#github-집단지성의-끝판왕",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "13 Github – 집단지성의 끝판왕",
-    "text": "13 Github – 집단지성의 끝판왕\n- 구글코랩처럼 비밀저장소를 만드는게 아니고 공개저장소를 만들면 개발자 입장에서는 뭐가 좋을까?\n\nhttps://github.com/huggingface/evaluate\nhttps://github.com/scikit-learn/scikit-learn ## 어우 큰일날뻔 했어요 진짜..\n\n- 해피엔딩? (전 엄청 보수적이라서요.. 별로 최신버전 쓰고싶진 않네요)\n\nhttps://github.com/huggingface/evaluate/pull/656"
-  },
-  {
-    "objectID": "posts/day2.html#일반sudo슈퍼-유저",
-    "href": "posts/day2.html#일반sudo슈퍼-유저",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "14 일반/sudo/슈퍼 유저",
-    "text": "14 일반/sudo/슈퍼 유저\n- sudo 아시죠?\n- 3가지 종류의 유저가 있음\n\n일반유저: sudo를 쓸 수 없는 유저\nsudo 그룹유저, sudo 유저: sudo를 쓸 수 있는 유저, 평소에는 일반유저인듯 보이지만 sudo를 쓰는 순간 슈퍼유저(=루트유저)의 권한을 써서 행동할 수 있다.\n슈퍼유저 = 루트유저: 모든 행동이 슈퍼유저의 권한으로 하는 행동임!!\n\n- 심술을 좀 부려볼까요?\n\n차상진 cktkdwls111\n이상민 gkem0222\n신다빈 teq040810"
-  },
-  {
-    "objectID": "posts/day2.html#git-설치",
-    "href": "posts/day2.html#git-설치",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "15 git 설치",
-    "text": "15 git 설치\n- 이 레포지토리 클론할수있어요?\n\nhttps://github.com/guebin/DSTBX2025\n\n- git이 없죠?\n- 설치할수있어요?\napt install git\n- 깔아줄까요?"
-  },
-  {
-    "objectID": "posts/day2.html#루트유저가-보는-세상",
-    "href": "posts/day2.html#루트유저가-보는-세상",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "16 루트유저가 보는 세상",
-    "text": "16 루트유저가 보는 세상\n/root\n\n루트사용자의 홈 디렉토리\nsudo로도 들어갈 수 없음\n\n/etc\n\n리눅스 시스템 전반적인 환경설정 파일들을 모은 디렉터리임.\n이 디렉터리의 모든 파일은 텍스트형식임.\n/etc/password 사용자 계정정보\n\n/home\n\n사용자의 홈 디렉터리\n\n/mnt\n\n다른 파일 시스템이 파일 시스템에 연결되거나 마운트 되는 위치\n\n/media\n\nCD, USB 장치가 파일 시스템에 연결되거나 마운트되는 위치임\n\n/bin\n\n시스템 부팅과 실행에 필요한 바이너리(=윈도도의 실행파일=macOS의 애플리케이션)들을 포함\n\n/lib\n\n시스템 프로그램에서 사용하는 공유 라이브러리가 저장. 윈도우즈의 DLL과 비슷한 것.\n\n/usr\n\n사용자가 사용하는 모든 프로그램과 지원파일들 (Program files + 프로그램들의 설정값)\n/usr/bin 리눅스 배포판이 설치한 실행 프로그램들이 있다. (여기에 R이 깔린다!!)\n\nhp-align, hp-check, hp-config_usb-printer …\nX11\nvi\ngcc\nsu, sudo\nsar\nssh, ssh-agent, ssh-keygen, ….\nnvidia-smi\n\n/usr/lib 여기에는 /usr/bin에 있는 프로그램들을 위한 공유라이브러리가 저장된다. 여기에 R folder가 있다. (R패키지는 여기말고 다른데 깔림)\n/usr/local/bin 소스코드로 컴파일된 파일, 보통 비어있음\n/usr/local/lib/R/site-library R패키지가 설치되어있음, 예를들면 tidyverse"
-  },
-  {
-    "objectID": "posts/day2.html#ls의-이름바꾸기",
-    "href": "posts/day2.html#ls의-이름바꾸기",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "17 ls의 이름바꾸기",
-    "text": "17 ls의 이름바꾸기\n- 루트유저는 생각보다 많은걸 할 수 있어요\n- 무섭죠? 그래서 그냥 sudo로 돌아가길 원합니다 보통은.."
-  },
-  {
-    "objectID": "posts/day2.html#컴퓨터란",
-    "href": "posts/day2.html#컴퓨터란",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "18 컴퓨터란?",
-    "text": "18 컴퓨터란?\n- 개념: 모든것은 파일과 폴더의 집합이다.\n- 183번 컴퓨터로 가보자.\n- 우분투컴퓨터에 guebin이라는 유저를 새롭게 추가했다 = /home/guebin/ 를 만듦\n- 우분투에서 깃을 설치했다 = 우분투에서 sudo apt-get install git을 실행했다. = /usr/bin/에 git이라는 파일이 생겼다. = /usr/bin/git 생성\n- ls는 우분투에 이미 내장되어있는 기능이다. = ls는 우분투에 이미 내장되어있는 명령파일이다. = 우분투를 설치하면 /usr/bin/에 ls라는 파일이 이미 있다.\n- 우분투에 guebin이라는 유저를 등록했다. 이후에 guebin이라는 유저가 아나콘다를 설치했다. = 우분투에 guebin이라는 유저를 등록했다. 이후에 guebin이라는 유저는 아나콘다를 이용하여 가상의 (base)환경을 만들었다. = /home/guebin/anaconda3/폴더가 만들어졌다는 의미.\n- 우분투에 guebin이라는 sudo유저를 등록했다. 이후에 guebin이라는 sudo유저가 루트권한을 이용하여 git을 설치했다. = /home/guebin/ 이 만들어짐 + /usr/bin/git 생성"
-  },
-  {
-    "objectID": "posts/day2.html#anaconda",
-    "href": "posts/day2.html#anaconda",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "19 Anaconda",
-    "text": "19 Anaconda\n- 아래를 실행하고 관찰해보자.\n(base) guebin@cgb3-desktop:~$ cd anaconda3/\n(base) guebin@cgb3-desktop:~/anaconda3$ ls\n- 이게 무엇인것 같나요?\n- 이제 다시 아래를 실행하고 관찰해봅시다.\n(base) guebin@cgb3-desktop:~$ cd anaconda3/\n(base) guebin@cgb3-desktop:~/anaconda3$ cd envs/\n(base) guebin@cgb3-desktop:~/anaconda3/envs$ cd first\n(base) guebin@cgb3-desktop:~/anaconda3/envs/first$ ls\n- 이건 뭐인것 같아요?"
-  },
-  {
-    "objectID": "posts/day2.html#git-설치하기",
-    "href": "posts/day2.html#git-설치하기",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "20 git 설치하기",
-    "text": "20 git 설치하기\n- 루트유저가 횡포를 부려서 다시 깃을 지웠습니다.\nsudo apt remove git\n\nbin 폴더가서 구경해볼까요?\n\n- 치사해서 내가 깝니다\nconda create -n git\nconda activate git \nconda install -c conda-forge git\n- 나는 콘다환경한정하여 루트유저급"
-  },
-  {
-    "objectID": "posts/day2.html#폴더의-레벨",
-    "href": "posts/day2.html#폴더의-레벨",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "21 폴더의 레벨",
-    "text": "21 폴더의 레벨\n- 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n- 영향력은 하위폴더에 행사할 수 있다."
-  },
-  {
-    "objectID": "posts/day2.html#난-어디에-깃을-설치했어",
-    "href": "posts/day2.html#난-어디에-깃을-설치했어",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "22 난 어디에 깃을 설치했어?",
-    "text": "22 난 어디에 깃을 설치했어?\n# 문제1: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래의 명령을 통하여 깃을 설치했다.\n(base) sudo apt-get install git \n깃은 어디에 설치되어있는가?\n\n정답은 1번입니다! 깃이 어디에 깔리는지를 생각하세요!\n\n#\n# 문제2: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래와 같이 깃을 설치했다.\n(py310) sudo apt-get install git \n깃은 어디에 설치되어있는가?\n\n정답은 1번입니다! 깃이 어디에 깔리는지를 생각하세요!\n\n#\n# 문제3: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래의 명령을 통하여 깃을 설치했다.\n(py310) conda install -c conda-forge git \n깃은 어디에 설치되어있는가?\n\n정답은 4번입니다!\n\n#\n# 문제4: 183번 컴퓨터에는 4개의 중첩된 컴퓨터(=폴더)가 존재한다.\n\nroot우분투\nguebin우분투\nguebin우분투-(base)\nguebin우분투-(py310)\n\n아래와 같이 깃을 설치했다.\n(base) conda install -c conda-forge git \n## 문제를 위해서 만들긴 했는데요, 제발 (base)에 머 설치하지 좀 마세요\n깃은 어디에 설치되어있는가?\n\n정답은 3번 입니다!\n\n#\n\n\n\n\n\n\nNote\n\n\n\n우리가 예전에 만든 publish.sh 파일 있잖아요?\n\n이걸 프로그램이라고 해석할 수도 있죠? (그렇다고 칩시다)\n그럼 이 프로그램은 어떤 컴퓨터에 설치되었을까요?\n어떤 폴더에 이 파일을 넣느냐에 따라 다르겠죠.."
-  },
-  {
-    "objectID": "posts/day2.html#환경삭제",
-    "href": "posts/day2.html#환경삭제",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "23 환경삭제",
-    "text": "23 환경삭제\n- 이제 183컴퓨터를 떠날준비를 합시다.\n- 아나콘다 환경을 삭제하는 방법"
-  },
-  {
-    "objectID": "posts/day2.html#rpy2",
-    "href": "posts/day2.html#rpy2",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "24 rpy2",
-    "text": "24 rpy2\n- 186 컴퓨터 갑시다.\n\nsudo 유저도 아니고 슈퍼유저에요!!\n\n- 아래를 실행: R에 필요한 ubuntu-level의 프로그램\napt-get update\napt-get install -y \\\n    libxt6 \\\n    libxrender1 \\\n    libcairo2 \\\n    libx11-dev \\\n    libxt-dev \\\n    libxrender-dev \\\n    libcairo2-dev\n- 아래를 실행\n(base) conda create -n rpy2\n(base) conda activate rpy2\n(rpy2) conda install r::rpy2\n(rpy2) conda install -c conda-forge notebook\n(rpy2) pip install numpy\n- 아래를 실행.. (포트는 학번제외하고 하나 쓰세요)\njupyter lab --ip=\"0.0.0.0\" --port=12345 --no-browser --allow-root\n- 주피터에서 이걸 치고 코딩해보세요\nimport numpy as np\nimport rpy2\n%load_ext rpy2.ipython\n- 당장 이거 3개만 알면 쓸만해요\n\n%%R\n%R -i ???\n%R -o ???\n\n- 응용..\n%%R\nset.seed(123)\nx &lt;- 1:10\ny &lt;- 2.5 * x + rnorm(10, mean = 0, sd = 2)  # y = 2.5x + noise\nplot(x,y)\nmodel &lt;- lm(y ~ x)\nbeta &lt;- model$coef\nprint(beta)\n%R -o beta\n- 이거는 하나의 메모장에 두 개의 커널이 붙어있는 경우입니다.\n- R,Python의 여러패키지 조합은 맞추기 어려워서요.. 스스로 환경 계속 새로 파면서 노가다해봐야합니다"
-  },
-  {
-    "objectID": "posts/day2.html#주피터랩-2개-켜기",
-    "href": "posts/day2.html#주피터랩-2개-켜기",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "25 주피터랩 2개 켜기",
-    "text": "25 주피터랩 2개 켜기\n- first 에서 하나.. rpy2 에서 하나..\n- 매번 이런거 하기 어렵죠?"
-  },
-  {
-    "objectID": "posts/day2.html#tmux-이용하기",
-    "href": "posts/day2.html#tmux-이용하기",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "26 tmux 이용하기",
-    "text": "26 tmux 이용하기\n- tmux 가 뭔가?\n\npython 보다 ipython 이 좋잖아요?\n일반적인 terminal 보다 tmux가 좋아요!\n\n- 이것만 기억하세요\n\ntmux ls\ntmux, tmux new -t asdf\nctrl + b + d\ntmux attach -t 0, tmux attach -t asdf\nctrl + d"
-  },
-  {
-    "objectID": "posts/day2.html#주피터랩-평생-켜놓기",
-    "href": "posts/day2.html#주피터랩-평생-켜놓기",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "27 주피터랩 평생 켜놓기",
-    "text": "27 주피터랩 평생 켜놓기\n- 세 가지 방법이 있음\n\n백엔드에서 실행\nnohup을 이용\ntmux를 이용 (이것만 알면됩니다)"
-  },
-  {
-    "objectID": "posts/day2.html#포트정리-lsof",
-    "href": "posts/day2.html#포트정리-lsof",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "28 포트정리 (lsof)",
-    "text": "28 포트정리 (lsof)\n- 내가 어떤포트에 어떤환경의 주피터를 켰는지 헷갈린다면?\n- lsof 프로그램 설치\napt-get install lsof\napt install lsof \n- 1307 포트를 사용하는 프로그램이 있는지 파악\nlsof -i :1307\n결과는 아래와 같은 예시로 나옴\nCOMMAND      PID USER   FD   TYPE    DEVICE SIZE/OFF NODE NAME\njupyter-l 862165 root    6u  IPv4 383551982      0t0  TCP *:1307 (LISTEN)\njupyter-l 862165 root   12u  IPv4 383671448      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59663 (ESTABLISHED)\njupyter-l 862165 root   16u  IPv4 383628690      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59664 (ESTABLISHED)\njupyter-l 862165 root   29u  IPv4 383612831      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59720 (ESTABLISHED)\njupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt;210.117.173.181:59667 (ESTABLISHED)\n- 각자해볼것: ssh 접속시 사용하는 포트 제외하고 나머지 포트를 쓰고 있는 프로그램은 삭제\nkill {PID}\n위의 예시의 경우\nkill 862165\n- 주피터랩 평생켜놓기 + 끄기 (이거 자유자재로 할 수 있어야함)\n- PID를 조회하는 다른방법\nps aux | grep jupyter"
-  },
-  {
-    "objectID": "posts/day2.html#r-전용-개발환경-만들기",
-    "href": "posts/day2.html#r-전용-개발환경-만들기",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "29 R 전용 개발환경 만들기",
-    "text": "29 R 전용 개발환경 만들기\n- 아래를 실행\nconda create -n renv\nconda activate renv\nconda install r::r-essentials\n- 여기에서 conda install -c conda-forge r-essentials로 인하여 R, Python, Jupyter 가 모두 최신버전으로 설치된다.\n- 또한 R에는 이미 tidyverse, IRkernel 등의 패키지가 기본으로 깔려있다.\n- 아래를 실행.. (포트는 안겹치게)\njupyter lab --ip=\"0.0.0.0\" --port=12345 --no-browser --allow-root\n- R 노트북이 잘 열리는가?\n- R커널에서 IDE와 연결"
-  },
-  {
-    "objectID": "posts/day2.html#r은-어디에-있음",
-    "href": "posts/day2.html#r은-어디에-있음",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "30 R은 어디에 있음?",
-    "text": "30 R은 어디에 있음?\n- R이 설치된 경로를 찾아보자.\n\n수틀리면 이 R을 지우면 된다.\n\n\n\n\n\n\n\nNote\n\n\n\nR이 설치될 수 있는 3가지 시나리오\nsudo apt-get install r-base # r 공식홈페이지, 수틀리면 리눅스 포맷  \n(base) conda install -c conda-forge ... # 수틀리면 아나콘다 삭제해야함. \n(renv) conda install -c conda-forge ... # 수틀리면 가상환경 삭제"
-  },
-  {
-    "objectID": "posts/day2.html#base에서-r-실행",
-    "href": "posts/day2.html#base에서-r-실행",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "31 (base)에서 R 실행",
-    "text": "31 (base)에서 R 실행\n- 원래는 불가능한 일이겠죠?\n- 억지로 가능하게 하려면?"
-  },
-  {
-    "objectID": "posts/day2.html#rstudio-사용하기",
-    "href": "posts/day2.html#rstudio-사용하기",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "32 Rstudio 사용하기",
-    "text": "32 Rstudio 사용하기\n- 아래를 이용하여 Rstudio를 설치 // base환경에서 실행하든 renv환경에서 실행하든 상관없음 (왜?)\napt-get install gdebi-core\nwget https://download2.rstudio.org/server/jammy/amd64/rstudio-server-2022.12.0-353-amd64.deb\ngdebi rstudio-server-2022.12.0-353-amd64.deb\n- grst가 만든 rstudio-server-conda를 클론\ngit clone https://github.com/grst/rstudio-server-conda.git\n- ~/rstudio-server-conda/local/start_rstudio_server.sh 내용을 수정\n\n\n~/rstudio-server-conda/local/start_rstudio_server.sh\n\n\n아래쪽으로 쭉 가면...\n\n/usr/lib/rstudio-server/bin/rserver --server-daemonize=0 \\\n  --www-port=????? \\ ### &lt;--- 여기 수정!!!!!\n  --auth-minimum-user-id=0 \\ ### &lt;--- 여기 추가!!!!!\n  --secure-cookie-key-file=$COOKIE_KEY_PATH \\\n  --server-pid-file=\"$CWD/rstudio-server.pid\" \\\n  --server-data-dir=\"$CWD/rstudio-server\" \\\n  --rsession-which-r=$(which R) \\\n  --rsession-ld-library-path=$CONDA_PREFIX/lib \\\n  --rsession-path=\"$CWD/rsession.sh\" \\\n  --server-user $USER \\\n  --database-config-file \"$CWD/database.conf\" \\\n  $REVOCATION_LIST_PAR\n\n- start_rstudio_server.sh를 실행\n\n어디서 실행해야 할까요?? base? renv?"
-  },
-  {
-    "objectID": "posts/day2.html#여러가지-프로그램",
-    "href": "posts/day2.html#여러가지-프로그램",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "33 여러가지 프로그램",
-    "text": "33 여러가지 프로그램\n- 우분투자체의 프로그램\n\n우분투 자체의 프로그램 예시: git, quarto, python, R, anaconda, vi, ssh, wget, vscode\n우분투 자체의 프로그램은 다시 모든 유저가 영향을 받는 받는 프로그램과 그렇지 않은 프로그램이 있음\n우분투 자체의 프로그램을 설치하는 방법들\n\nsudo apt install git \nsudo apt-get install git \nsudo dpkg -i quarto-1.4.533-linux-amd64.deb \nbash Anaconda3-2019.03-Linux-x86_64.sh\nsudo gdebi rstudio-server-1.2.5033-amd64.deb\n# 기타 파일을 넣을 수 있는 모든 방법 (예를들면 압축파일 다운로드후 풀기) \n- 아나콘다(=base)에 종속된 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: conda, python, R, jupyter\n아나콘다에 종속된 프로그램은 anaconda3 폴더안에 있음.\n\n- 아나콘다환경(=py310)에 종속시킬 수 “있는” 프로그램\n\n아나콘다내에 종속된 프로그램의 예시: python, R, jupyter\n아나콘다환경에 종속된 프로그램은 anaconda3/envs/py310 와 같은 형식의 폴더안에 있음.\n\n- 파이썬에 종속된 프로그램 (=파이썬패키지=파이썬라이브러리=파이썬모듈)\n\n파이썬에 종속된 프로그램 예시: numpy, pandas\n얘네들이 어디에 깔리는지는 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)\n\n- R에 종속된 프로그램 (=R패키지=R라이브러리)\n\nR에 종속된 프로그램의 예시: tidyverse\n얘들이 어디 깔리는지도 그때그때 다름\n지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)"
-  },
-  {
-    "objectID": "posts/day2.html#jupyterlab-desktop",
-    "href": "posts/day2.html#jupyterlab-desktop",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "34 jupyterlab-desktop",
-    "text": "34 jupyterlab-desktop\n- 주피터랩 app! (저는 좋더라고요)\n\nhttps://github.com/jupyterlab/jupyterlab-desktop\n\n- 굳이 로칼에 파이썬을 설치하진 않고 remote 로만 써요\n- 아래를 설정하는걸 좋아함. (취향차이??)"
-  },
-  {
-    "objectID": "posts/day2.html#footnotes",
-    "href": "posts/day2.html#footnotes",
-    "title": "Day2: 파이썬 버전확인하기 - vscode",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\n4학년쯤에는 이미 (base) 가 손쓸 수 없는 상태로 깨져있는 경우가 허다함. 공부를 열심히 한 학생일수록 그러함. 이럴경우 소생가능성이 없음↩︎"
   },
   {
     "objectID": "users.html",

@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.520">
+<meta name="generator" content="quarto-1.4.533">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="최규빈">
 <meta name="dcterms.date" content="2024-12-27">
 
-<title>DSTBX2025 - Day2: 파이썬 버전확인하기 - vscode</title>
+<title>DSTBX2025 - Day2: 파이썬 버전확인하기 - jupyterlab-desktop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -198,7 +198,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Day2: 파이썬 버전확인하기 - vscode</h1>
+<h1 class="title">Day2: 파이썬 버전확인하기 - jupyterlab-desktop</h1>
 </div>
 
 
@@ -294,15 +294,11 @@ Important
 </section>
 <section id="py310_conda_pd15" class="level2" data-number="7">
 <h2 data-number="7" class="anchored" data-anchor-id="py310_conda_pd15"><span class="header-section-number">7</span> <code>py310_conda_pd15</code></h2>
-<p><code>-</code> 새로운 환경 <code>py310_pip_pd15</code> 을 생성하고 거기에서 판다스를 설치하자. 그런데, 버전은 <code>1.5</code> 로 고정하여서..</p>
+<p><code>-</code> 새로운 환경 <code>py310_conda_pd15</code> 을 생성하고 거기에서 판다스를 설치하자. 그런데, 버전은 <code>1.5</code> 로 고정하여서..</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">guebin@cgb3-desktop:~$</span> conda create <span class="at">-n</span> py310_conda_pd15 python=3.10</span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">base</span><span class="kw">)</span> <span class="ex">guebin@cgb3-desktop:~$</span> conda activate py310_conda_pd15</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="kw">(</span><span class="ex">py310_conda_pd15</span><span class="kw">)</span> <span class="ex">guebin@cgb3-desktop:~$</span> conda install <span class="at">-c</span> conda-forge pandas==1.5</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 파이썬과 판다스 버전을 확인</p>
-<ul>
-<li>판다스는 그렇다치고..</li>
-<li>파이썬이 버전이 바뀌었네요?</li>
-</ul>
 <p><code>-</code> 판다스 import 가능? (ㅇㅇ..)</p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -316,7 +312,7 @@ Important
 <div class="callout-body-container callout-body">
 <p><code>conda install</code> vs <code>pip install</code> 의 차이점을 느끼셔야 합니다!!</p>
 <ul>
-<li>관찰결과1: conda install 이 좀 더 느리다. (답답하고 짜증나)</li>
+<li>관찰결과1: conda install 이 좀 더 느리다. (답답할때가 있음)</li>
 <li>관찰결과2: conda install 이 좀 더 충돌을 관리하면서 설치한다.</li>
 </ul>
 </div>
@@ -414,7 +410,7 @@ Note
 <ul>
 <li>ref: <a href="https://guebin.github.io/MP2024/posts/12wk-1.html" class="uri">https://guebin.github.io/MP2024/posts/12wk-1.html</a></li>
 </ul>
-<p><code>-</code> 지금!! (2024.12.27) 코랩에서 이거 해보실래요?</p>
+<p><code>-</code> 지금!! (2024.12.27) 코랩에서 이거 해보세요 – 실행안됨</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>pip install evaluate</span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> evaluate</span>
@@ -557,14 +553,11 @@ Note
 <h2 data-number="20" class="anchored" data-anchor-id="git-설치하기"><span class="header-section-number">20</span> <code>git</code> 설치하기</h2>
 <p><code>-</code> 루트유저가 횡포를 부려서 다시 깃을 지웠습니다.</p>
 <div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt remove git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<blockquote class="blockquote">
-<p><code>bin</code> 폴더가서 구경해볼까요?</p>
-</blockquote>
 <p><code>-</code> 치사해서 내가 깝니다</p>
 <div class="sourceCode" id="cb19"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> git</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate git </span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>-</code> 나는 콘다환경한정하여 루트유저급</p>
+<p><code>-</code> 나는 일반유저인 <code>guebin</code> 이지만 콘다환경 한정하여 루트유저급</p>
 </section>
 <section id="폴더의-레벨" class="level2" data-number="21">
 <h2 data-number="21" class="anchored" data-anchor-id="폴더의-레벨"><span class="header-section-number">21</span> 폴더의 레벨</h2>
@@ -771,8 +764,6 @@ jupyter-l 862165 root   34u  IPv4 383671463      0t0  TCP 8c8831330c68:23052-&gt
 <p><code>-</code> 아래를 실행.. (포트는 안겹치게)</p>
 <div class="sourceCode" id="cb37"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> lab <span class="at">--ip</span><span class="op">=</span><span class="st">"0.0.0.0"</span> <span class="at">--port</span><span class="op">=</span>12345 <span class="at">--no-browser</span> <span class="at">--allow-root</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> R 노트북이 잘 열리는가?</p>
-<p><code>-</code> R커널에서 IDE와 연결</p>
-<p><img src="day2_files/figure-html/3444a66c-a1c1-4fb9-b49b-9b9f12cb9194-1-0638dba4-3a65-4972-8367-3d30cc885f8c.png" class="img-fluid"></p>
 </section>
 <section id="r은-어디에-있음" class="level2" data-number="30">
 <h2 data-number="30" class="anchored" data-anchor-id="r은-어디에-있음"><span class="header-section-number">30</span> R은 어디에 있음?</h2>
@@ -810,30 +801,29 @@ Note
 <span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="ex">gdebi</span> rstudio-server-2022.12.0-353-amd64.deb</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> <code>grst</code>가 만든 <code>rstudio-server-conda</code>를 클론</p>
 <div class="sourceCode" id="cb40"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/grst/rstudio-server-conda.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>-</code> <code>~/rstudio-server-conda/local/start_rstudio_server.sh</code> 내용을 수정</p>
+<p><code>-</code> <code>~/rstudio-server-conda/local/start_rstudio_server.sh</code> 의 맨아래를 아래와 같이 수정</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>~/rstudio-server-conda/local/start_rstudio_server.sh</strong></pre>
 </div>
-<div class="sourceCode" id="cb41" data-filename="~/rstudio-server-conda/local/start_rstudio_server.sh"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="ex">아래쪽으로</span> 쭉 가면...</span>
-<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a><span class="ex">/usr/lib/rstudio-server/bin/rserver</span> <span class="at">--server-daemonize</span><span class="op">=</span>0 <span class="dt">\</span></span>
-<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">--www-port</span><span class="op">=</span><span class="pp">?????</span> <span class="dt">\ </span>### <span class="op">&lt;</span>--- 여기 수정!!!!!</span>
-<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>  <span class="ex">--auth-minimum-user-id=0</span> <span class="dt">\ </span>### <span class="op">&lt;</span>--- 여기 추가!!!!!</span>
-<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>  <span class="ex">--secure-cookie-key-file=</span><span class="va">$COOKIE_KEY_PATH</span> <span class="dt">\</span></span>
-<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">--server-pid-file</span><span class="op">=</span><span class="st">"</span><span class="va">$CWD</span><span class="st">/rstudio-server.pid"</span> <span class="dt">\</span></span>
-<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">--server-data-dir</span><span class="op">=</span><span class="st">"</span><span class="va">$CWD</span><span class="st">/rstudio-server"</span> <span class="dt">\</span></span>
-<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">--rsession-which-r</span><span class="op">=</span><span class="va">$(</span><span class="fu">which</span> R<span class="va">)</span> <span class="dt">\</span></span>
-<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">--rsession-ld-library-path</span><span class="op">=</span><span class="va">$CONDA_PREFIX</span>/lib <span class="dt">\</span></span>
-<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">--rsession-path</span><span class="op">=</span><span class="st">"</span><span class="va">$CWD</span><span class="st">/rsession.sh"</span> <span class="dt">\</span></span>
-<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a>  <span class="at">--server-user</span> <span class="va">$USER</span> <span class="dt">\</span></span>
-<span id="cb41-14"><a href="#cb41-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">--database-config-file</span> <span class="st">"</span><span class="va">$CWD</span><span class="st">/database.conf"</span> <span class="dt">\</span></span>
-<span id="cb41-15"><a href="#cb41-15" aria-hidden="true" tabindex="-1"></a>  <span class="va">$REVOCATION_LIST_PAR</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb41" data-filename="~/rstudio-server-conda/local/start_rstudio_server.sh"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a><span class="ex">/usr/lib/rstudio-server/bin/rserver</span> <span class="at">--server-daemonize</span><span class="op">=</span>0 <span class="dt">\</span></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">--www-port</span><span class="op">=</span>12345 <span class="dt">\</span></span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">--auth-minimum-user-id</span><span class="op">=</span>0 <span class="dt">\</span></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">--secure-cookie-key-file</span><span class="op">=</span><span class="va">$COOKIE_KEY_PATH</span> <span class="dt">\</span></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">--server-pid-file</span><span class="op">=</span><span class="st">"</span><span class="va">$CWD</span><span class="st">/rstudio-server.pid"</span> <span class="dt">\</span></span>
+<span id="cb41-7"><a href="#cb41-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">--server-data-dir</span><span class="op">=</span><span class="st">"</span><span class="va">$CWD</span><span class="st">/rstudio-server"</span> <span class="dt">\</span></span>
+<span id="cb41-8"><a href="#cb41-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">--rsession-which-r</span><span class="op">=</span><span class="va">$(</span><span class="fu">which</span> R<span class="va">)</span> <span class="dt">\</span></span>
+<span id="cb41-9"><a href="#cb41-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">--rsession-ld-library-path</span><span class="op">=</span><span class="va">$CONDA_PREFIX</span>/lib <span class="dt">\</span></span>
+<span id="cb41-10"><a href="#cb41-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">--rsession-path</span><span class="op">=</span><span class="st">"</span><span class="va">$CWD</span><span class="st">/rsession.sh"</span> <span class="dt">\</span></span>
+<span id="cb41-11"><a href="#cb41-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">--server-user</span> <span class="va">$USER</span> <span class="dt">\</span></span>
+<span id="cb41-12"><a href="#cb41-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">--database-config-file</span> <span class="st">"</span><span class="va">$CWD</span><span class="st">/database.conf"</span> <span class="dt">\</span></span>
+<span id="cb41-13"><a href="#cb41-13" aria-hidden="true" tabindex="-1"></a>  <span class="va">$REVOCATION_LIST_PAR</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><code>-</code> <code>start_rstudio_server.sh</code>를 실행</p>
 <ul>
-<li>어디서 실행해야 할까요?? base? renv?</li>
+<li>어디서 실행해야 할까요?? <code>base</code>? <code>renv</code>?</li>
+<li>R이 설치된 <code>renv</code>에서 해야함 (그래야 커널이랑 붙을테니까)</li>
 </ul>
 </section>
 <section id="여러가지-프로그램" class="level2" data-number="33">
@@ -852,23 +842,23 @@ Note
 <span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 기타 파일을 넣을 수 있는 모든 방법 (예를들면 압축파일 다운로드후 풀기) </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 아나콘다(=base)에 종속된 프로그램</p>
 <ul>
-<li>아나콘다내에 종속된 프로그램의 예시: conda, python, R, jupyter</li>
+<li>아나콘다내에 종속된 프로그램의 예시: <code>conda</code>, <code>python</code>, <code>R</code>, <code>jupyter</code></li>
 <li>아나콘다에 종속된 프로그램은 <code>anaconda3</code> 폴더안에 있음.</li>
 </ul>
 <p><code>-</code> 아나콘다환경(=py310)에 종속시킬 수 “있는” 프로그램</p>
 <ul>
-<li>아나콘다내에 종속된 프로그램의 예시: python, R, jupyter</li>
+<li>아나콘다내에 종속된 프로그램의 예시: <code>python</code>, <code>R</code>, <code>jupyter</code></li>
 <li>아나콘다환경에 종속된 프로그램은 <code>anaconda3/envs/py310</code> 와 같은 형식의 폴더안에 있음.</li>
 </ul>
 <p><code>-</code> 파이썬에 종속된 프로그램 (=파이썬패키지=파이썬라이브러리=파이썬모듈)</p>
 <ul>
-<li>파이썬에 종속된 프로그램 예시: numpy, pandas</li>
+<li>파이썬에 종속된 프로그램 예시: <code>numpy</code>, <code>pandas</code></li>
 <li>얘네들이 어디에 깔리는지는 그때그때 다름</li>
 <li>지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)</li>
 </ul>
 <p><code>-</code> R에 종속된 프로그램 (=R패키지=R라이브러리)</p>
 <ul>
-<li>R에 종속된 프로그램의 예시: tidyverse</li>
+<li>R에 종속된 프로그램의 예시: <code>tidyverse</code></li>
 <li>얘들이 어디 깔리는지도 그때그때 다름</li>
 <li>지우는 방법도 그때그때 다르겠지? (젤 편하고 깔끔하게 지우려면?)</li>
 </ul>
@@ -1021,27 +1011,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
     if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
@@ -1056,10 +1025,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             break;
           }
         }
-        typesetMath(container);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
         return container.innerHTML
       } else {
-        typesetMath(note);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
         return note.innerHTML;
       }
     } else {
@@ -1068,7 +1041,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (anchorLink) {
         anchorLink.remove();
       }
-      typesetMath(note);
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
       return note.innerHTML;
     }
   }
