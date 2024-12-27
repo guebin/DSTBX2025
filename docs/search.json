@@ -193,7 +193,7 @@
     "href": "posts/day2.html#tmux-이용하기",
     "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
     "section": "26 tmux 이용하기",
-    "text": "26 tmux 이용하기\n- tmux 가 뭔가?\n\npython 보다 ipython 이 좋잖아요?\n일반적인 terminal 보다 tmux가 좋아요!\n\n- 이것만 기억하세요\n\ntmux ls\ntmux, tmux new -t asdf\nctrl + b + d\ntmux attach -t 0, tmux attach -t asdf\nctrl + d"
+    "text": "26 tmux 이용하기\n- tmux 가 뭔가?\n\npython 보다 ipython 이 좋잖아요?\n일반적인 terminal 보다 tmux가 좋아요!\n\n- 이것만 기억하세요\n\ntmux ls\ntmux, tmux new -t asdf\nctrl + b \\(\\to\\) d\ntmux attach -t 0, tmux attach -t asdf\nctrl + d"
   },
   {
     "objectID": "posts/day2.html#주피터랩-평생-켜놓기",
