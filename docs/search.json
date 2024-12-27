@@ -263,14 +263,14 @@
     "href": "posts/day1.html",
     "title": "Day1: 터미널의 이해 - 학과서버셋팅",
     "section": "",
-    "text": "- 윈도우 컴퓨터에서 아래의 명령어가 뭘 의미하는지 살펴보자.\nls\nmkdir asdf\ncd asdf \ncd.. \nrmdir asdf\n\n외우세요: 터미널을 열어준다 = 컴퓨터에 대한 제어권을 준다\n\n\n\n\n\n\n\nImportant\n\n\n\n터미널명령어 숙지의 중요성을 이해했으면 해서 만들었어요.."
+    "text": "https://drive.google.com/drive/folders/1Nde8iX3TEEKb1RxlULlTWuwhRYUlDKnK?usp=sharing"
   },
   {
     "objectID": "posts/day1.html#터미널의-이해",
     "href": "posts/day1.html#터미널의-이해",
     "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "",
-    "text": "- 윈도우 컴퓨터에서 아래의 명령어가 뭘 의미하는지 살펴보자.\nls\nmkdir asdf\ncd asdf \ncd.. \nrmdir asdf\n\n외우세요: 터미널을 열어준다 = 컴퓨터에 대한 제어권을 준다\n\n\n\n\n\n\n\nImportant\n\n\n\n터미널명령어 숙지의 중요성을 이해했으면 해서 만들었어요.."
+    "section": "1 터미널의 이해",
+    "text": "1 터미널의 이해\n- 윈도우 컴퓨터에서 아래의 명령어가 뭘 의미하는지 살펴보자.\nls\nmkdir asdf\ncd asdf \ncd.. \nrmdir asdf\n\n외우세요: 터미널을 열어준다 = 컴퓨터에 대한 제어권을 준다\n\n\n\n\n\n\n\nImportant\n\n\n\n터미널명령어 숙지의 중요성을 이해했으면 해서 만들었어요.."
   },
   {
     "objectID": "posts/day1.html#터미널에서-조작하기",
