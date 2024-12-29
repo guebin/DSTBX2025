@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -118,7 +152,16 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#vscode-설치" id="toc-vscode-설치" class="nav-link active" data-scroll-target="#vscode-설치"><span class="header-section-number">1</span> vscode 설치</a></li>
+  <li><a href="#ssh-설정" id="toc-ssh-설정" class="nav-link" data-scroll-target="#ssh-설정"><span class="header-section-number">2</span> ssh 설정</a></li>
+  <li><a href="#extensions" id="toc-extensions" class="nav-link" data-scroll-target="#extensions"><span class="header-section-number">3</span> EXTENSIONS</a></li>
+  <li><a href="#check_ports.sh" id="toc-check_ports.sh" class="nav-link" data-scroll-target="#check_ports.sh"><span class="header-section-number">4</span> <code>check_ports.sh</code></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -160,20 +203,104 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://drive.google.com/drive/folders/1NQGXdvjkBxTK5D9xleb_hDZzhUG_kPD2?usp=sharing" class="uri">https://drive.google.com/drive/folders/1NQGXdvjkBxTK5D9xleb_hDZzhUG_kPD2?usp=sharing</a></li>
 </ul>
 </blockquote>
-<p>로그인: 깃헙</p>
-<p>local</p>
+<section id="vscode-설치" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="vscode-설치"><span class="header-section-number">1</span> vscode 설치</h2>
+<p><code>-</code> vscode 다운로드 및 설치</p>
+</section>
+<section id="ssh-설정" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="ssh-설정"><span class="header-section-number">2</span> ssh 설정</h2>
+<p><code>-</code> EXTENSTIONS 에서 아래를 설치 (<code>Remote - SSH</code> 만 설치하면 나머지는 자동설치됨)</p>
+<ul>
+<li><code>Remote - SSH</code></li>
+<li><code>Remote - SSH: Editing Configuration Files</code></li>
+<li><code>Remote Explorer</code></li>
+</ul>
+<blockquote class="blockquote">
+<p>취향에 따라 Theme도 설치하면 좋음</p>
+</blockquote>
+<p><code>-</code> REMOTE EXPLORER 열기</p>
+<p><img src="day3_files/figure-html/cell-8-1-73c655b9-9f1c-4a32-99fa-ecb149c5008a.png" class="img-fluid"></p>
+<ul>
+<li><code>ssh</code> 접속시 사용하는 코드 작성</li>
+</ul>
+<p><code>-</code> 터미널이 아래와 같이 바뀌면 성공</p>
+<p><img src="day3_files/figure-html/cell-11-1-57faeb1e-f441-4bb6-b9cc-3e9ddc92aa22.png" class="img-fluid"></p>
+</section>
+<section id="extensions" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="extensions"><span class="header-section-number">3</span> EXTENSIONS</h2>
+<p><code>-</code> 저의 LOCAL EXTENSIONS</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="day3_files/figure-html/cell-4-1-image.png" class="img-fluid figure-img"></p>
-<figcaption><em>제 local extension</em></figcaption>
+<p><img src="day3_files/figure-html/cell-14-1-7b213bc0-f87e-4473-8ba4-2cd98343b255.png" class="img-fluid figure-img"></p>
+<figcaption><em>local</em></figcaption>
 </figure>
 </div>
-<p>remote</p>
-<p><img src="day3_files/figure-html/cell-6-1-image.png" class="img-fluid"></p>
-<p><code>-</code> 설정하기</p>
-<p><img src="day3_files/figure-html/cell-8-1-image.png" class="img-fluid"></p>
+<p><code>-</code> 저의 REMOTE EXTENSIONS</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="day3_files/figure-html/cell-16-1-59d18121-ba2b-43f9-a4ab-131d04741ac7.png" class="img-fluid figure-img"></p>
+<figcaption><em>REMOTE EXTENSIONS</em></figcaption>
+</figure>
+</div>
+</section>
+<section id="check_ports.sh" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="check_ports.sh"><span class="header-section-number">4</span> <code>check_ports.sh</code></h2>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>/root/check_ports.sh</strong></pre>
+</div>
+<div class="sourceCode" id="cb1" data-filename="/root/check_ports.sh"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#!/bin/bash</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Bash 스크립트 시작을 알리는 선언문</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 기준 학번 설정</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="va">student_id</span><span class="op">=</span><span class="st">"13052"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co"># 숫자 목록을 저장할 배열 초기화</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="va">modified_numbers</span><span class="op">=</span><span class="va">()</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 만의 자리를 바꾼 숫자 생성</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="dt">{</span><span class="dv">1</span><span class="dt">..</span><span class="dv">4</span><span class="dt">}</span><span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 현재 반복 중인 숫자 `i`가 student_id의 만의 자리와 같지 않을 때 실행</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">[[</span> <span class="st">"</span><span class="va">${student_id</span><span class="op">:</span><span class="dv">0</span><span class="op">:</span><span class="dv">1</span><span class="va">}</span><span class="st">"</span> <span class="ot">!=</span> <span class="st">"</span><span class="va">$i</span><span class="st">"</span> <span class="kw">]];</span> <span class="cf">then</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 만의 자리를 `i`로 대체하고 나머지 숫자는 그대로 둔 새로운 숫자를 배열에 추가</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>        <span class="va">modified_numbers</span><span class="op">+=</span><span class="va">(</span><span class="st">"</span><span class="va">${i}${student_id</span><span class="op">:</span><span class="dv">1</span><span class="va">}</span><span class="st">"</span><span class="va">)</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">fi</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co"># 십의 자리를 바꾼 숫자 생성</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="dt">{</span><span class="dv">0</span><span class="dt">..</span><span class="dv">9</span><span class="dt">}</span><span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 현재 반복 중인 숫자 `i`가 student_id의 십의 자리와 같지 않을 때 실행</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">[[</span> <span class="st">"</span><span class="va">${student_id</span><span class="op">:</span><span class="dv">4</span><span class="op">:</span><span class="dv">1</span><span class="va">}</span><span class="st">"</span> <span class="ot">!=</span> <span class="st">"</span><span class="va">$i</span><span class="st">"</span> <span class="kw">]];</span> <span class="cf">then</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 십의 자리를 `i`로 대체하고 나머지 숫자는 그대로 둔 새로운 숫자를 배열에 추가</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        <span class="va">modified_numbers</span><span class="op">+=</span><span class="va">(</span><span class="st">"</span><span class="va">${student_id</span><span class="op">:</span><span class="dv">0</span><span class="op">:</span><span class="dv">4</span><span class="va">}${i}</span><span class="st">"</span><span class="va">)</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">fi</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="co"># 테이블 헤더 출력</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="at">-e</span> <span class="st">"Port\tPID\tCommand"</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="co"># 배열의 각 포트 번호에 대해 처리</span></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> port <span class="kw">in</span> <span class="st">"</span><span class="va">${modified_numbers</span><span class="op">[@]</span><span class="va">}</span><span class="st">"</span><span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>    <span class="co"># lsof 명령을 사용하여 해당 포트 번호의 PID와 COMMAND를 추출</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>    <span class="va">result</span><span class="op">=</span><span class="va">$(</span><span class="ex">lsof</span> <span class="at">-i:</span><span class="st">"</span><span class="va">$port</span><span class="st">"</span> <span class="dv">2</span><span class="op">&gt;</span>/dev/null <span class="kw">|</span> <span class="fu">awk</span> <span class="st">'NR==2 {print $2, $1}'</span> <span class="kw">|</span> <span class="fu">head</span> <span class="at">-n</span> 1<span class="va">)</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 결과가 비어 있으면 프로세스가 없음을 의미</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="kw">[[</span> <span class="ot">-z</span> <span class="st">"</span><span class="va">$result</span><span class="st">"</span> <span class="kw">]];</span> <span class="cf">then</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>        <span class="va">pid</span><span class="op">=</span><span class="st">"N/A"</span>          <span class="co"># PID를 N/A로 설정</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>        <span class="va">command</span><span class="op">=</span><span class="st">"N/A"</span>      <span class="co"># COMMAND를 N/A로 설정</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>        <span class="co"># 결과에서 PID와 COMMAND를 각각 추출</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>        <span class="va">pid</span><span class="op">=</span><span class="va">$(</span><span class="bu">echo</span> <span class="st">"</span><span class="va">$result</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">awk</span> <span class="st">'{print $1}'</span><span class="va">)</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>        <span class="va">command</span><span class="op">=</span><span class="va">$(</span><span class="bu">echo</span> <span class="st">"</span><span class="va">$result</span><span class="st">"</span> <span class="kw">|</span> <span class="fu">awk</span> <span class="st">'{print $2}'</span><span class="va">)</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>    <span class="cf">fi</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 포트 번호, PID, COMMAND를 테이블 형식으로 출력</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    <span class="bu">echo</span> <span class="at">-e</span> <span class="st">"</span><span class="va">$port</span><span class="st">\t</span><span class="va">$pid</span><span class="st">\t</span><span class="va">$command</span><span class="st">"</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="cf">done</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

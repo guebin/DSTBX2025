@@ -151,7 +151,7 @@
     "href": "posts/day1.html#sh",
     "title": "Day1: 터미널의 이해 - 학과서버셋팅",
     "section": "20 .sh",
-    "text": "20 .sh\n- 블로그에 업로드할때마다..\nquarto render \ngit add .\ngit commit -m .\ngit push \n하는것 귀찮죠?\n- 자동화하는 방법.\n\npublish.sh 파일을 만든다.\nquarto render, git add ., git commit -m ., git push를 순서대로 친다.\n저장한다.\n터미널에서 bash push.sh 실행"
+    "text": "20 .sh\n- 블로그에 업로드할때마다..\nquarto render \ngit add .\ngit commit -m .\ngit push \n하는것 귀찮죠?\n- 자동화하는 방법.\n\npublish.sh 파일을 만든다.\nquarto render, git add ., git commit -m ., git push를 순서대로 친다.\n저장한다.\n터미널에서 bash publish.sh 실행"
   },
   {
     "objectID": "posts/day1.html#vi-벼락치기",
