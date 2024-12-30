@@ -529,21 +529,21 @@
     "href": "posts/day3.html#py를-이용한-코딩",
     "title": "Day3: vscode 설치 –",
     "section": "10 .py를 이용한 코딩",
-    "text": "10 .py를 이용한 코딩\n- 아래를 설정\n\n- test.py 파일 생성\nimport numpy as np\nimport pandas as pd \nimport matplotlib.pyplot as plt\nx=np.array([1,2,3,4])\ny=np.array([1,2,4,3])\npd.DataFrame({'x':x, 'y':y})\nplt.plot(x,y)\nprint(x+y)\n- shift + enter 실행해보기\n- Interactive-1을 저장해보기\n- Run Python File 로 실행해보기\n- 커널을 바꾸어서 실습해보기\n\nvscode 기본설정들"
+    "text": "10 .py를 이용한 코딩\n- 아래를 설정\n\n- test.py 파일 생성\nimport numpy as np\nimport pandas as pd \nimport matplotlib.pyplot as plt\nx=np.array([1,2,3,4])\ny=np.array([1,2,4,3])\npd.DataFrame({'x':x, 'y':y})\nplt.plot(x,y)\nprint(x+y)\n- shift + enter 실행해보기\n- Interactive-1을 저장해보기\n- Run Python File 로 실행해보기\n- 커널을 바꾸어서 실습해보기\n\n\n\n\n\n\nImportant\n\n\n\nvscode 기본설정들"
   },
   {
     "objectID": "posts/day3.html#bash-커널",
     "href": "posts/day3.html#bash-커널",
     "title": "Day3: vscode 설치 –",
     "section": "11 bash 커널",
-    "text": "11 bash 커널\n# 예제1\necho hello \n#\n# 예제2\na=askdf\na\n$a\necho $a\n#\n\na = asdf 라고 입력하면 오류가 발생한다.\n\n# 예제3\na=(상민 다빈)\necho $a \necho ${a}\necho ${a[0]}\necho ${a[1]}\necho ${a[@]}\n#\n# 예제4\ncmd_list=(ls \"ls -a\") \n${cmd_list}\n${cmd_list[0]}\n${cmd_list[1]}\n#\n\nterminal도 커널이었음!!"
+    "text": "11 bash 커널\n# 예제1\necho hello \n#\n# 예제2\na=askdf\na\n$a\necho $a\n#\n\na = asdf 라고 입력하면 오류가 발생한다.\n\n# 예제3\na=(상민 다빈)\necho $a \necho ${a}\necho ${a[0]}\necho ${a[1]}\necho ${a[@]}\n#\n# 예제4\ncmd_list=(ls \"ls -a\") \n${cmd_list}\n${cmd_list[0]}\n${cmd_list[1]}\n#\n\n\n\n\n\n\nImportant\n\n\n\nterminal도 커널이었음!!"
   },
   {
     "objectID": "posts/day3.html#export",
     "href": "posts/day3.html#export",
     "title": "Day3: vscode 설치 –",
     "section": "12 export",
-    "text": "12 export\n- 걱정: 근데 그러면 내 리눅스에는 평생 a, cmd_list 라는 변수가 있는거야??\n\n아니요\n\n- 평생존재하는 변수도 있다. (환경변수)\nenv\n- bash커널에서 아래를 이용하여 ipython을 실행하자.\nipython\n- 일반변수는 ipython이 상속받지 못하지만 환경변수는 ipython이 상속받는다.\na=asdf\nipython \n!echo $a\n!echo $PATH\n\n모두 대문자로 선언된 변수는 subprocess를 뚫고 갈 수 있다. 기계학습코드들에서 보면 하이퍼파라메터를 설정할때 모두 대문자로 설정하는 경우가 종종 있는데, 리눅스의 환경변수에서 유래되지 않았을까?\n\n- 그런데 export 를 하면 상속받을 수 있다.\na=asdf\nb=1234\nexport a\nipython\n!echo $a\n!echo $b\n!echo $PATH\n\nipython을 subprocess라고 한다.\n\n\nsubprocess의 이해, 환경변수의 이해"
+    "text": "12 export\n- 걱정: 근데 그러면 내 리눅스에는 평생 a, cmd_list 라는 변수가 있는거야??\n\n아니요\n\n- 평생존재하는 변수도 있다. (환경변수)\nenv\n- bash커널에서 아래를 이용하여 ipython을 실행하자.\nipython\n- 일반변수는 ipython이 상속받지 못하지만 환경변수는 ipython이 상속받는다.\na=asdf\nipython \n!echo $a\n!echo $PATH\n\n모두 대문자로 선언된 변수는 subprocess를 뚫고 갈 수 있다. 기계학습코드들에서 보면 하이퍼파라메터를 설정할때 모두 대문자로 설정하는 경우가 종종 있는데, 리눅스의 환경변수에서 유래되지 않았을까?\n\n- 그런데 export 를 하면 상속받을 수 있다.\na=asdf\nb=1234\nexport a\nipython\n!echo $a\n!echo $b\n!echo $PATH\n\nipython을 subprocess라고 한다.\n\n\n\n\n\n\n\nImportant\n\n\n\nsubprocess의 이해, 환경변수의 이해"
   },
   {
     "objectID": "posts/day3.html#check_ports.sh",
@@ -557,7 +557,7 @@
     "href": "posts/day3.html#주피터랩-편하게",
     "title": "Day3: vscode 설치 –",
     "section": "14 주피터랩 편하게",
-    "text": "14 주피터랩 편하게\n- (아무 conda 환경에서나) 아래를 실행한다.\njupyter notebook --generate-config\n- 아래를 수정한다.\nc.ServerApp.allow_root = True\nc.ServerApp.ip = '0.0.0.0'\n\n\n\n\n\n\nNote\n\n\n\n이것을 하면\njupyter lab --allow-root --ip=\"0.0.0.0\" \n대신\njupyter lab\n을 하여도 같은 효과이다.\n\n\n- 이를 이용하여 비어있는 포트에 몇개의 Jupyter를 띄우자.\n\n주피터랩을 좀 편하게 열자"
+    "text": "14 주피터랩 편하게\n- (아무 conda 환경에서나) 아래를 실행한다.\njupyter notebook --generate-config\n- 아래를 수정한다.\nc.ServerApp.allow_root = True\nc.ServerApp.ip = '0.0.0.0'\n\n\n\n\n\n\nNote\n\n\n\n이것을 하면\njupyter lab --allow-root --ip=\"0.0.0.0\" \n대신\njupyter lab\n을 하여도 같은 효과이다.\n\n\n- 이를 이용하여 비어있는 포트에 몇개의 Jupyter를 띄우자.\n\n\n\n\n\n\nImportant\n\n\n\n주피터랩을 좀 편하게 열자"
   },
   {
     "objectID": "posts/day3.html#문자열-결합",
@@ -578,7 +578,14 @@
     "href": "posts/day3.html#rstudio처럼-쓰기",
     "title": "Day3: vscode 설치 –",
     "section": "17 Rstudio처럼 쓰기",
-    "text": "17 Rstudio처럼 쓰기\n- R을 vscode에서 쓰고 싶다면? (굳이?..)\n\nref: https://code.visualstudio.com/docs/languages/r\n\n\n이거 제가 써보니까 진짜 좋긴하거든요.. 그런데 셋팅하는게 까다로워요, 그래서 굳이 셋팅해줄 필요가 있나 싶긴한데요 연습삼아 해봅시다\n\n- 설치과정\n\nR extension for Visual Studio Code 설치\nradian 설치\nhttpgd 설치\n경로설정 – (까다로움 \\(\\star\\))\n\n- 4를 잘 해결하는게 중요합니다.\n핵심설정\n{\n    \"jupyter.interactiveWindow.textEditor.executeSelection\": true,\n    \"r.rterm.linux\": \"/root/anaconda3/envs/renv/bin/radian\",\n    \"terminal.integrated.env.linux\": {\n        \"R_HOME\": \"/root/anaconda3/envs/renv/lib/R\"\n    },\n    \"r.plot.useHttpgd\": true\n}"
+    "text": "17 Rstudio처럼 쓰기\n- R을 vscode에서 쓰고 싶다면? (굳이?..)\n\nref: https://code.visualstudio.com/docs/languages/r\n\n\n이거 제가 써보니까 진짜 좋긴하거든요.. 그런데 셋팅하는게 까다로워요, 그래서 굳이 셋팅해줄 필요가 있나 싶긴한데요 연습삼아 해봅시다\n\n- 설치과정\n\nR extension for Visual Studio Code 설치\nradian 설치\nhttpgd 설치\nR &gt; Rterm: Linux 설정 – (까다로움 \\(\\star\\))\n\n- 4를 잘 해결하는게 중요합니다.\n\nR &gt; Rterm: Linux 에서 *.R과 연결할 커널 설정\n에러의 원인 파익\n해결책 생각해 보기 (export로 해결해보기?)\nTerminal &gt; Integrated &gt; Env: Linux 설정\n\n핵심설정1: Terminal &gt; Integrated &gt; Env: Linux, R &gt; Rterm: Linux 의 설정\n\n핵심설정2: Terminal &gt; Integrated &gt; Env: Linux의 주요설정\n{\n    \"jupyter.interactiveWindow.textEditor.executeSelection\": true,\n    \"r.rterm.linux\": \"/root/anaconda3/envs/renv/bin/radian\",\n    \"terminal.integrated.env.linux\": {\n        \"R_HOME\": \"/root/anaconda3/envs/renv/lib/R\"\n    },\n    \"r.plot.useHttpgd\": true\n}\n\n역할?"
+  },
+  {
+    "objectID": "posts/day3.html#jupyter와-vscode의-차이",
+    "href": "posts/day3.html#jupyter와-vscode의-차이",
+    "title": "Day3: vscode 설치 –",
+    "section": "18 jupyter와 vscode의 차이",
+    "text": "18 jupyter와 vscode의 차이\n- jupyter는 프로그램을 꺼도 커널이 죽지 않지만 vscode는 프로그램을 끄는 순간 커널이 죽음\n\n연속작업에 치명적인 차이가 남\n\n- 극복하는 방법?\n\n살짝트릭: vscode에서 주피터 커널을 물리면 된다.\n\n- 이 원리를 이용하면 local의 .ipynb에 원격 vscode 를 물릴 수 있다.\n\n그런데 주의해서 사용해야함.\n저는 안써요"
   },
   {
     "objectID": "users.html",
