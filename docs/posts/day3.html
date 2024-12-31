@@ -2,14 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.520">
+<meta name="generator" content="quarto-1.4.533">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="최규빈">
 <meta name="dcterms.date" content="2024-12-30">
 
-<title>DSTBX2025 - Day3: vscode 설치 –</title>
+<title>DSTBX2025 - Day3: vscode 설치 – jupyter와 vscode의 차이</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -106,6 +106,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
 <link rel="stylesheet" href="../styles.css">
 </head>
 
@@ -176,6 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#path의-비밀" id="toc-path의-비밀" class="nav-link" data-scroll-target="#path의-비밀"><span class="header-section-number">16</span> PATH의 비밀</a></li>
   <li><a href="#rstudio처럼-쓰기" id="toc-rstudio처럼-쓰기" class="nav-link" data-scroll-target="#rstudio처럼-쓰기"><span class="header-section-number">17</span> Rstudio처럼 쓰기</a></li>
   <li><a href="#jupyter와-vscode의-차이" id="toc-jupyter와-vscode의-차이" class="nav-link" data-scroll-target="#jupyter와-vscode의-차이"><span class="header-section-number">18</span> <code>jupyter</code>와 <code>vscode</code>의 차이</a></li>
+  <li><a href="#리소스관리" id="toc-리소스관리" class="nav-link" data-scroll-target="#리소스관리"><span class="header-section-number">19</span> 리소스관리</a></li>
   </ul>
 </nav>
     </div>
@@ -184,7 +212,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Day3: vscode 설치 –</h1>
+<h1 class="title">Day3: vscode 설치 – jupyter와 vscode의 차이</h1>
 </div>
 
 
@@ -216,7 +244,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <blockquote class="blockquote">
 <p>강의영상 요청하기</p>
 <ul>
-<li><a href="https://drive.google.com/drive/folders/1NQGXdvjkBxTK5D9xleb_hDZzhUG_kPD2?usp=sharing" class="uri">https://drive.google.com/drive/folders/1NQGXdvjkBxTK5D9xleb_hDZzhUG_kPD2?usp=sharing</a></li>
+<li><a href="https://drive.google.com/drive/asdf" class="uri">https://drive.google.com/drive/asdf</a></li>
 </ul>
 </blockquote>
 <section id="vscode-설치" class="level2" data-number="1">
@@ -555,16 +583,26 @@ Important
 <p><code>-</code> 아래를 관찰</p>
 <div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">$PATH</span> <span class="kw">|</span> <span class="fu">tr</span> <span class="st">":"</span> <span class="st">"\n"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 도전!: 아무데서나 <code>bash check_ports.sh</code>를 실행되게 하려면?</p>
-<pre><code>PATH=$PATH:~
-export PATH</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="va">PATH</span><span class="op">=</span><span class="va">$PATH</span>:~</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PATH</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> 위의 코드를 다른 새로운 <code>bash</code> 에서도 자동적용되게 하려면? <code>.bashrc</code>파일을 열고 아래를 추가한다.</p>
-<pre><code>PATH=$PATH:~
-export PATH</code></pre>
+<div class="sourceCode" id="cb25"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="va">PATH</span><span class="op">=</span><span class="va">$PATH</span>:~</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">PATH</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <blockquote class="blockquote">
 <p>근데 저는 이걸 굳이 설정하진 않아요</p>
 </blockquote>
-<div class="callout-import">
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
 <p>PATH의 이해</p>
+</div>
 </div>
 </section>
 <section id="rstudio처럼-쓰기" class="level2" data-number="17">
@@ -574,36 +612,72 @@ export PATH</code></pre>
 <li>ref: <a href="https://code.visualstudio.com/docs/languages/r" class="uri">https://code.visualstudio.com/docs/languages/r</a></li>
 </ul>
 <blockquote class="blockquote">
-<p>이거 제가 써보니까 진짜 좋긴하거든요.. 그런데 셋팅하는게 까다로워요, 그래서 굳이 셋팅해줄 필요가 있나 싶긴한데요 연습삼아 해봅시다</p>
+<p>이거 제가 써보니까 진짜 좋긴하거든요.. 그런데 셋팅하는게 까다로워요, 그래서 굳이 셋팅해줄 필요가 있나 싶긴한데요, PATH 사용을 연습삼아 해봅시다</p>
 </blockquote>
 <p><code>-</code> 설치과정</p>
+<ul>
+<li>step1. <code>R</code> 설치</li>
+<li>step2. <code>languageserver</code> 설치</li>
+<li>step3. <code>radian</code> 설치</li>
+<li>step4. <code>httpgd</code> 설치</li>
+<li>step5. <code>R extension for Visual Studio Code</code> 설치</li>
+<li>step6. vscode 환경설정 – (까다로움 <span class="math inline">\(\star\)</span>)</li>
+</ul>
+<p><code>-</code> step1-step4의 과정</p>
+<p><em>bash</em> – <code>R</code> 설치</p>
+<div class="sourceCode" id="cb26"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">-n</span> renv</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate renv </span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install r::r-essentials</span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>R</em> – languageserver 설치</p>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"languageserver"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>bash</em> – radian 설치</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge radian</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>R</em> – httpgd 설치</p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"httpgd"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> step5의과정: Vscode의 R-extension 설치</p>
+<p><code>-</code> step6을 잘 해결하는게 중요합니다.</p>
+<p><em>아래를 진행해보기 – local 이 아니라 remote 의 설정에서 진행해야함!!!</em></p>
 <ol type="1">
-<li><code>R extension for Visual Studio Code</code> 설치</li>
-<li><code>radian</code> 설치</li>
-<li><code>httpgd</code> 설치</li>
-<li><code>R &gt; Rterm: Linux</code> 설정 – (까다로움 <span class="math inline">\(\star\)</span>)</li>
+<li><em>“R › Rpath: Linux”</em> 에서 <code>/root/anaconda3/envs/renv/bin/R</code></li>
+<li><em>“R &gt; Rterm: Linux”</em> 에서 <code>/root/anaconda3/envs/renv/bin/R</code></li>
+<li>test</li>
+<li><em>“R &gt; Plot: Use Httpgd:</em> 체크</li>
+<li>test</li>
+<li><em>“R &gt; Rterm: Linux”</em> 에서 <code>/root/anaconda3/envs/renv/bin/radian</code> 으로 변경</li>
+<li>test</li>
+<li>에러 관찰하기: <code>(base)</code> 에서 <code>/root/anaconda3/envs/renv/bin/radian</code> 실행해보기</li>
+<li>해결해보기: <code>R_HOME</code> 에 “/root/anaconda3/envs/renv/lib/R” 를 설정하고 다시 5를 해보기</li>
 </ol>
-<p><code>-</code> 4를 잘 해결하는게 중요합니다.</p>
-<ol type="1">
-<li><code>R &gt; Rterm: Linux</code> 에서 <code>*.R</code>과 연결할 커널 설정</li>
-<li>에러의 원인 파익</li>
-<li>해결책 생각해 보기 (export로 해결해보기?)</li>
-<li><code>Terminal &gt; Integrated &gt; Env: Linux</code> 설정</li>
-</ol>
-<p><strong><em>핵심설정1</em></strong>: <code>Terminal &gt; Integrated &gt; Env: Linux</code>, <code>R &gt; Rterm: Linux</code> 의 설정</p>
-<p><img src="day3_files/figure-html/cell-107-1-72cb6610-8ffe-416a-9fac-a8419c2d182e.png" class="img-fluid"></p>
-<p><strong><em>핵심설정2</em></strong>: <code>Terminal &gt; Integrated &gt; Env: Linux</code>의 주요설정</p>
+<p><em>“Terminal &gt; Integrated &gt; Env: Linux”</em> 을 통하여 5의 오류 수정하기</p>
+<pre class="{json}"><code>    "terminal.integrated.env.linux": {        
+        "R_HOME": "/root/anaconda3/envs/renv/lib/R"
+    }</code></pre>
+<p><em>최종적인 환경</em></p>
+<p>– 최종환경그림 <img src="day3_files/figure-html/cell-117-1-fb3fd667-a4c2-4f7e-a886-3a94ce0c7f5f.png" class="img-fluid"></p>
+<p>– 최종환경 <code>json</code></p>
 <pre class="{json}"><code>{
     "jupyter.interactiveWindow.textEditor.executeSelection": true,
+    "r.rpath.linux": "/root/anaconda3/envs/renv/bin/R",
     "r.rterm.linux": "/root/anaconda3/envs/renv/bin/radian",
+    "r.plot.useHttpgd": true,
     "terminal.integrated.env.linux": {
         "R_HOME": "/root/anaconda3/envs/renv/lib/R"
     },
-    "r.plot.useHttpgd": true
 }</code></pre>
-<ul>
-<li>역할?</li>
-</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>vscode에서 R 개발환경을 셋팅하는것 보다 환경변수 R_HOME을 조작해보는것이 더 중요함. 셋팅과정에서 문제가 발생하는 이유는 기본적으로 아나콘다를 사용한다는 전제 없이 base에서 억지로 R을 연결하기 때문에 일어나는 문제임 (즉 R을 아나콘다 없이 사용할 경우 발생하지 않는 문제임)</p>
+</div>
+</div>
 </section>
 <section id="jupyter와-vscode의-차이" class="level2" data-number="18">
 <h2 data-number="18" class="anchored" data-anchor-id="jupyter와-vscode의-차이"><span class="header-section-number">18</span> <code>jupyter</code>와 <code>vscode</code>의 차이</h2>
@@ -620,6 +694,85 @@ export PATH</code></pre>
 <li>그런데 주의해서 사용해야함.</li>
 <li>저는 안써요</li>
 </ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>주피터랩과 vscode 각각 편한점이 있음. 잘 쓰는 사람들은 vscode를 더 편하게 생각함. (저는 주피터가 더 편함)</p>
+</div>
+</div>
+</section>
+<section id="리소스관리" class="level2" data-number="19">
+<h2 data-number="19" class="anchored" data-anchor-id="리소스관리"><span class="header-section-number">19</span> 리소스관리</h2>
+<p><code>-</code> 메모리, CPU 사용량 체크</p>
+<div class="sourceCode" id="cb32"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="ex">top</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>테스트코드</em></p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co">## 1. Imports </span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time </span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a><span class="co">## 2. 개념설명</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array(<span class="bu">range</span>(n))</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>dist1 <span class="op">=</span> np.zeros([n,n])</span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>        dist1[i,j]<span class="op">=</span>(x[i]<span class="op">-</span>x[j])<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dist1)</span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>x1<span class="op">=</span>x.reshape(n,<span class="dv">1</span>).astype(dtype<span class="op">=</span>np.float64)</span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>x2<span class="op">=</span>x.reshape(<span class="dv">1</span>,n).astype(dtype<span class="op">=</span>np.float64)</span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a>dist2<span class="op">=</span>(x1<span class="op">-</span>x2)<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dist2)</span>
+<span id="cb33-17"><a href="#cb33-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-18"><a href="#cb33-18" aria-hidden="true" tabindex="-1"></a><span class="co">## 3. CPU vs MEM</span></span>
+<span id="cb33-19"><a href="#cb33-19" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">10000</span></span>
+<span id="cb33-20"><a href="#cb33-20" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array(<span class="bu">range</span>(n))</span>
+<span id="cb33-21"><a href="#cb33-21" aria-hidden="true" tabindex="-1"></a>t1 <span class="op">=</span> time.time()</span>
+<span id="cb33-22"><a href="#cb33-22" aria-hidden="true" tabindex="-1"></a>dist1 <span class="op">=</span> np.zeros([n,n])</span>
+<span id="cb33-23"><a href="#cb33-23" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb33-24"><a href="#cb33-24" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(n):</span>
+<span id="cb33-25"><a href="#cb33-25" aria-hidden="true" tabindex="-1"></a>        dist1[i,j]<span class="op">=</span>(x[i]<span class="op">-</span>x[j])<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb33-26"><a href="#cb33-26" aria-hidden="true" tabindex="-1"></a>t2 <span class="op">=</span> time.time()</span>
+<span id="cb33-27"><a href="#cb33-27" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t2<span class="op">-</span>t1)</span>
+<span id="cb33-28"><a href="#cb33-28" aria-hidden="true" tabindex="-1"></a>t1 <span class="op">=</span> time.time()</span>
+<span id="cb33-29"><a href="#cb33-29" aria-hidden="true" tabindex="-1"></a>x1<span class="op">=</span>x.reshape(n,<span class="dv">1</span>).astype(dtype<span class="op">=</span>np.float64)</span>
+<span id="cb33-30"><a href="#cb33-30" aria-hidden="true" tabindex="-1"></a>x2<span class="op">=</span>x.reshape(<span class="dv">1</span>,n).astype(dtype<span class="op">=</span>np.float64)</span>
+<span id="cb33-31"><a href="#cb33-31" aria-hidden="true" tabindex="-1"></a>dist2<span class="op">=</span>(x1<span class="op">-</span>x2)<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb33-32"><a href="#cb33-32" aria-hidden="true" tabindex="-1"></a>t2 <span class="op">=</span> time.time()</span>
+<span id="cb33-33"><a href="#cb33-33" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t2<span class="op">-</span>t1)</span>
+<span id="cb33-34"><a href="#cb33-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-35"><a href="#cb33-35" aria-hidden="true" tabindex="-1"></a><span class="co">## 4. MEM 사용량증가 </span></span>
+<span id="cb33-36"><a href="#cb33-36" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">100000</span></span>
+<span id="cb33-37"><a href="#cb33-37" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.array(<span class="bu">range</span>(n))</span>
+<span id="cb33-38"><a href="#cb33-38" aria-hidden="true" tabindex="-1"></a><span class="co"># t1 = time.time()</span></span>
+<span id="cb33-39"><a href="#cb33-39" aria-hidden="true" tabindex="-1"></a><span class="co"># dist1 = np.zeros([n,n])</span></span>
+<span id="cb33-40"><a href="#cb33-40" aria-hidden="true" tabindex="-1"></a><span class="co"># for i in range(n):</span></span>
+<span id="cb33-41"><a href="#cb33-41" aria-hidden="true" tabindex="-1"></a><span class="co">#     for j in range(n):</span></span>
+<span id="cb33-42"><a href="#cb33-42" aria-hidden="true" tabindex="-1"></a><span class="co">#         dist1[i,j]=(x[i]-x[j])**2</span></span>
+<span id="cb33-43"><a href="#cb33-43" aria-hidden="true" tabindex="-1"></a><span class="co"># t2 = time.time()</span></span>
+<span id="cb33-44"><a href="#cb33-44" aria-hidden="true" tabindex="-1"></a><span class="co"># print(t2-t1)</span></span>
+<span id="cb33-45"><a href="#cb33-45" aria-hidden="true" tabindex="-1"></a>t1 <span class="op">=</span> time.time()</span>
+<span id="cb33-46"><a href="#cb33-46" aria-hidden="true" tabindex="-1"></a>x1<span class="op">=</span>x.reshape(n,<span class="dv">1</span>).astype(dtype<span class="op">=</span>np.float64)</span>
+<span id="cb33-47"><a href="#cb33-47" aria-hidden="true" tabindex="-1"></a>x2<span class="op">=</span>x.reshape(<span class="dv">1</span>,n).astype(dtype<span class="op">=</span>np.float64)</span>
+<span id="cb33-48"><a href="#cb33-48" aria-hidden="true" tabindex="-1"></a>dist2<span class="op">=</span>(x1<span class="op">-</span>x2)<span class="op">**</span><span class="dv">2</span></span>
+<span id="cb33-49"><a href="#cb33-49" aria-hidden="true" tabindex="-1"></a>t2 <span class="op">=</span> time.time()</span>
+<span id="cb33-50"><a href="#cb33-50" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(t2<span class="op">-</span>t1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> GPU 사용량 체크</p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="ex">nvidia-smi</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="ex">watch</span> <span class="at">-n</span> 1 nvidia-smi</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><em>test code</em></p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> torch.randn([<span class="dv">50000</span>,<span class="dv">10000</span>])</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>x.to(<span class="st">"cuda:0"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 하드디스크 용량체크: 아래를 반복적으로 치면서 찾아보자.</p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">du</span> <span class="at">-sh</span> <span class="pp">*</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 휴지통비우기</p>
 
 
 </section>
@@ -753,27 +906,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
     stripColumnClz(note)
-    const typesetMath = (el) => {
-      if (window.MathJax) {
-        // MathJax Typeset
-        window.MathJax.typeset([el]);
-      } else if (window.katex) {
-        // KaTeX Render
-        var mathElements = el.getElementsByClassName("math");
-        var macros = [];
-        for (var i = 0; i < mathElements.length; i++) {
-          var texText = mathElements[i].firstChild;
-          if (mathElements[i].tagName == "SPAN") {
-            window.katex.render(texText.data, mathElements[i], {
-              displayMode: mathElements[i].classList.contains('display'),
-              throwOnError: false,
-              macros: macros,
-              fleqn: false
-            });
-          }
-        }
-      }
-    }
     if (id === null || id.startsWith('sec-')) {
       // Special case sections, only their first couple elements
       const container = document.createElement("div");
@@ -788,10 +920,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             break;
           }
         }
-        typesetMath(container);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
         return container.innerHTML
       } else {
-        typesetMath(note);
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
         return note.innerHTML;
       }
     } else {
@@ -800,7 +936,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (anchorLink) {
         anchorLink.remove();
       }
-      typesetMath(note);
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
       return note.innerHTML;
     }
   }
