@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "데이터과학 툴박스 (2025)",
     "section": "",
-    "text": "수업계획\n\n12월26일(화) – 10:00~16:30 day1 수업\n12월27일(수) – 10:00~16:30 day2 수업\n12월30일(목) – 10:00~16:30 day3 수업\n12월31일(금) – 10:00~16:30 day4 수업\n1월2일(월) – 10:00~16:30 Q&A\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nDec 30, 2024\n\n\nDay3: vscode 설치 – jupyter와 vscode의 차이\n\n\n최규빈 \n\n\n\n\nDec 27, 2024\n\n\nDay2: 파이썬 버전확인하기 - jupyterlab-desktop\n\n\n최규빈 \n\n\n\n\nDec 26, 2024\n\n\nDay1: 터미널의 이해 - 학과서버셋팅\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
+    "text": "수업계획\n\n12월26일(화) – 10:00~16:30 day1 수업\n12월27일(수) – 10:00~16:30 day2 수업\n12월30일(목) – 10:00~16:30 day3 수업\n12월31일(금) – 10:00~16:30 day4 수업\n1월2일(월) – 10:00~16:30 Q&A\n\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nDec 30, 2024\n\n\nDay3: vscode 설치 – 리소스관리\n\n\n최규빈 \n\n\n\n\nDec 27, 2024\n\n\nDay2: 파이썬 버전확인하기 - jupyterlab-desktop\n\n\n최규빈 \n\n\n\n\nDec 26, 2024\n\n\nDay1: 터미널의 이해 - 학과서버셋팅\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/day2.html",
@@ -457,140 +457,140 @@
   {
     "objectID": "posts/day3.html",
     "href": "posts/day3.html",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "",
     "text": "강의영상 요청하기\n\nhttps://drive.google.com/drive/asdf"
   },
   {
     "objectID": "posts/day3.html#vscode-설치",
     "href": "posts/day3.html#vscode-설치",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "1 vscode 설치",
     "text": "1 vscode 설치\n- vscode 다운로드 및 설치"
   },
   {
     "objectID": "posts/day3.html#ssh-설정",
     "href": "posts/day3.html#ssh-설정",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "2 ssh 설정",
     "text": "2 ssh 설정\n- EXTENSTIONS 에서 아래를 설치 (Remote - SSH 만 설치하면 나머지는 자동설치됨)\n\nRemote - SSH\nRemote - SSH: Editing Configuration Files\nRemote Explorer\n\n- REMOTE EXPLORER 열기\n\n\nssh 접속시 사용하는 코드 작성\n\n- 터미널이 아래와 같이 바뀌면 성공"
   },
   {
     "objectID": "posts/day3.html#extensions",
     "href": "posts/day3.html#extensions",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "3 EXTENSIONS",
     "text": "3 EXTENSIONS\n- 저의 LOCAL EXTENSIONS\n\n- 저의 REMOTE EXTENSIONS"
   },
   {
     "objectID": "posts/day3.html#ipynb에서-커널선택",
     "href": "posts/day3.html#ipynb에서-커널선택",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "4 .ipynb에서 커널선택",
     "text": "4 .ipynb에서 커널선택\n\n4.1 python 커널\n- local(현재는 186는 컴퓨터를 지칭)의 python 커널을 선택하기 위해서 아래에서 Python Environments... 선택\n\n- 설치된 모든 스펙을 표시해줌\n\n- 각 경로의 python 확인해보기\nls py* # py로 시작하는 파일/폴더명을 출력 \n- 질문: 몇개의 컴퓨터가 있다고 보여지는가?\n\n/root, (base), (first), (renv), (rpy2) 가 있다고 생각됨\n\n- 질문: 각각의 python은 어떤 컴퓨터에 설치되어있는가? (그리고 이러한 python을 언제 설치했는가?)\n\n/bin/python3은 어떤 컴퓨터에 설치되어있는가?\nusr/bin/python3은 어떤 컴퓨터에 설치되어있는가?\nanaconda3/bin/python은 어떤 컴퓨터에 설치되어있는가?\nanaconda3/envs/first/bin/python은 어떤 컴퓨터에 설치되어있는가?\nanaconda3/envs/renv/bin/python은 어떤 컴퓨터에 설치되어있는가?\nanaconda3/envs/rpy2/bin/python은 어떤 컴퓨터에 설치되어있는가?\n\n\n\n4.2 R 커널\n- local(현재는 186는 컴퓨터를 지칭)의 R 커널을 선택하기 위해서 아래에서 Jupyter Kernel... 선택\n\n- 아래를 선택 (선택의 여지가 없음)\n\n- 질문: 왜 rpy2에 설치된 R은 등록되지 않는가?\n\n저기에는 Jupyter Kernel에 등록된 list만 보입니다.\n그런데 (rpy2)의 R은 Jupyter Kernel에 등록하지 않았어요.\n(renv)의 R은 등록했습니다. 콘다에서 r-essentials 를 설치할때 자동등록.."
   },
   {
     "objectID": "posts/day3.html#환경만드는-팁",
     "href": "posts/day3.html#환경만드는-팁",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "5 환경만드는 팁",
     "text": "5 환경만드는 팁\n- (base) 에 설치하는 방법은 피한다.\n- 가능하면 /root 자체에 뭘 설치하는 경우는 피한다.\napt-get\n- 충돌관리가 어려워보이는 패키지는 conda install 을 사용한다. 별 충돌이 없을거라 생각하는 패키지는 pip install 을 사용한다.\n- 가상환경을 설계하는 것은 논리적으로 접근해서 해결 할 수 있는 문제가 아니다. 시행착오를 통해 답을 찾아야 한다. (구글도 실패한다니까요?)"
   },
   {
     "objectID": "posts/day3.html#환경만들기-torch",
     "href": "posts/day3.html#환경만들기-torch",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "6 환경만들기: torch",
     "text": "6 환경만들기: torch\n- 아래가 동작하는 환경을 구성해 볼 것\nPython 3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:50:58) [GCC 12.3.0] on linux\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n&gt;&gt;&gt; import torch\n&gt;&gt;&gt; torch.cuda.is_available()\nTrue\n&gt;&gt;&gt; \n- 아래의 코드를 주피터노트북에서 실행해 볼 것.\nimport torch \ntorch.cuda.is_available()"
   },
   {
     "objectID": "posts/day3.html#환경만들기-scikit-learn",
     "href": "posts/day3.html#환경만들기-scikit-learn",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "7 환경만들기: scikit-learn",
     "text": "7 환경만들기: scikit-learn\n\nref: https://scikit-learn.org/stable/auto_examples/cluster/plot_ward_structured_vs_unstructured.html#sphx-glr-auto-examples-cluster-plot-ward-structured-vs-unstructured-py\n\n- 여기로 이동하여 노트북을 다운로드하고, 이것이 동작하는 환경을 설계하라."
   },
   {
     "objectID": "posts/day3.html#환경만들기-huggingface",
     "href": "posts/day3.html#환경만들기-huggingface",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "8 환경만들기: HuggingFace",
     "text": "8 환경만들기: HuggingFace\n\nref1: https://guebin.github.io/MP2024/quiz/Quiz-7.html\n\n\nref2: https://huggingface.co/docs/transformers/en/installation\n\n- 아래의 명령어를 이용하여 노트북을 다운로드하고, 이것이 동작하는 환경을 설계하라.\n!wget https://raw.githubusercontent.com/guebin/MP2024/refs/heads/main/quiz/Quiz-7.ipynb"
   },
   {
     "objectID": "posts/day3.html#환경만들기-autogluon",
     "href": "posts/day3.html#환경만들기-autogluon",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "9 환경만들기: AutoGluon",
     "text": "9 환경만들기: AutoGluon\n\nref: https://auto.gluon.ai/stable/tutorials/tabular/tabular-quick-start.html\n\n- 여기의 코드가 동작하는 환경을 설계하라."
   },
   {
     "objectID": "posts/day3.html#py를-이용한-코딩",
     "href": "posts/day3.html#py를-이용한-코딩",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "10 .py를 이용한 코딩",
     "text": "10 .py를 이용한 코딩\n- 아래를 설정\n\n- test.py 파일 생성\nimport numpy as np\nimport pandas as pd \nimport matplotlib.pyplot as plt\nx=np.array([1,2,3,4])\ny=np.array([1,2,4,3])\npd.DataFrame({'x':x, 'y':y})\nplt.plot(x,y)\nprint(x+y)\n- shift + enter 실행해보기\n- Interactive-1을 저장해보기\n- Run Python File 로 실행해보기\n- 커널을 바꾸어서 실습해보기\n\n\n\n\n\n\nImportant\n\n\n\nvscode 기본설정들"
   },
   {
     "objectID": "posts/day3.html#bash-커널",
     "href": "posts/day3.html#bash-커널",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "11 bash 커널",
     "text": "11 bash 커널\n# 예제1\necho hello \n#\n# 예제2\na=askdf\na\n$a\necho $a\n#\n\na = asdf 라고 입력하면 오류가 발생한다.\n\n# 예제3\na=(상민 다빈)\necho $a \necho ${a}\necho ${a[0]}\necho ${a[1]}\necho ${a[@]}\n#\n# 예제4\ncmd_list=(ls \"ls -a\") \n${cmd_list}\n${cmd_list[0]}\n${cmd_list[1]}\n#\n\n\n\n\n\n\nImportant\n\n\n\nterminal도 커널이었음!!"
   },
   {
     "objectID": "posts/day3.html#export",
     "href": "posts/day3.html#export",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "12 export",
     "text": "12 export\n- 걱정: 근데 그러면 내 리눅스에는 평생 a, cmd_list 라는 변수가 있는거야??\n\n아니요\n\n- 평생존재하는 변수도 있다. (환경변수)\nenv\n- bash커널에서 아래를 이용하여 ipython을 실행하자.\nipython\n- 일반변수는 ipython이 상속받지 못하지만 환경변수는 ipython이 상속받는다.\na=asdf\nipython \n!echo $a\n!echo $PATH\n\n모두 대문자로 선언된 변수는 subprocess를 뚫고 갈 수 있다. 기계학습코드들에서 보면 하이퍼파라메터를 설정할때 모두 대문자로 설정하는 경우가 종종 있는데, 리눅스의 환경변수에서 유래되지 않았을까?\n\n- 그런데 export 를 하면 상속받을 수 있다.\na=asdf\nb=1234\nexport a\nipython\n!echo $a\n!echo $b\n!echo $PATH\n\nipython을 subprocess라고 한다.\n\n\n\n\n\n\n\nImportant\n\n\n\nsubprocess의 이해, 환경변수의 이해"
   },
   {
     "objectID": "posts/day3.html#check_ports.sh",
     "href": "posts/day3.html#check_ports.sh",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "13 check_ports.sh",
     "text": "13 check_ports.sh\n- /root (=~) 에 아래와 같은 소스코드를 가진 check_ports.sh를 만들자.\n\n\n/root/check_ports.sh\n\n#!/bin/bash\n# Bash 스크립트 시작을 알리는 선언문\n\n# 기준 학번 설정\nstudent_id=\"13052\"\n\n# 숫자 목록을 저장할 배열 초기화\nmodified_numbers=()\n\n# 만의 자리를 바꾼 숫자 생성\nfor i in {1..4}; do\n    # 현재 반복 중인 숫자 `i`가 student_id의 만의 자리와 같지 않을 때 실행\n    if [[ \"${student_id:0:1}\" != \"$i\" ]]; then\n        # 만의 자리를 `i`로 대체하고 나머지 숫자는 그대로 둔 새로운 숫자를 배열에 추가\n        modified_numbers+=(\"${i}${student_id:1}\")\n    fi\ndone\n\n# 십의 자리를 바꾼 숫자 생성\nfor i in {0..9}; do\n    if [[ \"${student_id:3:1}\" != \"$i\" ]]; then\n        modified_numbers+=(\"${student_id:0:3}${i}${student_id:4}\")\n    fi\ndone\n\n\n# 테이블 헤더 출력\necho -e \"Port\\tPID\\tCommand\"\n\n# 배열의 각 포트 번호에 대해 처리\nfor port in \"${modified_numbers[@]}\"; do\n    # lsof 명령을 사용하여 해당 포트 번호의 PID와 COMMAND를 추출\n    result=$(lsof -i:\"$port\" 2&gt;/dev/null | awk 'NR==2 {print $2, $1}' | head -n 1)\n    \n    # 결과가 비어 있으면 프로세스가 없음을 의미\n    if [[ -z \"$result\" ]]; then\n        pid=\"N/A\"          # PID를 N/A로 설정\n        command=\"N/A\"      # COMMAND를 N/A로 설정\n    else\n        # 결과에서 PID와 COMMAND를 각각 추출\n        pid=$(echo \"$result\" | awk '{print $1}')\n        command=$(echo \"$result\" | awk '{print $2}')\n    fi\n\n    # 포트 번호, PID, COMMAND를 테이블 형식으로 출력\n    echo -e \"$port\\t$pid\\t$command\"\ndone"
   },
   {
     "objectID": "posts/day3.html#주피터랩-편하게",
     "href": "posts/day3.html#주피터랩-편하게",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "14 주피터랩 편하게",
     "text": "14 주피터랩 편하게\n- (아무 conda 환경에서나) 아래를 실행한다.\njupyter notebook --generate-config\n- 아래를 수정한다.\nc.ServerApp.allow_root = True\nc.ServerApp.ip = '0.0.0.0'\n\n\n\n\n\n\nNote\n\n\n\n이것을 하면\njupyter lab --allow-root --ip=\"0.0.0.0\" \n대신\njupyter lab\n을 하여도 같은 효과이다.\n\n\n- 이를 이용하여 비어있는 포트에 몇개의 Jupyter를 띄우자.\n\n\n\n\n\n\nImportant\n\n\n\n주피터랩을 좀 편하게 열자"
   },
   {
     "objectID": "posts/day3.html#문자열-결합",
     "href": "posts/day3.html#문자열-결합",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "15 문자열 결합",
     "text": "15 문자열 결합\n- 아래를 실행하고 관찰하자.\na=123\necho $a\necho ${a}456"
   },
   {
     "objectID": "posts/day3.html#path의-비밀",
     "href": "posts/day3.html#path의-비밀",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "16 PATH의 비밀",
     "text": "16 PATH의 비밀\n- 의문1: 왜 git, python 은 아무데서나 실행되는데 bash check_ports.sh는 아무데서나 실행불가능한거지?\n- 의문2: 왜 (base)에서 python을 실행하면 찰떡같이 /root/anaconda3/bin/python 이 실행되는거지?\n- 아래를 관찰\necho $PATH | tr \":\" \"\\n\"\n- 도전!: 아무데서나 bash check_ports.sh를 실행되게 하려면?\nPATH=$PATH:~\nexport PATH\n- 위의 코드를 다른 새로운 bash 에서도 자동적용되게 하려면? .bashrc파일을 열고 아래를 추가한다.\nPATH=$PATH:~\nexport PATH\n\n근데 저는 이걸 굳이 설정하진 않아요\n\n\n\n\n\n\n\nImportant\n\n\n\nPATH의 이해"
   },
   {
     "objectID": "posts/day3.html#rstudio처럼-쓰기",
     "href": "posts/day3.html#rstudio처럼-쓰기",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "17 Rstudio처럼 쓰기",
     "text": "17 Rstudio처럼 쓰기\n- R을 vscode에서 쓰고 싶다면? (굳이?..)\n\nref: https://code.visualstudio.com/docs/languages/r\n\n\n이거 제가 써보니까 진짜 좋긴하거든요.. 그런데 셋팅하는게 까다로워요, 그래서 굳이 셋팅해줄 필요가 있나 싶긴한데요, PATH 사용을 연습삼아 해봅시다\n\n- 설치과정\n\nstep1. R 설치\nstep2. languageserver 설치\nstep3. radian 설치\nstep4. httpgd 설치\nstep5. R extension for Visual Studio Code 설치\nstep6. vscode 환경설정 – (까다로움 \\(\\star\\))\n\n- step1-step4의 과정\nbash – R 설치\nconda create -n renv\nconda activate renv \nconda install r::r-essentials\nR\nR – languageserver 설치\ninstall.packages(\"languageserver\")\nbash – radian 설치\nconda install -c conda-forge radian\nR – httpgd 설치\ninstall.packages(\"httpgd\")\n- step5의과정: Vscode의 R-extension 설치\n- step6을 잘 해결하는게 중요합니다.\n아래를 진행해보기 – local 이 아니라 remote 의 설정에서 진행해야함!!!\n\n“R › Rpath: Linux” 에서 /root/anaconda3/envs/renv/bin/R\n“R &gt; Rterm: Linux” 에서 /root/anaconda3/envs/renv/bin/R\ntest\n“R &gt; Plot: Use Httpgd: 체크\ntest\n“R &gt; Rterm: Linux” 에서 /root/anaconda3/envs/renv/bin/radian 으로 변경\ntest\n에러 관찰하기: (base) 에서 /root/anaconda3/envs/renv/bin/radian 실행해보기\n해결해보기: R_HOME 에 “/root/anaconda3/envs/renv/lib/R” 를 설정하고 다시 5를 해보기\n\n“Terminal &gt; Integrated &gt; Env: Linux” 을 통하여 5의 오류 수정하기\n    \"terminal.integrated.env.linux\": {        \n        \"R_HOME\": \"/root/anaconda3/envs/renv/lib/R\"\n    }\n최종적인 환경\n– 최종환경그림 \n– 최종환경 json\n{\n    \"jupyter.interactiveWindow.textEditor.executeSelection\": true,\n    \"r.rpath.linux\": \"/root/anaconda3/envs/renv/bin/R\",\n    \"r.rterm.linux\": \"/root/anaconda3/envs/renv/bin/radian\",\n    \"r.plot.useHttpgd\": true,\n    \"terminal.integrated.env.linux\": {\n        \"R_HOME\": \"/root/anaconda3/envs/renv/lib/R\"\n    },\n}\n\n\n\n\n\n\nImportant\n\n\n\nvscode에서 R 개발환경을 셋팅하는것 보다 환경변수 R_HOME을 조작해보는것이 더 중요함. 셋팅과정에서 문제가 발생하는 이유는 기본적으로 아나콘다를 사용한다는 전제 없이 base에서 억지로 R을 연결하기 때문에 일어나는 문제임 (즉 R을 아나콘다 없이 사용할 경우 발생하지 않는 문제임)"
   },
   {
     "objectID": "posts/day3.html#jupyter와-vscode의-차이",
     "href": "posts/day3.html#jupyter와-vscode의-차이",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "18 jupyter와 vscode의 차이",
     "text": "18 jupyter와 vscode의 차이\n- jupyter는 프로그램을 꺼도 커널이 죽지 않지만 vscode는 프로그램을 끄는 순간 커널이 죽음\n\n연속작업에 치명적인 차이가 남\n\n- 극복하는 방법?\n\n살짝트릭: vscode에서 주피터 커널을 물리면 된다.\n\n- 이 원리를 이용하면 local의 .ipynb에 원격 vscode 를 물릴 수 있다.\n\n그런데 주의해서 사용해야함.\n저는 안써요\n\n\n\n\n\n\n\nImportant\n\n\n\n주피터랩과 vscode 각각 편한점이 있음. 잘 쓰는 사람들은 vscode를 더 편하게 생각함. (저는 주피터가 더 편함)"
   },
   {
     "objectID": "posts/day3.html#리소스관리",
     "href": "posts/day3.html#리소스관리",
-    "title": "Day3: vscode 설치 – jupyter와 vscode의 차이",
+    "title": "Day3: vscode 설치 – 리소스관리",
     "section": "19 리소스관리",
     "text": "19 리소스관리\n- 메모리, CPU 사용량 체크\ntop\n테스트코드\n## 1. Imports \nimport numpy as np\nimport time \n\n## 2. 개념설명\nn = 5\nx = np.array(range(n))\ndist1 = np.zeros([n,n])\nfor i in range(n):\n    for j in range(n):\n        dist1[i,j]=(x[i]-x[j])**2\nprint(dist1)\nx1=x.reshape(n,1).astype(dtype=np.float64)\nx2=x.reshape(1,n).astype(dtype=np.float64)\ndist2=(x1-x2)**2\nprint(dist2)\n\n## 3. CPU vs MEM\nn = 10000\nx = np.array(range(n))\nt1 = time.time()\ndist1 = np.zeros([n,n])\nfor i in range(n):\n    for j in range(n):\n        dist1[i,j]=(x[i]-x[j])**2\nt2 = time.time()\nprint(t2-t1)\nt1 = time.time()\nx1=x.reshape(n,1).astype(dtype=np.float64)\nx2=x.reshape(1,n).astype(dtype=np.float64)\ndist2=(x1-x2)**2\nt2 = time.time()\nprint(t2-t1)\n\n## 4. MEM 사용량증가 \nn = 100000\nx = np.array(range(n))\n# t1 = time.time()\n# dist1 = np.zeros([n,n])\n# for i in range(n):\n#     for j in range(n):\n#         dist1[i,j]=(x[i]-x[j])**2\n# t2 = time.time()\n# print(t2-t1)\nt1 = time.time()\nx1=x.reshape(n,1).astype(dtype=np.float64)\nx2=x.reshape(1,n).astype(dtype=np.float64)\ndist2=(x1-x2)**2\nt2 = time.time()\nprint(t2-t1)\n- GPU 사용량 체크\nnvidia-smi\nwatch -n 1 nvidia-smi\ntest code\nimport torch\nx = torch.randn([50000,10000])\nx.to(\"cuda:0\")\n- 하드디스크 용량체크: 아래를 반복적으로 치면서 찾아보자.\ndu -sh *\n- 휴지통비우기"
   },
