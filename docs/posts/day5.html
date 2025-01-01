@@ -176,11 +176,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#pororo.qmd" id="toc-pororo.qmd" class="nav-link" data-scroll-target="#pororo.qmd"><span class="header-section-number">16</span> <code>pororo.qmd</code></a></li>
   <li><a href="#code.ipynb" id="toc-code.ipynb" class="nav-link" data-scroll-target="#code.ipynb"><span class="header-section-number">17</span> <code>code.ipynb</code></a></li>
   <li><a href="#france.ipynb" id="toc-france.ipynb" class="nav-link" data-scroll-target="#france.ipynb"><span class="header-section-number">18</span> <code>france.ipynb</code></a></li>
-  <li><a href="#quarto.ipynb" id="toc-quarto.ipynb" class="nav-link" data-scroll-target="#quarto.ipynb"><span class="header-section-number">19</span> <code>quarto.ipynb</code></a></li>
-  <li><a href="#quarto-github-의-역할" id="toc-quarto-github-의-역할" class="nav-link" data-scroll-target="#quarto-github-의-역할"><span class="header-section-number">20</span> <code>quarto</code>, <code>github</code> 의 역할</a></li>
-  <li><a href="#mb-충돌" id="toc-mb-충돌" class="nav-link" data-scroll-target="#mb-충돌"><span class="header-section-number">21</span> <code>100MB</code> 충돌</a></li>
-  <li><a href="#해결-삭제clone" id="toc-해결-삭제clone" class="nav-link" data-scroll-target="#해결-삭제clone"><span class="header-section-number">22</span> 해결 – 삭제/clone</a></li>
-  <li><a href="#template" id="toc-template" class="nav-link" data-scroll-target="#template"><span class="header-section-number">23</span> template</a></li>
+  <li><a href="#quarto-github-의-역할" id="toc-quarto-github-의-역할" class="nav-link" data-scroll-target="#quarto-github-의-역할"><span class="header-section-number">19</span> <code>quarto</code>, <code>github</code> 의 역할</a></li>
+  <li><a href="#mb-충돌" id="toc-mb-충돌" class="nav-link" data-scroll-target="#mb-충돌"><span class="header-section-number">20</span> <code>100MB</code> 충돌</a></li>
+  <li><a href="#해결-삭제clone" id="toc-해결-삭제clone" class="nav-link" data-scroll-target="#해결-삭제clone"><span class="header-section-number">21</span> 해결 – 삭제/clone</a></li>
+  <li><a href="#template" id="toc-template" class="nav-link" data-scroll-target="#template"><span class="header-section-number">22</span> template</a></li>
   </ul>
 </nav>
     </div>
@@ -415,11 +414,20 @@ date: "01/02/2025"
 <section id="github으로-push" class="level2" data-number="14">
 <h2 data-number="14" class="anchored" data-anchor-id="github으로-push"><span class="header-section-number">14</span> github으로 <code>push</code></h2>
 <p><code>-</code> preview 중단</p>
+<p><code>-</code> github에서 비밀번호 얻어야함</p>
+<ul>
+<li><a href="https://github.com/settings/tokens" class="uri">https://github.com/settings/tokens</a></li>
+</ul>
 <p><code>-</code> 아래를 실행</p>
 <div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render </span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> test.qmd</span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><code>-</code> 이후의 작업을 편하게 하기 위해서..</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config credential.helper store</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> .</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="github-에서-설정" class="level2" data-number="15">
 <h2 data-number="15" class="anchored" data-anchor-id="github-에서-설정"><span class="header-section-number">15</span> <code>github</code> 에서 설정</h2>
@@ -432,42 +440,42 @@ date: "01/02/2025"
 <div class="code-with-filename-file">
 <pre><strong>pororo.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="cb14" data-filename="pororo.qmd"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "뽀롱뽀롱"</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "최다호"</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "01/02/2025"</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>ref: <span class="ot">&lt;https://home.ebs.co.kr/pororo/etc/1/cast&gt;</span></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## 뽀로로사진</span></span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://static.ebs.co.kr/images/public/lectures/2014/06/19/10/bhpImg/44deb98d-1c50-4073-9bd7-2c2c28d65f9e.jpg)</span></span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## 패티사진</span></span>
-<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://static.ebs.co.kr/images/ebs/WAS-HOME/portal/upload/img/programinfo/person/per/1242723588618_dphGgSgOAp.jpg)</span></span>
-<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## 표만들기</span></span>
-<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a>| 캐릭터 | 설명 |</span>
-<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a>|-------|------|</span>
-<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a>| **PORORO (뽀로로)** | 호기심이 많은 꼬마 펭귄. 신기한 물건을 발견하면 왕성한 호기심이 발동하고, 하고 싶은 것은 꼭 하고야 만다. 하늘을 날 수 있을 거라는 의지를 실천에 옮기려는 좌충우돌형에 장난기가 넘치는 사고뭉칠 꼬마이지만 숲속 마을에는 없어선 안되는 분위기 메이커입니다. |</span>
-<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>| **PETTY (패티)** | 뽀롱뽀롱 숲 속 마을에 새로 이사 온 활달하고 사고성이 좋은 소녀 펭귄. 예쁘고 깜찍한 성격으로 친구들의 관심을 받는 새로운 친구로 등장합니다. 귀엽고 예쁜 외모와는 달리 털털한 성격에, 축구, 달리기, 수영, 무술 운동에도 뛰어나 친구들의 부러움을 사지만 요리만은 서툽니다. |</span>
-<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## 준비됐나요?</span></span>
-<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
-<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a><span class="fu">### 옜날</span></span>
-<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a>준비됐나요? -&gt; 준비됐어요~</span>
-<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
-<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a><span class="fu">### 요즘</span></span>
-<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a>준비됐나요? -&gt; 네네, 선생님!</span>
-<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb15" data-filename="pororo.qmd"><pre class="sourceCode md code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "뽀롱뽀롱"</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "최다호"</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "01/02/2025"</span></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>ref: <span class="ot">&lt;https://home.ebs.co.kr/pororo/etc/1/cast&gt;</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a><span class="fu">## 뽀로로사진</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://static.ebs.co.kr/images/public/lectures/2014/06/19/10/bhpImg/44deb98d-1c50-4073-9bd7-2c2c28d65f9e.jpg)</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## 패티사진</span></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="al">![](https://static.ebs.co.kr/images/ebs/WAS-HOME/portal/upload/img/programinfo/person/per/1242723588618_dphGgSgOAp.jpg)</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## 표만들기</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a>| 캐릭터 | 설명 |</span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>|-------|------|</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>| **PORORO (뽀로로)** | 호기심이 많은 꼬마 펭귄. 신기한 물건을 발견하면 왕성한 호기심이 발동하고, 하고 싶은 것은 꼭 하고야 만다. 하늘을 날 수 있을 거라는 의지를 실천에 옮기려는 좌충우돌형에 장난기가 넘치는 사고뭉칠 꼬마이지만 숲속 마을에는 없어선 안되는 분위기 메이커입니다. |</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a>| **PETTY (패티)** | 뽀롱뽀롱 숲 속 마을에 새로 이사 온 활달하고 사고성이 좋은 소녀 펭귄. 예쁘고 깜찍한 성격으로 친구들의 관심을 받는 새로운 친구로 등장합니다. 귀엽고 예쁜 외모와는 달리 털털한 성격에, 축구, 달리기, 수영, 무술 운동에도 뛰어나 친구들의 부러움을 사지만 요리만은 서툽니다. |</span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a><span class="fu">## 준비됐나요?</span></span>
+<span id="cb15-25"><a href="#cb15-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-26"><a href="#cb15-26" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
+<span id="cb15-27"><a href="#cb15-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-28"><a href="#cb15-28" aria-hidden="true" tabindex="-1"></a><span class="fu">### 옜날</span></span>
+<span id="cb15-29"><a href="#cb15-29" aria-hidden="true" tabindex="-1"></a>준비됐나요? -&gt; 준비됐어요~</span>
+<span id="cb15-30"><a href="#cb15-30" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb15-31"><a href="#cb15-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-32"><a href="#cb15-32" aria-hidden="true" tabindex="-1"></a>:::{.callout-important}</span>
+<span id="cb15-33"><a href="#cb15-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-34"><a href="#cb15-34" aria-hidden="true" tabindex="-1"></a><span class="fu">### 요즘</span></span>
+<span id="cb15-35"><a href="#cb15-35" aria-hidden="true" tabindex="-1"></a>준비됐나요? -&gt; 네네, 선생님!</span>
+<span id="cb15-36"><a href="#cb15-36" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><code>-</code> upload</p>
 </section>
@@ -479,10 +487,10 @@ title: "code"
 author: "장하니"
 date: "01/02/2025"
 ---</code></pre>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt </span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.random.randn(<span class="dv">100</span>)</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt </span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> np.random.randn(<span class="dv">100</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> upload</p>
 </section>
 <section id="france.ipynb" class="level2" data-number="18">
@@ -498,22 +506,8 @@ date: "01/02/2025"
 <li><a href="https://ko.wikipedia.org/wiki/프랑스_혁명" class="uri">https://ko.wikipedia.org/wiki/프랑스_혁명</a></li>
 </ul>
 </section>
-<section id="quarto.ipynb" class="level2" data-number="19">
-<h2 data-number="19" class="anchored" data-anchor-id="quarto.ipynb"><span class="header-section-number">19</span> <code>quarto.ipynb</code></h2>
-<p><code>-</code> 아래의 환경을 만들자.</p>
-<div class="sourceCode" id="cb18"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> plotly plotly=5.24.1</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> install <span class="at">-c</span> conda-forge notebook </span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install matplotlib</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install pandas</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>-</code> <code>quarto.ipynb</code> 파일 download</p>
-<pre class="{md}"><code>---
-title: "quarto"
-author: "최규빈"
-date: "01/02/2025"
----</code></pre>
-</section>
-<section id="quarto-github-의-역할" class="level2" data-number="20">
-<h2 data-number="20" class="anchored" data-anchor-id="quarto-github-의-역할"><span class="header-section-number">20</span> <code>quarto</code>, <code>github</code> 의 역할</h2>
+<section id="quarto-github-의-역할" class="level2" data-number="19">
+<h2 data-number="19" class="anchored" data-anchor-id="quarto-github-의-역할"><span class="header-section-number">19</span> <code>quarto</code>, <code>github</code> 의 역할</h2>
 <p><code>-</code> 실질적으로 우리가 <code>quarto</code> + <code>github</code> 을 이용하여 publish 하는 과정은 아래와 같다.</p>
 <ol type="1">
 <li><code>local</code>에서 <code>.qmd</code>, <code>.ipynb</code> 파일들을 생성하여 작업한다.</li>
@@ -529,61 +523,61 @@ date: "01/02/2025"
 </ol>
 <p>이중에서 1은 사용자가 하고, 2는 quarto가 하고, 3은 github이 한다.</p>
 </section>
-<section id="mb-충돌" class="level2" data-number="21">
-<h2 data-number="21" class="anchored" data-anchor-id="mb-충돌"><span class="header-section-number">21</span> <code>100MB</code> 충돌</h2>
+<section id="mb-충돌" class="level2" data-number="20">
+<h2 data-number="20" class="anchored" data-anchor-id="mb-충돌"><span class="header-section-number">20</span> <code>100MB</code> 충돌</h2>
 <p><code>-</code> <code>fashion-mnist.ipynb</code> 에 아래의 코드를 작성</p>
 <pre class="{md}"><code>---
 title: "fashion-mnist"
 author: "장하니"
 date: "01/02/2025"
 ---</code></pre>
-<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget https:<span class="op">//</span>media.githubusercontent.com<span class="op">/</span>media<span class="op">/</span>guebin<span class="op">/</span>PP2023<span class="op">/</span>main<span class="op">/</span>posts<span class="op">/</span>fashion<span class="op">-</span>mnist_train.csv</span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"fashion-mnist_train.csv"</span>)</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>plt.imshow(df.iloc[<span class="dv">1</span>,<span class="dv">1</span>:].to_numpy().reshape(<span class="dv">28</span>,<span class="dv">28</span>),cmap<span class="op">=</span><span class="st">"gray"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>wget https:<span class="op">//</span>media.githubusercontent.com<span class="op">/</span>media<span class="op">/</span>guebin<span class="op">/</span>PP2023<span class="op">/</span>main<span class="op">/</span>posts<span class="op">/</span>fashion<span class="op">-</span>mnist_train.csv</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">"fashion-mnist_train.csv"</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>plt.imshow(df.iloc[<span class="dv">1</span>,<span class="dv">1</span>:].to_numpy().reshape(<span class="dv">28</span>,<span class="dv">28</span>),cmap<span class="op">=</span><span class="st">"gray"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> upload – 아래의 메시지 확인</p>
-<div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">@miruetoto</span> ➜ /workspaces/blog-test <span class="er">(</span><span class="ex">main</span><span class="kw">)</span> <span class="ex">$</span> git push </span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Enumerating</span> objects: 13, done.</span>
-<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Counting</span> objects: 100% <span class="er">(</span><span class="ex">13/13</span><span class="kw">)</span><span class="ex">,</span> done.</span>
-<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Delta</span> compression using up to 2 threads</span>
-<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Compressing</span> objects: 100% <span class="er">(</span><span class="ex">8/8</span><span class="kw">)</span><span class="ex">,</span> done.</span>
-<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Writing</span> objects: 100% <span class="er">(</span><span class="ex">10/10</span><span class="kw">)</span><span class="ex">,</span> 32.41 MiB <span class="kw">|</span> <span class="ex">2.45</span> MiB/s, done.</span>
-<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Total</span> 10 <span class="er">(</span><span class="ex">delta</span> 3<span class="kw">)</span><span class="ex">,</span> reused 0 <span class="er">(</span><span class="ex">delta</span> 0<span class="kw">)</span><span class="ex">,</span> pack-reused 0 <span class="er">(</span><span class="ex">from</span> 0<span class="kw">)</span></span>
-<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> Resolving deltas: 100% <span class="er">(</span><span class="ex">3/3</span><span class="kw">)</span><span class="ex">,</span> completed with 3 local objects.</span>
-<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> error: Trace: 6994b81c2ea821341c951bbca38f8f734c40af004fbc73f4d154cd73eb69eb32</span>
-<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> error: See https://gh.io/lfs for more information.</span>
-<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> error: File fashion-mnist_train.csv is 126.88 MB<span class="kw">;</span> <span class="ex">this</span> exceeds GitHub<span class="st">'s file size limit of 100.00 MB</span></span>
-<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a><span class="st">remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.</span></span>
-<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a><span class="st">To https://github.com/miruetoto/blog-test</span></span>
-<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a><span class="st"> ! [remote rejected] main -&gt; main (pre-receive hook declined)</span></span>
-<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a><span class="st">error: failed to push some refs to '</span>https://github.com/miruetoto/blog-test<span class="st">'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ex">@miruetoto</span> ➜ /workspaces/blog-test <span class="er">(</span><span class="ex">main</span><span class="kw">)</span> <span class="ex">$</span> git push </span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Enumerating</span> objects: 13, done.</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Counting</span> objects: 100% <span class="er">(</span><span class="ex">13/13</span><span class="kw">)</span><span class="ex">,</span> done.</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Delta</span> compression using up to 2 threads</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Compressing</span> objects: 100% <span class="er">(</span><span class="ex">8/8</span><span class="kw">)</span><span class="ex">,</span> done.</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="ex">Writing</span> objects: 100% <span class="er">(</span><span class="ex">10/10</span><span class="kw">)</span><span class="ex">,</span> 32.41 MiB <span class="kw">|</span> <span class="ex">2.45</span> MiB/s, done.</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Total</span> 10 <span class="er">(</span><span class="ex">delta</span> 3<span class="kw">)</span><span class="ex">,</span> reused 0 <span class="er">(</span><span class="ex">delta</span> 0<span class="kw">)</span><span class="ex">,</span> pack-reused 0 <span class="er">(</span><span class="ex">from</span> 0<span class="kw">)</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> Resolving deltas: 100% <span class="er">(</span><span class="ex">3/3</span><span class="kw">)</span><span class="ex">,</span> completed with 3 local objects.</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> error: Trace: 6994b81c2ea821341c951bbca38f8f734c40af004fbc73f4d154cd73eb69eb32</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> error: See https://gh.io/lfs for more information.</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> error: File fashion-mnist_train.csv is 126.88 MB<span class="kw">;</span> <span class="ex">this</span> exceeds GitHub<span class="st">'s file size limit of 100.00 MB</span></span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a><span class="st">remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.</span></span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a><span class="st">To https://github.com/miruetoto/blog-test</span></span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a><span class="st"> ! [remote rejected] main -&gt; main (pre-receive hook declined)</span></span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a><span class="st">error: failed to push some refs to '</span>https://github.com/miruetoto/blog-test<span class="st">'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><code>-</code> <code>fashion-mnist_train.csv</code> 를 삭제해도 안된다..</p>
-<div class="sourceCode" id="cb23"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="ex">@miruetoto</span> ➜ /workspaces/blog-test <span class="er">(</span><span class="ex">main</span><span class="kw">)</span> <span class="ex">$</span> git add .</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="ex">@miruetoto</span> ➜ /workspaces/blog-test <span class="er">(</span><span class="ex">main</span><span class="kw">)</span> <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"fashion-mnist.csv 삭제"</span></span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[main</span> f17cb1f] fashion-mnist.csv 삭제</span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">1</span> file changed, 60001 deletions<span class="er">(</span><span class="ex">-</span><span class="kw">)</span></span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a> <span class="ex">delete</span> mode 100644 fashion-mnist_train.csv</span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="ex">@miruetoto</span> ➜ /workspaces/blog-test <span class="er">(</span><span class="ex">main</span><span class="kw">)</span> <span class="ex">$</span> git push</span>
-<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Enumerating</span> objects: 15, done.</span>
-<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="ex">Counting</span> objects: 100% <span class="er">(</span><span class="ex">15/15</span><span class="kw">)</span><span class="ex">,</span> done.</span>
-<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a><span class="ex">Delta</span> compression using up to 2 threads</span>
-<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a><span class="ex">Compressing</span> objects: 100% <span class="er">(</span><span class="ex">10/10</span><span class="kw">)</span><span class="ex">,</span> done.</span>
-<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a><span class="ex">Writing</span> objects: 100% <span class="er">(</span><span class="ex">12/12</span><span class="kw">)</span><span class="ex">,</span> 32.41 MiB <span class="kw">|</span> <span class="ex">2.33</span> MiB/s, done.</span>
-<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a><span class="ex">Total</span> 12 <span class="er">(</span><span class="ex">delta</span> 4<span class="kw">)</span><span class="ex">,</span> reused 0 <span class="er">(</span><span class="ex">delta</span> 0<span class="kw">)</span><span class="ex">,</span> pack-reused 0 <span class="er">(</span><span class="ex">from</span> 0<span class="kw">)</span></span>
-<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> Resolving deltas: 100% <span class="er">(</span><span class="ex">4/4</span><span class="kw">)</span><span class="ex">,</span> completed with 3 local objects.</span>
-<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> error: Trace: a2a9e6b3dfd49b2aa8afeb13aae04ba1684311239c0abc06f49f4236f30f5a62</span>
-<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> error: See https://gh.io/lfs for more information.</span>
-<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> error: File fashion-mnist_train.csv is 126.88 MB<span class="kw">;</span> <span class="ex">this</span> exceeds GitHub<span class="st">'s file size limit of 100.00 MB</span></span>
-<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a><span class="st">remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.</span></span>
-<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a><span class="st">To https://github.com/miruetoto/blog-test</span></span>
-<span id="cb23-19"><a href="#cb23-19" aria-hidden="true" tabindex="-1"></a><span class="st"> ! [remote rejected] main -&gt; main (pre-receive hook declined)</span></span>
-<span id="cb23-20"><a href="#cb23-20" aria-hidden="true" tabindex="-1"></a><span class="st">error: failed to push some refs to '</span>https://github.com/miruetoto/blog-test<span class="st">'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb22"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">@miruetoto</span> ➜ /workspaces/blog-test <span class="er">(</span><span class="ex">main</span><span class="kw">)</span> <span class="ex">$</span> git add .</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="ex">@miruetoto</span> ➜ /workspaces/blog-test <span class="er">(</span><span class="ex">main</span><span class="kw">)</span> <span class="ex">$</span> git commit <span class="at">-m</span> <span class="st">"fashion-mnist.csv 삭제"</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="ex">[main</span> f17cb1f] fashion-mnist.csv 삭제</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a> <span class="ex">1</span> file changed, 60001 deletions<span class="er">(</span><span class="ex">-</span><span class="kw">)</span></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a> <span class="ex">delete</span> mode 100644 fashion-mnist_train.csv</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a><span class="ex">@miruetoto</span> ➜ /workspaces/blog-test <span class="er">(</span><span class="ex">main</span><span class="kw">)</span> <span class="ex">$</span> git push</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a><span class="ex">Enumerating</span> objects: 15, done.</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="ex">Counting</span> objects: 100% <span class="er">(</span><span class="ex">15/15</span><span class="kw">)</span><span class="ex">,</span> done.</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="ex">Delta</span> compression using up to 2 threads</span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a><span class="ex">Compressing</span> objects: 100% <span class="er">(</span><span class="ex">10/10</span><span class="kw">)</span><span class="ex">,</span> done.</span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a><span class="ex">Writing</span> objects: 100% <span class="er">(</span><span class="ex">12/12</span><span class="kw">)</span><span class="ex">,</span> 32.41 MiB <span class="kw">|</span> <span class="ex">2.33</span> MiB/s, done.</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a><span class="ex">Total</span> 12 <span class="er">(</span><span class="ex">delta</span> 4<span class="kw">)</span><span class="ex">,</span> reused 0 <span class="er">(</span><span class="ex">delta</span> 0<span class="kw">)</span><span class="ex">,</span> pack-reused 0 <span class="er">(</span><span class="ex">from</span> 0<span class="kw">)</span></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> Resolving deltas: 100% <span class="er">(</span><span class="ex">4/4</span><span class="kw">)</span><span class="ex">,</span> completed with 3 local objects.</span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> error: Trace: a2a9e6b3dfd49b2aa8afeb13aae04ba1684311239c0abc06f49f4236f30f5a62</span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> error: See https://gh.io/lfs for more information.</span>
+<span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> error: File fashion-mnist_train.csv is 126.88 MB<span class="kw">;</span> <span class="ex">this</span> exceeds GitHub<span class="st">'s file size limit of 100.00 MB</span></span>
+<span id="cb22-17"><a href="#cb22-17" aria-hidden="true" tabindex="-1"></a><span class="st">remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.</span></span>
+<span id="cb22-18"><a href="#cb22-18" aria-hidden="true" tabindex="-1"></a><span class="st">To https://github.com/miruetoto/blog-test</span></span>
+<span id="cb22-19"><a href="#cb22-19" aria-hidden="true" tabindex="-1"></a><span class="st"> ! [remote rejected] main -&gt; main (pre-receive hook declined)</span></span>
+<span id="cb22-20"><a href="#cb22-20" aria-hidden="true" tabindex="-1"></a><span class="st">error: failed to push some refs to '</span>https://github.com/miruetoto/blog-test<span class="st">'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="해결-삭제clone" class="level2" data-number="22">
-<h2 data-number="22" class="anchored" data-anchor-id="해결-삭제clone"><span class="header-section-number">22</span> 해결 – 삭제/clone</h2>
+<section id="해결-삭제clone" class="level2" data-number="21">
+<h2 data-number="21" class="anchored" data-anchor-id="해결-삭제clone"><span class="header-section-number">21</span> 해결 – 삭제/clone</h2>
 </section>
-<section id="template" class="level2" data-number="23">
-<h2 data-number="23" class="anchored" data-anchor-id="template"><span class="header-section-number">23</span> template</h2>
+<section id="template" class="level2" data-number="22">
+<h2 data-number="22" class="anchored" data-anchor-id="template"><span class="header-section-number">22</span> template</h2>
 <table class="table">
 <thead>
 <tr class="header">
@@ -613,8 +607,35 @@ date: "01/02/2025"
 <td style="text-align: center;"><a href="https://github.com/guebin/DV2023-DASH" class="uri">https://github.com/guebin/DV2023-DASH</a></td>
 <td style="text-align: center;"><a href="https://guebin.github.io/DV2023-DASH" class="uri">https://guebin.github.io/DV2023-DASH</a></td>
 </tr>
+<tr class="odd">
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+<td style="text-align: center;">–</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">대시보드</td>
+<td style="text-align: center;">??</td>
+<td style="text-align: center;"><a href="https://ivelasq.github.io/mortgage-dashboard/" class="uri">https://ivelasq.github.io/mortgage-dashboard/</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">강의노트</td>
+<td style="text-align: center;">??</td>
+<td style="text-align: center;"><a href="https://sta210-s22.github.io/website/" class="uri">https://sta210-s22.github.io/website/</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">책</td>
+<td style="text-align: center;"><a href="https://github.com/hadley/r4ds" class="uri">https://github.com/hadley/r4ds</a></td>
+<td style="text-align: center;"><a href="https://r4ds.hadley.nz/" class="uri">https://r4ds.hadley.nz/</a></td>
+</tr>
 </tbody>
 </table>
+<ul>
+<li>?? 를 찾아내세요</li>
+</ul>
+<p><code>-</code> 여기에 가면 많아요</p>
+<ul>
+<li><a href="https://quarto.org/docs/gallery/" class="uri">https://quarto.org/docs/gallery/</a></li>
+</ul>
 
 
 </section>

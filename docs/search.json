@@ -837,7 +837,7 @@
     "href": "posts/day5.html#github으로-push",
     "title": "Day5: html – template",
     "section": "14 github으로 push",
-    "text": "14 github으로 push\n- preview 중단\n- 아래를 실행\nquarto render \ngit add .\ngit commit -m test.qmd\ngit push"
+    "text": "14 github으로 push\n- preview 중단\n- github에서 비밀번호 얻어야함\n\nhttps://github.com/settings/tokens\n\n- 아래를 실행\nquarto render \ngit add .\ngit commit -m test.qmd\ngit push \n- 이후의 작업을 편하게 하기 위해서..\ngit config credential.helper store\ngit add .\ngit commit -m .\ngit push"
   },
   {
     "objectID": "posts/day5.html#github-에서-설정",
@@ -868,39 +868,32 @@
     "text": "18 france.ipynb\n- france.ipynb 파일을 만들자.\n---\ntitle: \"프랑스혁명\"\nauthor: \"최규빈\"\ndate: \"01/02/2025\"\n---\n- 아래의 내용을 공부하자.\n\nhttps://ko.wikipedia.org/wiki/프랑스_혁명"
   },
   {
-    "objectID": "posts/day5.html#quarto.ipynb",
-    "href": "posts/day5.html#quarto.ipynb",
-    "title": "Day5: html – template",
-    "section": "19 quarto.ipynb",
-    "text": "19 quarto.ipynb\n- 아래의 환경을 만들자.\nconda install -c plotly plotly=5.24.1\nconda install -c conda-forge notebook \npip install matplotlib\npip install pandas\n- quarto.ipynb 파일 download\n---\ntitle: \"quarto\"\nauthor: \"최규빈\"\ndate: \"01/02/2025\"\n---"
-  },
-  {
     "objectID": "posts/day5.html#quarto-github-의-역할",
     "href": "posts/day5.html#quarto-github-의-역할",
     "title": "Day5: html – template",
-    "section": "20 quarto, github 의 역할",
-    "text": "20 quarto, github 의 역할\n- 실질적으로 우리가 quarto + github 을 이용하여 publish 하는 과정은 아래와 같다.\n\nlocal에서 .qmd, .ipynb 파일들을 생성하여 작업한다.\nquarto render를 입력하여 .ipynb 파일들을 .html 파일로 바꾸고 “연결성”을 정의한다. 이러한 연결성은 local에서 완벽하게 동작한다.\n연결성+link가 종합적으로 저장된 폴더 (우리의 경우는 docs) 를 github 에 업로드한다.\ngithub은 docs폴더를 바탕으로 웹사이트를 구축한다.\n\n- 블로그의 생성은 아래의 3가지 요소가 결합되어야 한다고 했었다.\n\n컨텐츠 생성\n컨텐츠를 html화 (=컨텐츠를 보기좋게 만들어주고 link를 정의)\n2의 결과가 local 이 아니라 remote 에 존재해야 함.\n\n이중에서 1은 사용자가 하고, 2는 quarto가 하고, 3은 github이 한다."
+    "section": "19 quarto, github 의 역할",
+    "text": "19 quarto, github 의 역할\n- 실질적으로 우리가 quarto + github 을 이용하여 publish 하는 과정은 아래와 같다.\n\nlocal에서 .qmd, .ipynb 파일들을 생성하여 작업한다.\nquarto render를 입력하여 .ipynb 파일들을 .html 파일로 바꾸고 “연결성”을 정의한다. 이러한 연결성은 local에서 완벽하게 동작한다.\n연결성+link가 종합적으로 저장된 폴더 (우리의 경우는 docs) 를 github 에 업로드한다.\ngithub은 docs폴더를 바탕으로 웹사이트를 구축한다.\n\n- 블로그의 생성은 아래의 3가지 요소가 결합되어야 한다고 했었다.\n\n컨텐츠 생성\n컨텐츠를 html화 (=컨텐츠를 보기좋게 만들어주고 link를 정의)\n2의 결과가 local 이 아니라 remote 에 존재해야 함.\n\n이중에서 1은 사용자가 하고, 2는 quarto가 하고, 3은 github이 한다."
   },
   {
     "objectID": "posts/day5.html#mb-충돌",
     "href": "posts/day5.html#mb-충돌",
     "title": "Day5: html – template",
-    "section": "21 100MB 충돌",
-    "text": "21 100MB 충돌\n- fashion-mnist.ipynb 에 아래의 코드를 작성\n---\ntitle: \"fashion-mnist\"\nauthor: \"장하니\"\ndate: \"01/02/2025\"\n---\nimport pandas as pd\n!wget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv\ndf = pd.read_csv(\"fashion-mnist_train.csv\")\nplt.imshow(df.iloc[1,1:].to_numpy().reshape(28,28),cmap=\"gray\")\n- upload – 아래의 메시지 확인\n@miruetoto ➜ /workspaces/blog-test (main) $ git push \nEnumerating objects: 13, done.\nCounting objects: 100% (13/13), done.\nDelta compression using up to 2 threads\nCompressing objects: 100% (8/8), done.\nWriting objects: 100% (10/10), 32.41 MiB | 2.45 MiB/s, done.\nTotal 10 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)\nremote: Resolving deltas: 100% (3/3), completed with 3 local objects.\nremote: error: Trace: 6994b81c2ea821341c951bbca38f8f734c40af004fbc73f4d154cd73eb69eb32\nremote: error: See https://gh.io/lfs for more information.\nremote: error: File fashion-mnist_train.csv is 126.88 MB; this exceeds GitHub's file size limit of 100.00 MB\nremote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.\nTo https://github.com/miruetoto/blog-test\n ! [remote rejected] main -&gt; main (pre-receive hook declined)\nerror: failed to push some refs to 'https://github.com/miruetoto/blog-test'\n- fashion-mnist_train.csv 를 삭제해도 안된다..\n@miruetoto ➜ /workspaces/blog-test (main) $ git add .\n@miruetoto ➜ /workspaces/blog-test (main) $ git commit -m \"fashion-mnist.csv 삭제\"\n[main f17cb1f] fashion-mnist.csv 삭제\n 1 file changed, 60001 deletions(-)\n delete mode 100644 fashion-mnist_train.csv\n@miruetoto ➜ /workspaces/blog-test (main) $ git push\nEnumerating objects: 15, done.\nCounting objects: 100% (15/15), done.\nDelta compression using up to 2 threads\nCompressing objects: 100% (10/10), done.\nWriting objects: 100% (12/12), 32.41 MiB | 2.33 MiB/s, done.\nTotal 12 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)\nremote: Resolving deltas: 100% (4/4), completed with 3 local objects.\nremote: error: Trace: a2a9e6b3dfd49b2aa8afeb13aae04ba1684311239c0abc06f49f4236f30f5a62\nremote: error: See https://gh.io/lfs for more information.\nremote: error: File fashion-mnist_train.csv is 126.88 MB; this exceeds GitHub's file size limit of 100.00 MB\nremote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.\nTo https://github.com/miruetoto/blog-test\n ! [remote rejected] main -&gt; main (pre-receive hook declined)\nerror: failed to push some refs to 'https://github.com/miruetoto/blog-test'"
+    "section": "20 100MB 충돌",
+    "text": "20 100MB 충돌\n- fashion-mnist.ipynb 에 아래의 코드를 작성\n---\ntitle: \"fashion-mnist\"\nauthor: \"장하니\"\ndate: \"01/02/2025\"\n---\nimport pandas as pd\n!wget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv\ndf = pd.read_csv(\"fashion-mnist_train.csv\")\nplt.imshow(df.iloc[1,1:].to_numpy().reshape(28,28),cmap=\"gray\")\n- upload – 아래의 메시지 확인\n@miruetoto ➜ /workspaces/blog-test (main) $ git push \nEnumerating objects: 13, done.\nCounting objects: 100% (13/13), done.\nDelta compression using up to 2 threads\nCompressing objects: 100% (8/8), done.\nWriting objects: 100% (10/10), 32.41 MiB | 2.45 MiB/s, done.\nTotal 10 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)\nremote: Resolving deltas: 100% (3/3), completed with 3 local objects.\nremote: error: Trace: 6994b81c2ea821341c951bbca38f8f734c40af004fbc73f4d154cd73eb69eb32\nremote: error: See https://gh.io/lfs for more information.\nremote: error: File fashion-mnist_train.csv is 126.88 MB; this exceeds GitHub's file size limit of 100.00 MB\nremote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.\nTo https://github.com/miruetoto/blog-test\n ! [remote rejected] main -&gt; main (pre-receive hook declined)\nerror: failed to push some refs to 'https://github.com/miruetoto/blog-test'\n- fashion-mnist_train.csv 를 삭제해도 안된다..\n@miruetoto ➜ /workspaces/blog-test (main) $ git add .\n@miruetoto ➜ /workspaces/blog-test (main) $ git commit -m \"fashion-mnist.csv 삭제\"\n[main f17cb1f] fashion-mnist.csv 삭제\n 1 file changed, 60001 deletions(-)\n delete mode 100644 fashion-mnist_train.csv\n@miruetoto ➜ /workspaces/blog-test (main) $ git push\nEnumerating objects: 15, done.\nCounting objects: 100% (15/15), done.\nDelta compression using up to 2 threads\nCompressing objects: 100% (10/10), done.\nWriting objects: 100% (12/12), 32.41 MiB | 2.33 MiB/s, done.\nTotal 12 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)\nremote: Resolving deltas: 100% (4/4), completed with 3 local objects.\nremote: error: Trace: a2a9e6b3dfd49b2aa8afeb13aae04ba1684311239c0abc06f49f4236f30f5a62\nremote: error: See https://gh.io/lfs for more information.\nremote: error: File fashion-mnist_train.csv is 126.88 MB; this exceeds GitHub's file size limit of 100.00 MB\nremote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.\nTo https://github.com/miruetoto/blog-test\n ! [remote rejected] main -&gt; main (pre-receive hook declined)\nerror: failed to push some refs to 'https://github.com/miruetoto/blog-test'"
   },
   {
     "objectID": "posts/day5.html#해결-삭제clone",
     "href": "posts/day5.html#해결-삭제clone",
     "title": "Day5: html – template",
-    "section": "22 해결 – 삭제/clone",
-    "text": "22 해결 – 삭제/clone"
+    "section": "21 해결 – 삭제/clone",
+    "text": "21 해결 – 삭제/clone"
   },
   {
     "objectID": "posts/day5.html#template",
     "href": "posts/day5.html#template",
     "title": "Day5: html – template",
-    "section": "23 template",
-    "text": "23 template\n\n\n\ntype\nrepo\nwebsite\n\n\n\n\n블로그\nhttps://github.com/guebin/DSTBX2025\nhttps://guebin.github.io/DSTBX2025/\n\n\n슬라이드\nhttps://github.com/guebin/qslides-template\nhttps://guebin.github.io/qslides-template\n\n\n대시보드\nhttps://github.com/guebin/qdash-template\nhttps://guebin.github.io/qdash-template/\n\n\n대시보드\nhttps://github.com/guebin/DV2023-DASH\nhttps://guebin.github.io/DV2023-DASH"
+    "section": "22 template",
+    "text": "22 template\n\n\n\ntype\nrepo\nwebsite\n\n\n\n\n블로그\nhttps://github.com/guebin/DSTBX2025\nhttps://guebin.github.io/DSTBX2025/\n\n\n슬라이드\nhttps://github.com/guebin/qslides-template\nhttps://guebin.github.io/qslides-template\n\n\n대시보드\nhttps://github.com/guebin/qdash-template\nhttps://guebin.github.io/qdash-template/\n\n\n대시보드\nhttps://github.com/guebin/DV2023-DASH\nhttps://guebin.github.io/DV2023-DASH\n\n\n–\n–\n–\n\n\n대시보드\n??\nhttps://ivelasq.github.io/mortgage-dashboard/\n\n\n강의노트\n??\nhttps://sta210-s22.github.io/website/\n\n\n책\nhttps://github.com/hadley/r4ds\nhttps://r4ds.hadley.nz/\n\n\n\n\n?? 를 찾아내세요\n\n- 여기에 가면 많아요\n\nhttps://quarto.org/docs/gallery/"
   },
   {
     "objectID": "users.html",
