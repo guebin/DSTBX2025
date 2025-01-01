@@ -20,4 +20,5 @@ format:
     css: styles.css
     toc: true
     toc-location: right
-    toc-depth: 2
+    highlight-style: github
+    toc-depth: 2  
