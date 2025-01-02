@@ -739,14 +739,14 @@
     "href": "posts/day5.html",
     "title": "Day5: html – template",
     "section": "",
-    "text": "- 일반적으로 html은 “볼 수 있다”\n- 강의노트를 저장하는 방법?\n\nhttps://guebin.github.io/DL2024/posts/01wk-1.html 저장해보기\n\n- 네이버저장해보기\n\nhttps://www.naver.com/ 저장해보기\n거의 하드에 네이버가 깔린 느낌임.\n저장된 html은 인터넷이 없어도 open 가능.\n\n- html는 pdf와 같이 읽을 수 있는 문서의 형태임\n\n웹에서 보이는것은 보통 html 형식으로 재 저장할 수 있음.\n\n- pdf와의 차이점? HTML은 다른문서와의 연결성을 더 강조한다.\n\nHTML의 HT는 HyperText 를 의미함.\n하이퍼텍스트란 문서 내에서 다른 문서로의 링크를 포함한 텍스트를 의미함."
+    "text": "강의영상 요청하기\n\nhttps://drive.google.com/drive/folders/1dAC8P0yNIzH7NbXKFU2HvFHdZUmn1CPV?usp=sharing"
   },
   {
     "objectID": "posts/day5.html#html",
     "href": "posts/day5.html#html",
     "title": "Day5: html – template",
-    "section": "",
-    "text": "- 일반적으로 html은 “볼 수 있다”\n- 강의노트를 저장하는 방법?\n\nhttps://guebin.github.io/DL2024/posts/01wk-1.html 저장해보기\n\n- 네이버저장해보기\n\nhttps://www.naver.com/ 저장해보기\n거의 하드에 네이버가 깔린 느낌임.\n저장된 html은 인터넷이 없어도 open 가능.\n\n- html는 pdf와 같이 읽을 수 있는 문서의 형태임\n\n웹에서 보이는것은 보통 html 형식으로 재 저장할 수 있음.\n\n- pdf와의 차이점? HTML은 다른문서와의 연결성을 더 강조한다.\n\nHTML의 HT는 HyperText 를 의미함.\n하이퍼텍스트란 문서 내에서 다른 문서로의 링크를 포함한 텍스트를 의미함."
+    "section": "1 *.html",
+    "text": "1 *.html\n- 일반적으로 html은 “볼 수 있다”\n- 강의노트를 저장하는 방법?\n\nhttps://guebin.github.io/DL2024/posts/01wk-1.html 저장해보기\n\n- 네이버저장해보기\n\nhttps://www.naver.com/ 저장해보기\n거의 하드에 네이버가 깔린 느낌임.\n저장된 html은 인터넷이 없어도 open 가능.\n\n- html는 pdf와 같이 읽을 수 있는 문서의 형태임\n\n웹에서 보이는것은 보통 html 형식으로 재 저장할 수 있음.\n\n- pdf와의 차이점? HTML은 다른문서와의 연결성을 더 강조한다.\n\nHTML의 HT는 HyperText 를 의미함.\n하이퍼텍스트란 문서 내에서 다른 문서로의 링크를 포함한 텍스트를 의미함."
   },
   {
     "objectID": "posts/day5.html#홈페이지-통째로-html화",
@@ -893,7 +893,7 @@
     "href": "posts/day5.html#template",
     "title": "Day5: html – template",
     "section": "22 template",
-    "text": "22 template\n\n\n\ntype\nrepo\nwebsite\n\n\n\n\n블로그\nhttps://github.com/guebin/DSTBX2025\nhttps://guebin.github.io/DSTBX2025/\n\n\n슬라이드\nhttps://github.com/guebin/qslides-template\nhttps://guebin.github.io/qslides-template\n\n\n대시보드\nhttps://github.com/guebin/qdash-template\nhttps://guebin.github.io/qdash-template/\n\n\n대시보드\nhttps://github.com/guebin/DV2023-DASH\nhttps://guebin.github.io/DV2023-DASH\n\n\n–\n–\n–\n\n\n대시보드\n??\nhttps://ivelasq.github.io/mortgage-dashboard/\n\n\n강의노트\n??\nhttps://sta210-s22.github.io/website/\n\n\n책\nhttps://github.com/hadley/r4ds\nhttps://r4ds.hadley.nz/\n\n\n\n\n?? 를 찾아내세요\n\n- 여기에 가면 많아요\n\nhttps://quarto.org/docs/gallery/"
+    "text": "22 template\n\n\n\ntype\nrepo\nwebsite\n\n\n\n\n블로그\nhttps://github.com/guebin/DSTBX2025\nhttps://guebin.github.io/DSTBX2025/\n\n\n슬라이드\nhttps://github.com/guebin/qslides-template\nhttps://guebin.github.io/qslides-template\n\n\n대시보드\nhttps://github.com/guebin/DV2023-DASH\nhttps://guebin.github.io/DV2023-DASH\n\n\n–\n–\n–\n\n\n대시보드\n??\nhttps://ivelasq.github.io/mortgage-dashboard/\n\n\n강의노트\n??\nhttps://sta210-s22.github.io/website/\n\n\n책\nhttps://github.com/hadley/r4ds\nhttps://r4ds.hadley.nz/\n\n\n\n\n?? 를 찾아내세요\n\n- 여기에 가면 많아요\n\nhttps://quarto.org/docs/gallery/"
   },
   {
     "objectID": "users.html",
