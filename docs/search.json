@@ -7,6 +7,363 @@
     "text": "수업계획\n\n12월26일(화) – 10:00~16:30 day1 수업\n12월27일(수) – 10:00~16:30 day2 수업\n12월30일(목) – 10:00~16:30 day3 수업\n12월31일(금) – 10:00~16:30 day4 수업 + Q&A\n1월2일(월) – 10:00~16:30 day5 수업\n\n고생하셨습니다~\n숨겨진 페이지는 보안관계상 삭제하겠습니다.\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\nJan 2, 2025\n\n\nDay5: html – template\n\n\n최규빈 \n\n\n\n\nDec 30, 2024\n\n\nDay3-4: vscode 설치 – 리소스관리\n\n\n최규빈 \n\n\n\n\nDec 27, 2024\n\n\nDay2: 파이썬 버전확인하기 - jupyterlab-desktop\n\n\n최규빈 \n\n\n\n\nDec 26, 2024\n\n\nDay1: 터미널의 이해 - 학과서버셋팅\n\n\n최규빈 \n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "posts/day5.html",
+    "href": "posts/day5.html",
+    "title": "Day5: html – template",
+    "section": "",
+    "text": "강의영상 요청하기\n\nhttps://drive.google.com/drive/folders/1dAC8P0yNIzH7NbXKFU2HvFHdZUmn1CPV?usp=sharing"
+  },
+  {
+    "objectID": "posts/day5.html#html",
+    "href": "posts/day5.html#html",
+    "title": "Day5: html – template",
+    "section": "1 *.html",
+    "text": "1 *.html\n- 일반적으로 html은 “볼 수 있다”\n- 강의노트를 저장하는 방법?\n\nhttps://guebin.github.io/DL2024/posts/01wk-1.html 저장해보기\n\n- 네이버저장해보기\n\nhttps://www.naver.com/ 저장해보기\n거의 하드에 네이버가 깔린 느낌임.\n저장된 html은 인터넷이 없어도 open 가능.\n\n- html는 pdf와 같이 읽을 수 있는 문서의 형태임\n\n웹에서 보이는것은 보통 html 형식으로 재 저장할 수 있음.\n\n- pdf와의 차이점? HTML은 다른문서와의 연결성을 더 강조한다.\n\nHTML의 HT는 HyperText 를 의미함.\n하이퍼텍스트란 문서 내에서 다른 문서로의 링크를 포함한 텍스트를 의미함."
+  },
+  {
+    "objectID": "posts/day5.html#홈페이지-통째로-html화",
+    "href": "posts/day5.html#홈페이지-통째로-html화",
+    "title": "Day5: html – template",
+    "section": "2 홈페이지 통째로 html화",
+    "text": "2 홈페이지 통째로 html화\n- MP2024 를 다운로드해보자.\n\nhttps://github.com/guebin/MP2024 접속\nZIP으로 다운로드\n\n- docs 폴더를 제외하고 모두 삭제\n- docs 폴더를 탐색하기\n- 수정해보기: 퀴즈1의 점수는 학점에 포함하지 않습니다 \\(\\to\\) 퀴즈111의 점수는 학점에 포함하지 않습니다.\n- 코드(?)형태의 text를 예쁘게 보여주는 변환기 역할을 브라우저 (크롬, 사파리,…) 가 담당한다."
+  },
+  {
+    "objectID": "posts/day5.html#개념-블로그-생성",
+    "href": "posts/day5.html#개념-블로그-생성",
+    "title": "Day5: html – template",
+    "section": "3 개념: 블로그 생성",
+    "text": "3 개념: 블로그 생성\n- 블로그의 생성은 아래의 3가지 요소가 결합되어야 한다.\n\n컨텐츠 생성\n컨텐츠를 html화 (=컨텐츠를 보기좋게 만들어주고 link를 정의)\n2의 결과가 local 이 아니라 remote 에 존재해야 함.\n\n- 이게 가능하면 사용자가 인터넷이 켜진상태에서 블로그를 보는 행위는 아래의 과정으로 이해할 수 있다.\n\n특정주소에 접속한다.\n그 주소에 대응하는 ?.html파일이 remote의 하드에 존재할텐데 그것의 download를 요청한다.\n다운로드한다.\n내 컴퓨터 (local)의 어딘가에 존재하는 임시폴더에 ?.html이 있을텐데 그것을 크롬으로 연다.\n\n\n브라우징이 빠를려면 (1) remote의 처리속도 (2) remote의 인터넷속도 (3) local의 인터넷속도 (4) local의 렌더링속도 등이 모두 좋아야함. // 의외로 (4)는 local의 복합적인 능력을 요구한다. (4)의 과정이 원활하게 되려면 local의 cpu, gpu의 처리속도가 빨라야하며 local의 메모리도 충분해야한다."
+  },
+  {
+    "objectID": "posts/day5.html#학과서버에서-docs-보기",
+    "href": "posts/day5.html#학과서버에서-docs-보기",
+    "title": "Day5: html – template",
+    "section": "4 학과서버에서 docs 보기",
+    "text": "4 학과서버에서 docs 보기\n- docs 폴더를 remote에 upload\n- Live Preview 확장프로그램 설치\n- 탐색\n- docs 삭제"
+  },
+  {
+    "objectID": "posts/day5.html#quarto-의-설치",
+    "href": "posts/day5.html#quarto-의-설치",
+    "title": "Day5: html – template",
+    "section": "5 quarto 의 설치",
+    "text": "5 quarto 의 설치\n- quarto 를 설치\n\nhttps://quarto.org/docs/download/"
+  },
+  {
+    "objectID": "posts/day5.html#quarto-create",
+    "href": "posts/day5.html#quarto-create",
+    "title": "Day5: html – template",
+    "section": "6 quarto – create",
+    "text": "6 quarto – create\n- terminal에서 아래를 입력\nquarto create\n- project 선택\n@miruetoto ➜ /workspaces/blog-test (main) $ quarto create \n? Create\n❯ project\n  extension\n- blog 선택\n@miruetoto ➜ /workspaces/blog-test (main) $ quarto create \n? Create › project\n? Type\n  default\n  website\n❯ blog\n  manuscript\n  book\n  confluence\n- directory 선택 – 현재디렉토리 선택\n@miruetoto ➜ /workspaces/blog-test (main) $ quarto create \n? Create › project\n? Type › blog\n? Directory › .\n- Blog title 설정 – tttt 로 설정\n@miruetoto ➜ /workspaces/blog-test (main) $ quarto create \n? Create › project\n? Type › blog\n? Directory › .\n? Title (blog) › tttt"
+  },
+  {
+    "objectID": "posts/day5.html#quarto.yml-수정",
+    "href": "posts/day5.html#quarto.yml-수정",
+    "title": "Day5: html – template",
+    "section": "7 _quarto.yml 수정",
+    "text": "7 _quarto.yml 수정\n- _quarto.yml 열기 – 메모장\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"tttt\"\n  navbar:\n    right:\n      - about.qmd\n      - icon: github\n        href: https://github.com/\n      - icon: twitter\n        href: https://twitter.com\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n\n- _quarto.yml – 수정하기 // output-dir: docs를 추가하기\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs\n\nwebsite:\n  title: \"tttt\"\n  navbar:\n    right:\n      - about.qmd\n      - icon: github\n        href: https://github.com/\n      - icon: twitter\n        href: https://twitter.com\nformat:\n  html:\n    theme: cosmo\n    css: styles.css"
+  },
+  {
+    "objectID": "posts/day5.html#quarto-render",
+    "href": "posts/day5.html#quarto-render",
+    "title": "Day5: html – template",
+    "section": "8 quarto render",
+    "text": "8 quarto render\n- 아래를 실행\nquarto render \n\n실행하면 docs 폴더가 생성됨!"
+  },
+  {
+    "objectID": "posts/day5.html#posts-비우기",
+    "href": "posts/day5.html#posts-비우기",
+    "title": "Day5: html – template",
+    "section": "9 posts 비우기",
+    "text": "9 posts 비우기\n- 아래의 폴더를 삭제\n\npost-with-code\nwelcome\n\n- 아래를 실행후 결과 관찰\nquarto render"
+  },
+  {
+    "objectID": "posts/day5.html#test.qmd-생성",
+    "href": "posts/day5.html#test.qmd-생성",
+    "title": "Day5: html – template",
+    "section": "10 test.qmd 생성",
+    "text": "10 test.qmd 생성\n- posts에 test.qmd 생성하고 아래를 만든다.\n---\ntitle: \"test\"\nauthor: \"최규빈\"\ndate: \"01/02/2025\"\n---\n\n첫 포스트!\n- 아래를 실행후 결과 관찰\nquarto render"
+  },
+  {
+    "objectID": "posts/day5.html#preview",
+    "href": "posts/day5.html#preview",
+    "title": "Day5: html – template",
+    "section": "11 preview",
+    "text": "11 preview\n- 아래를 실행후 결과 관찰\nquarto preview \n- test.qmd 수정해보기~"
+  },
+  {
+    "objectID": "posts/day5.html#index.qmd-수정",
+    "href": "posts/day5.html#index.qmd-수정",
+    "title": "Day5: html – template",
+    "section": "12 index.qmd 수정",
+    "text": "12 index.qmd 수정\n- 홈페이지 접속시 보이는 화면\n- 인사해보기"
+  },
+  {
+    "objectID": "posts/day5.html#quarto.yml-수정2",
+    "href": "posts/day5.html#quarto.yml-수정2",
+    "title": "Day5: html – template",
+    "section": "13 _quarto.yml 수정2",
+    "text": "13 _quarto.yml 수정2\n- 타이틀 수정하기\n- 테마를 minty로 수정"
+  },
+  {
+    "objectID": "posts/day5.html#github으로-push",
+    "href": "posts/day5.html#github으로-push",
+    "title": "Day5: html – template",
+    "section": "14 github으로 push",
+    "text": "14 github으로 push\n- preview 중단\n- github에서 비밀번호 얻어야함\n\nhttps://github.com/settings/tokens\n\n- 아래를 실행\nquarto render \ngit add .\ngit commit -m test.qmd\ngit push \n- 이후의 작업을 편하게 하기 위해서..\ngit config credential.helper store\ngit add .\ngit commit -m .\ngit push"
+  },
+  {
+    "objectID": "posts/day5.html#github-에서-설정",
+    "href": "posts/day5.html#github-에서-설정",
+    "title": "Day5: html – template",
+    "section": "15 github 에서 설정",
+    "text": "15 github 에서 설정\n- github 에 로그인하여 setting \\(\\to\\) pages 에 이동, 그리고 Build and deployment 에서 /docs를 설정!"
+  },
+  {
+    "objectID": "posts/day5.html#pororo.qmd",
+    "href": "posts/day5.html#pororo.qmd",
+    "title": "Day5: html – template",
+    "section": "16 pororo.qmd",
+    "text": "16 pororo.qmd\n- pororo.qmd 를 만들고 두번째 포스트를 만들자.\n\n\npororo.qmd\n\n---\ntitle: \"뽀롱뽀롱\"\nauthor: \"최다호\"\ndate: \"01/02/2025\"\n---\n\nref: &lt;https://home.ebs.co.kr/pororo/etc/1/cast&gt;\n\n## 뽀로로사진\n\n![](https://static.ebs.co.kr/images/public/lectures/2014/06/19/10/bhpImg/44deb98d-1c50-4073-9bd7-2c2c28d65f9e.jpg)\n\n## 패티사진\n\n![](https://static.ebs.co.kr/images/ebs/WAS-HOME/portal/upload/img/programinfo/person/per/1242723588618_dphGgSgOAp.jpg)\n\n## 표만들기\n\n| 캐릭터 | 설명 |\n|-------|------|\n| **PORORO (뽀로로)** | 호기심이 많은 꼬마 펭귄. 신기한 물건을 발견하면 왕성한 호기심이 발동하고, 하고 싶은 것은 꼭 하고야 만다. 하늘을 날 수 있을 거라는 의지를 실천에 옮기려는 좌충우돌형에 장난기가 넘치는 사고뭉칠 꼬마이지만 숲속 마을에는 없어선 안되는 분위기 메이커입니다. |\n| **PETTY (패티)** | 뽀롱뽀롱 숲 속 마을에 새로 이사 온 활달하고 사고성이 좋은 소녀 펭귄. 예쁘고 깜찍한 성격으로 친구들의 관심을 받는 새로운 친구로 등장합니다. 귀엽고 예쁜 외모와는 달리 털털한 성격에, 축구, 달리기, 수영, 무술 운동에도 뛰어나 친구들의 부러움을 사지만 요리만은 서툽니다. |\n\n## 준비됐나요?\n\n:::{.callout-important}\n\n### 옜날\n준비됐나요? -&gt; 준비됐어요~\n:::\n\n:::{.callout-important}\n\n### 요즘\n준비됐나요? -&gt; 네네, 선생님!\n:::\n\n- upload"
+  },
+  {
+    "objectID": "posts/day5.html#code.ipynb",
+    "href": "posts/day5.html#code.ipynb",
+    "title": "Day5: html – template",
+    "section": "17 code.ipynb",
+    "text": "17 code.ipynb\n- code.ipynb를 만들고 아래를 해보자.\n---\ntitle: \"code\"\nauthor: \"장하니\"\ndate: \"01/02/2025\"\n---\nimport numpy as np\nimport matplotlib.pyplot as plt \nx = np.random.randn(100)\nplt.plot(x)\n- upload"
+  },
+  {
+    "objectID": "posts/day5.html#france.ipynb",
+    "href": "posts/day5.html#france.ipynb",
+    "title": "Day5: html – template",
+    "section": "18 france.ipynb",
+    "text": "18 france.ipynb\n- france.ipynb 파일을 만들자.\n---\ntitle: \"프랑스혁명\"\nauthor: \"최규빈\"\ndate: \"01/02/2025\"\n---\n- 아래의 내용을 공부하자.\n\nhttps://ko.wikipedia.org/wiki/프랑스_혁명"
+  },
+  {
+    "objectID": "posts/day5.html#quarto-github-의-역할",
+    "href": "posts/day5.html#quarto-github-의-역할",
+    "title": "Day5: html – template",
+    "section": "19 quarto, github 의 역할",
+    "text": "19 quarto, github 의 역할\n- 실질적으로 우리가 quarto + github 을 이용하여 publish 하는 과정은 아래와 같다.\n\nlocal에서 .qmd, .ipynb 파일들을 생성하여 작업한다.\nquarto render를 입력하여 .ipynb 파일들을 .html 파일로 바꾸고 “연결성”을 정의한다. 이러한 연결성은 local에서 완벽하게 동작한다.\n연결성+link가 종합적으로 저장된 폴더 (우리의 경우는 docs) 를 github 에 업로드한다.\ngithub은 docs폴더를 바탕으로 웹사이트를 구축한다.\n\n- 블로그의 생성은 아래의 3가지 요소가 결합되어야 한다고 했었다.\n\n컨텐츠 생성\n컨텐츠를 html화 (=컨텐츠를 보기좋게 만들어주고 link를 정의)\n2의 결과가 local 이 아니라 remote 에 존재해야 함.\n\n이중에서 1은 사용자가 하고, 2는 quarto가 하고, 3은 github이 한다."
+  },
+  {
+    "objectID": "posts/day5.html#mb-충돌",
+    "href": "posts/day5.html#mb-충돌",
+    "title": "Day5: html – template",
+    "section": "20 100MB 충돌",
+    "text": "20 100MB 충돌\n- fashion-mnist.ipynb 에 아래의 코드를 작성\n---\ntitle: \"fashion-mnist\"\nauthor: \"장하니\"\ndate: \"01/02/2025\"\n---\nimport pandas as pd\n!wget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv\ndf = pd.read_csv(\"fashion-mnist_train.csv\")\nplt.imshow(df.iloc[1,1:].to_numpy().reshape(28,28),cmap=\"gray\")\n- upload – 아래의 메시지 확인\n@miruetoto ➜ /workspaces/blog-test (main) $ git push \nEnumerating objects: 13, done.\nCounting objects: 100% (13/13), done.\nDelta compression using up to 2 threads\nCompressing objects: 100% (8/8), done.\nWriting objects: 100% (10/10), 32.41 MiB | 2.45 MiB/s, done.\nTotal 10 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)\nremote: Resolving deltas: 100% (3/3), completed with 3 local objects.\nremote: error: Trace: 6994b81c2ea821341c951bbca38f8f734c40af004fbc73f4d154cd73eb69eb32\nremote: error: See https://gh.io/lfs for more information.\nremote: error: File fashion-mnist_train.csv is 126.88 MB; this exceeds GitHub's file size limit of 100.00 MB\nremote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.\nTo https://github.com/miruetoto/blog-test\n ! [remote rejected] main -&gt; main (pre-receive hook declined)\nerror: failed to push some refs to 'https://github.com/miruetoto/blog-test'\n- fashion-mnist_train.csv 를 삭제해도 안된다..\n@miruetoto ➜ /workspaces/blog-test (main) $ git add .\n@miruetoto ➜ /workspaces/blog-test (main) $ git commit -m \"fashion-mnist.csv 삭제\"\n[main f17cb1f] fashion-mnist.csv 삭제\n 1 file changed, 60001 deletions(-)\n delete mode 100644 fashion-mnist_train.csv\n@miruetoto ➜ /workspaces/blog-test (main) $ git push\nEnumerating objects: 15, done.\nCounting objects: 100% (15/15), done.\nDelta compression using up to 2 threads\nCompressing objects: 100% (10/10), done.\nWriting objects: 100% (12/12), 32.41 MiB | 2.33 MiB/s, done.\nTotal 12 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)\nremote: Resolving deltas: 100% (4/4), completed with 3 local objects.\nremote: error: Trace: a2a9e6b3dfd49b2aa8afeb13aae04ba1684311239c0abc06f49f4236f30f5a62\nremote: error: See https://gh.io/lfs for more information.\nremote: error: File fashion-mnist_train.csv is 126.88 MB; this exceeds GitHub's file size limit of 100.00 MB\nremote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.\nTo https://github.com/miruetoto/blog-test\n ! [remote rejected] main -&gt; main (pre-receive hook declined)\nerror: failed to push some refs to 'https://github.com/miruetoto/blog-test'"
+  },
+  {
+    "objectID": "posts/day5.html#해결-삭제clone",
+    "href": "posts/day5.html#해결-삭제clone",
+    "title": "Day5: html – template",
+    "section": "21 해결 – 삭제/clone",
+    "text": "21 해결 – 삭제/clone"
+  },
+  {
+    "objectID": "posts/day5.html#template",
+    "href": "posts/day5.html#template",
+    "title": "Day5: html – template",
+    "section": "22 template",
+    "text": "22 template\n\n\n\ntype\nrepo\nwebsite\n\n\n\n\n블로그\nhttps://github.com/guebin/DSTBX2025\nhttps://guebin.github.io/DSTBX2025/\n\n\n슬라이드\nhttps://github.com/guebin/qslides-template\nhttps://guebin.github.io/qslides-template\n\n\n대시보드\nhttps://github.com/guebin/DV2023-DASH\nhttps://guebin.github.io/DV2023-DASH\n\n\n–\n–\n–\n\n\n대시보드\n??\nhttps://ivelasq.github.io/mortgage-dashboard/\n\n\n강의노트\n??\nhttps://sta210-s22.github.io/website/\n\n\n책\nhttps://github.com/hadley/r4ds\nhttps://r4ds.hadley.nz/\n\n\n\n\n?? 를 찾아내세요\n\n- 여기에 가면 많아요\n\nhttps://quarto.org/docs/gallery/"
+  },
+  {
+    "objectID": "posts/day1.html",
+    "href": "posts/day1.html",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "",
+    "text": "강의영상 요청하기\n\nhttps://drive.google.com/drive/folders/1Nde8iX3TEEKb1RxlULlTWuwhRYUlDKnK?usp=sharing"
+  },
+  {
+    "objectID": "posts/day1.html#터미널의-이해",
+    "href": "posts/day1.html#터미널의-이해",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "1 터미널의 이해",
+    "text": "1 터미널의 이해\n- 윈도우 컴퓨터에서 아래의 명령어가 뭘 의미하는지 살펴보자.\nls\nmkdir asdf\ncd asdf \ncd.. \nrmdir asdf\n\n외우세요: 터미널을 열어준다 = 컴퓨터에 대한 제어권을 준다\n\n\n\n\n\n\n\nImportant\n\n\n\n터미널명령어 숙지의 중요성을 이해했으면 해서 만들었어요.."
+  },
+  {
+    "objectID": "posts/day1.html#터미널에서-조작하기",
+    "href": "posts/day1.html#터미널에서-조작하기",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "2 터미널에서 조작하기",
+    "text": "2 터미널에서 조작하기\n- 복사하기 & 붙여넣기\n\n복사하기: 드래그 + 우클릭\n붙여넣기: 우클릭\n\n- 자동완성: 탭!!\n\n\n\n\n\n\nImportant\n\n\n\n복붙하기 이거 작년에 많이 헤메시더라고요?? 익숙해져야합니당"
+  },
+  {
+    "objectID": "posts/day1.html#파이썬-설치방법-조사",
+    "href": "posts/day1.html#파이썬-설치방법-조사",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "3 파이썬 설치방법 조사",
+    "text": "3 파이썬 설치방법 조사\n- 파이썬 배우는 초보자에게 가장 어려운것!\n\n선생님마다 설치하는 방법이 모두 다름\n\n- 왜 저렇게 설치방법이 다른가? 왜 다른 방법으로 각각 파이썬을 실행하는가? 이런것이 너무 어려움\n\n방법1: 파이썬프로그램 다운로드 -&gt; 시작버튼 눌러서 설치\n방법2: 아나콘다 설치 (그럼 자동으로 파이썬이 설치됨)\n방법3: 아나콘다 설치 + 가상환경\n…\n\n- 심지어 실행하는것도 다름\n\n방법1: 파이썬 프롬프트\n방법2: .py를 이용하여 실행?\n방법3: IDLE\n방법4: 파이참\n방법5: 스파이더\n방법6: Visual Studio Code\n방법7: 주피터노트북, 주피터랩\n\n가상환경을 만들어서 해라..\n아나콘다 네비게이터에 주피터가 있다..\n\n…\n\n- 머리아프니까 colab을 쓰라는 사람도 있음. 아니면 도커이미지를 줄테니까 그걸 쓰라는 사람도 있음. AWS를 쓰라는 사람도 있음..\n- 핵심: 그냥 (1) 컴퓨터에 (2) 파이썬을 깔아서 (3) 실행하는 것임\n- 의문: 그런데 방법이 왜이렇게 많은가? 엑셀처럼 프로그램 설치하고 아이콘 더블클릭하면 끝나는 식으로 만들어야 하는것 아닌가?"
+  },
+  {
+    "objectID": "posts/day1.html#python-실행하고-살펴보기",
+    "href": "posts/day1.html#python-실행하고-살펴보기",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "4 python 실행하고 살펴보기",
+    "text": "4 python 실행하고 살펴보기\n- 윈도우에서 anaconda prompt 실행 -&gt; python\n(base) C:\\Users\\python&gt;python\nPython 3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n&gt;&gt;&gt; [1,2,3]+[4]\n[1, 2, 3, 4]\n&gt;&gt;&gt; a=[1,2,3]+[4]\n&gt;&gt;&gt; a\n[1, 2, 3, 4]\n- 2개를 실행할 수도 있음. (두 환경은 각각 서로 독립적인 파이썬, 변수가 공유되지 않음) \\(\\star\\)\n- 아쉬운점: `?list’와 같이 도움말 기능이 동작하지 않음\n&gt;&gt;&gt; ?list\n  File \"&lt;stdin&gt;\", line 1\n    ?list\n    ^\nSyntaxError: invalid syntax\n&gt;&gt;&gt;"
+  },
+  {
+    "objectID": "posts/day1.html#python-으로-코딩하기-최악",
+    "href": "posts/day1.html#python-으로-코딩하기-최악",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "5 python 으로 코딩하기 (최악)",
+    "text": "5 python 으로 코딩하기 (최악)\n- 1부터 10까지 합을 구하는 프로그램을 만들고 싶음\n- 시도1: python을 키고 아래와 같이 실행\n(base) C:\\Users\\python&gt;python\nPython 3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n&gt;&gt;&gt; total = 0\n&gt;&gt;&gt; for i in range(10):\n...     total=total+i\n...\n&gt;&gt;&gt; total\n45\n&gt;&gt;&gt;\n- 반성: 정답은 55인데 45가 출력되었다! \\(\\to\\) range(10)을 range(1,11)으로 바꿔야겠다!\n- 시도2: range(1,11)을 바꿔야겠다고 생각하고 다시 입력하다가 오타가 발생\n&gt;&gt;&gt; total =0\n&gt;&gt;&gt; for i in range(1,11):\n...     total = totla +i\n...\n\n앗 totla이라고 잘못쳤다.\n\n- 반성: 다음에는 정신을 똑바로 차려야겠다."
+  },
+  {
+    "objectID": "posts/day1.html#ipython-실행하고-살펴보기",
+    "href": "posts/day1.html#ipython-실행하고-살펴보기",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "6 ipython 실행하고 살펴보기",
+    "text": "6 ipython 실행하고 살펴보기\n- 윈도우에서 anaconda prompt 실행 -&gt; ipython\n(base) C:\\Users\\python&gt;ipython\nPython 3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]\nType 'copyright', 'credits' or 'license' for more information\nIPython 7.29.0 -- An enhanced Interactive Python. Type '?' for help.\n\nIn [1]: a=[1,2,3]\n\nIn [2]: a\nOut[2]: [1, 2, 3]\n\nIn [3]: a+[4]\nOut[3]: [1, 2, 3, 4]\n- list?가 가능\nIn [4]: list?\nInit signature: list(iterable=(), /)\nDocstring:\nBuilt-in mutable sequence.\n\nIf no argument is given, the constructor creates a new empty list.\nThe argument must be an iterable if specified.\nType:           type\nSubclasses:     _HashedSeq, StackSummary, DeferredConfigList, SList, _ImmutableLineList, FormattedText, NodeList, _ExplodedList, Stack, _Accumulator, ...\n- 색깔이 알록달록해서 문법을 보기 편하다. (구문강조)"
+  },
+  {
+    "objectID": "posts/day1.html#ipython-으로-코딩하기",
+    "href": "posts/day1.html#ipython-으로-코딩하기",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "7 ipython 으로 코딩하기",
+    "text": "7 ipython 으로 코딩하기\n- ipython을 사용한 프로그래머는 좀더 상황이 낫다\n(base) C:\\Users\\python&gt;ipython\nPython 3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]\nType 'copyright', 'credits' or 'license' for more information\nIPython 7.29.0 -- An enhanced Interactive Python. Type '?' for help.\n\nIn [1]: total = 0\n\nIn [2]: for i in range(1,11):\n   ...:     total = total + i\n   ...:\n\nIn [3]: total\nOut[3]: 55"
+  },
+  {
+    "objectID": "posts/day1.html#메모장-python",
+    "href": "posts/day1.html#메모장-python",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "8 메모장 + python",
+    "text": "8 메모장 + python\n- 메모장을 키고 아래의 내용을 적는다.\ntotal = 0 \nfor i in range(1,11): \n    total = total + i\nprint(total)\n- 파일이름을 mysum.py로 저장한다.\n- anaconda prompt에서 mysum.py파일이 저장된 폴더로 이동 -&gt; 실행\n(base) C:\\Users\\python&gt;cd Desktop\n\n(base) C:\\Users\\python\\Desktop&gt;dir\n C 드라이브의 볼륨에는 이름이 없습니다.\n 볼륨 일련 번호: 9AFD-A05F\n\n C:\\Users\\python\\Desktop 디렉터리\n\n2022-03-27  오전 11:32    &lt;DIR&gt;          .\n2022-03-27  오전 11:32    &lt;DIR&gt;          ..\n2022-03-27  오전 12:01             2,306 Chrome.lnk\n2022-03-26  오후 08:32             2,332 Microsoft Edge.lnk\n2022-03-27  오전 11:33                71 mysum.py\n               3개 파일               4,709 바이트\n               2개 디렉터리  743,643,467,776 바이트 남음\n\n(base) C:\\Users\\python\\Desktop&gt;python mysum.py\n55\n\n(base) C:\\Users\\python\\Desktop&gt;\n- 소감\n\n편한점1: 마우스를 이용하여 이동가능\n편한점2: 내가 작업한 내용은 바탕화면의 메모장에 저장이 되어있음\n아쉬운점: ipython의 장점은 활용못함 (구문강조, 도움말기능)"
+  },
+  {
+    "objectID": "posts/day1.html#메모장-ipython",
+    "href": "posts/day1.html#메모장-ipython",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "9 메모장 + ipython",
+    "text": "9 메모장 + ipython\n- 전체적인 개발방식\n\n메모장: 코드를 편집, 저장\nipython: anaconda prompt처럼 메모장의 코드를 실행하고 결과를 확인 + 구문강조, 도움말확인기능 등을 이용하여 짧은 코드를 빠르게 작성\n\n- 기능\n\nipython에서 !python mysum.py를 입력하면 anaconda prompt에서 python mysum.py를 입력한 것과 같은 효과\nipython에서 %run mysum을 입력하면 메모장에서 mysum.py에 입력된 내용을 복사해서 ipython에 붙여넣어 실행한것과 같은 효과\n\n\n! 는 터미널 명령을 훔쳐쓰는 기능. % 는 ipython 에서 제공하는 마법같은 기능. 이 두개를 잘 쓰면 ipynb에서 작업하기 매우 편리함."
+  },
+  {
+    "objectID": "posts/day1.html#jupyterlab",
+    "href": "posts/day1.html#jupyterlab",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "10 Jupyterlab",
+    "text": "10 Jupyterlab\n- 메모장과 ipython을 하나로 통합한 프로그램이 등장!\n\njupyter notebook, jupyter lab\nspyder\nidle\nVScode\n…\n\n- 주피터노트북, 혹은 주피터랩을 켜보자.\n(base) C:\\Users\\python&gt;jupyter lab \n\n셀에서 1+1 수행\n셀에서 !dir 등의 명령어 실행\n\n- 주피터의 트릭 (실제로 주피터는 ipython에 기생할 뿐 아무런 역할도 안해요)\n\n주피터를 실행\n새 노트북을 생성\n\n컴퓨터는 내부적으로 ipython을 실행하고 그 ipython이랑 여러분이 방금만든 그 노트북과 연결\n\n처음보이는 cell에 1+1을 입력 -&gt; 쉬프트엔터 -&gt; 결과2가 출력\n\n처음보이는 cell하나 = 자동으로 열린 하나의 메모장\ncell 1+1을 입력 = 메모장에 1+1을 적음\n쉬프트+엔터후 결과2를 출력 = cell의 내용을 복사 -&gt; ipython에 붙여넣음 -&gt; ipython 계산된 결과를 복사 -&gt; cell로 돌아와 붙여넣기\n\n새로운 cell을 추가하고 2+2을 입력 -&gt; 쉬프트엔터 -&gt; 결과4가 출력\n\n새로운 cell을 추가 = 새로운 메모장 추가\ncell 2+2을 입력 = 새로운 메모장에 2+2를 적음\n쉬프트+엔터후 결과4를 출력 = cell의 내용을 복사 -&gt; ipython에 붙여넣음 -&gt; ipython 계산된 결과를 복사 -&gt; cell로 돌아와 붙여넣기\n\n\n- 중요한 사실들\n\nIDE는 내부적으로 연산을 수행하는 능력이 없다. (생각해볼것: 왜 R을 꼭 설치하고 Rstudio를 설치해야 했을까?)\n주피터에서 커널을 재시작한다는 의미는 메모장이 열린채로 ipython을 껐다가 다시 실행한다는 의미\n주피터는 단순히 ’메모장의 내용을 복사하여 붙여넣는 기계’라고 볼 수 있다. 이렇게 생각하면 주피터는 꼭 ipython에 연결할 이유는 없다. 실제로 주피터에 R을 연결해서 쓸 수 있다. 즉 하나의 IDE가 여러개의 언어와 연결될 수 있다.\nJupyterlab이라는 프로그램은 크롬에 있는 내용과 ipython간의 통신을 제어하는 프로그램일 뿐이다.\n\n\n\n\n\n\n\nImportant\n\n\n\nLanguage, Kernel, IDE 의 차이점을 이해하는게 중요함"
+  },
+  {
+    "objectID": "posts/day1.html#원격클라우드-컴퓨터",
+    "href": "posts/day1.html#원격클라우드-컴퓨터",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "11 원격/클라우드 컴퓨터",
+    "text": "11 원격/클라우드 컴퓨터\n- 지금까지는 ipython이 실행되는 컴퓨터와 크롬이 실행되는 컴퓨터가 동일하다는 전제였음.\n- 생각해보니까 어차피 ipython이 실행된 컴퓨터에서 내가 크롬에 입력한 명령 “전달”되기만 하면 되므로 꼭 같은 컴퓨터일 필요는 없다.\n\n11.1 모델1 – 원격컴퓨터 (일대일)\n- 준비상태\n\n학과서버: ipython을 실행 + 이 컴퓨터는 인터넷 연결이 되어있어야함\n규빈노트북: 크롬실행 + 이 컴퓨터도 인터넷이 연결되어 있어야함\n\n- 명령입력\n\n규빈노트북의 크롬에서 1+1을 입력하고 쉬프트 엔터를 누름\n\n- 규빈노트북 -&gt; 학과서버\n\n규빈노트북의 내부의 어떤프로그램은 1+1이라는 명령을 복사하여 카카오톡으로 학과서버에 전달\n학과서버 내부의 어떤프로그램은 1+1이라는 명령을 카톡으로 받아서 그것을 ipython에게 전달\n\n- 학과서버 -&gt; 규빈노트북\n\n학과서버 내부의 ipython은 2라는 출력결과를 계산함\n학과서버 내부의 어떤프로그램은 계산결과를 카톡으로 규빈노트북에 알려줌\n규빈은 본인 노트북에서 편하게 계산결과를 받아볼 수 있다.\n\n\n\n11.2 모델2 – 원격컴퓨터 (일대다)\n- 개념: 2개 이상의 ipython 커널을 각각 다른 메모장에 연결가능.\n- 확장개념:\n\n2개 ipython 커널을 생성. 편의상 각각을 커널A,커널B라고 하자.\n커널A는 규빈노트북의 메모장에 커널B는 영미노트북의 메모장에 연결한다.\n영미와 규빈은 각각 독립적으로 작업가능\n\n- 의문?\n\n규빈은 python==3.10 을 쓰고 싶고 영미는 python==3.12 를 쓰고 싶다면??\n학과서버에 python==3.10 과 python==3.12 가 동시에 깔려야함.\n원래는 불가능하지만 “가상환경” 이라는 개념을 도입하면 가능하다. \\(\\to\\) 아나콘다의 등장\n\n\n\n11.3 모델3 – 클라우드 컴퓨터 (google colab)\n- 구글코랩\n\n구글에 여러가지 성능을 가진 컴퓨터가 \\(n\\)대 있음. 이 컴퓨터들을 연결하여 하나의 거대한 컴퓨터처럼 동작하게 만듦.\n이 컴퓨터는 학과서버처럼 동작함. 즉 여러명에게 컴퓨팅 자원을 분배함.\n\n- 구글코랩과 비슷한 방식으로 코드스페이스가 있음."
+  },
+  {
+    "objectID": "posts/day1.html#원격제어-맥북",
+    "href": "posts/day1.html#원격제어-맥북",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "12 원격제어 (맥북)",
+    "text": "12 원격제어 (맥북)\n- ssh를 이용한 접속\n- 질문: 여기서 파이썬을 키면? 어떤 컴퓨터 spec으로 계산될까?\n- 한계점: ssh는 동일네트워크내에서만 동작한다. (진짜?)"
+  },
+  {
+    "objectID": "posts/day1.html#local-remote",
+    "href": "posts/day1.html#local-remote",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "13 local / remote",
+    "text": "13 local / remote\n- local: 물리적으로 가까이 있음 + 네트워크 없이 접근\n\n강의실에 있는 윈도우 컴퓨터\n여러분이 가지고 있는 노트북\n\n- remote: 물리적으로 멀리 있음 + 네트워크를 통해 접근\n\n제서버1 (210.???.???.???)\n제서버2 (210.???.???.???)\n학과서버 (210.???.???.???)\n구글코랩\ncodespace\ngithub, google drive\n\n- 구분이 딱 떨어지는건 아님.. 그냥 아래의 정도로 이해하면 좋음\n\nlocal = 가까이\nremote = 멀리"
+  },
+  {
+    "objectID": "posts/day1.html#코드스페이스-켜보기",
+    "href": "posts/day1.html#코드스페이스-켜보기",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "14 코드스페이스 켜보기",
+    "text": "14 코드스페이스 켜보기\n\n우리의 두 번째 리눅스 서버 얻기 (첫 서버는 코랩아닐까요?)\n\n- 단계1: 실습실컴퓨터로 깃헙에 로그인\n\n깃헙이란? 그냥 구글드라이브 같이 파일을 저장하는 기능을 한다고 이해하자.. (틀린 설명입니다!)\n\n- 단계2: New repository 를 이용하여 새로운 저장소를 만들자. 저장소 이름은 아무거나..\n\n저장소란?? 말그대로 파일,폴더들을 저장할 수 있는 것\n쉽게 생각하면 그냥 “큰” 폴더임.\n윈도우로 치면 downloada, desktop, 이런폴더들..\n\n\n- 단계3: 만들어진 저장소를 기반으로 codespace 생성\n\nlocal = 실습실컴퓨터\nremote = codespace\n\n- 단계4: codespace에서 아래의 명렁어들을 순서대로 실행하고 무엇을 의미하는지 공부하자.\nls\nls -a \nls .\nls .. \nls sample\nmkdir asdf \nwget https://raw.githubusercontent.com/guebin/DV2023/main/posts/titanic.csv\ncp titanic.csv ./asdf \nls ./asdf \nrm titanic.csv \nrm -rf asdf \n명령어들을 linux_commands.txt에 저장하자.\n- 단계5: 개인노트북으로 깃헙로그인\n\nlocal = 개인노트북\nremote = codespace\n\n- 단계6: 다시 코드스페이스에 접근하여 study_list.ipynb 주피터노트북을 만들자. 리스트만드는 방법을 공부하자.\nlst = [1,2,3] \n- 단계7: study_dict.py파일을 만들자. dict만드는 방법을 공부하자.\n# 방법1\ndct1 = {'a':1, 'b':2, 'c':3}\n\n# 방법2\ndct2 = dict(a=1,b=2,c=3)\n# 퀴즈1: 다시 코드스페이스에 접근하여 test.ipynb 주피터노트북을 만들고 아래 경로에 존재하는 파일을 다운로드하라.\nhttps://raw.githubusercontent.com/guebin/DV2023/main/posts/titanic.csv\n현재폴더에서 asdf폴더를 만들고 다운로드한 파일을 asdf 폴더로 옮겨라.\n(풀이1)\n!wget ~ \n!mkdir ~\n!cp ~\n!rm ~\n(풀이2)\n!wget ~ \n!mkdir ~\n!mv ~\n(풀이3) – 사실 이거는 “asdf 폴더를 만들고 그안에 다운로드하는 방식”이라 문제에서 요구하는 동작이랑 좀 다르긴해요 (결과는 똑같지만)\n!mkdir ~\n!wget ~ \n#"
+  },
+  {
+    "objectID": "posts/day1.html#코드스페이스-rightarrow-깃헙-rightarrow-코랩",
+    "href": "posts/day1.html#코드스페이스-rightarrow-깃헙-rightarrow-코랩",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "15 코드스페이스 \\(\\rightarrow\\) 깃헙 \\(\\rightarrow\\) 코랩",
+    "text": "15 코드스페이스 \\(\\rightarrow\\) 깃헙 \\(\\rightarrow\\) 코랩\n- 코드스페이스에서 공부한 내용을 코랩에서 이어서 하고싶다.\n- 단계1: 코드스페이스에 접근\n\nlocal = 개인노트북\nremote = codespace\n\n- 단계2: 코드스페이스 \\(\\to\\) 깃헙 레포지토리\n\nlocal = codespace\nremote = github\n\n- 단계3: 코랩 \\(\\leftarrow\\) 깃헙 레포지토리\n\nlocal = colab\nremote = github\n\n!wget ~~~~~\n\n코랩에서 공부한 내용을 나중에 codespace에서 이어하려면 “코랩 \\(\\to\\) 깃헙” 의 과정이 가능해야함. 이건 다루지 않음.\n\n\n\n\n\n\n\nImportant\n\n\n\nlocal/remote 의 개념을 이해"
+  },
+  {
+    "objectID": "posts/day1.html#블로그카피-fork",
+    "href": "posts/day1.html#블로그카피-fork",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "16 블로그카피 (Fork)",
+    "text": "16 블로그카피 (Fork)\n- 깃헙과 구글드라이브의 첫번째 차이: 깃헙은 기본적으로 “공개” 되어 있음.\n- !!! 생각해보니까 이 강의노트도 깃헙으로 만들지 않았을까??\n\n강의노트의 내용들은 깃헙 (=공개된 구글드라이브) 어딘가에 저장되어있을거야\n그걸 찾아내면? 강의노트를 힘들게 따라칠 필요가 없었잖아?\n\n- 여기있어요: https://github.com/guebin/DSTBX2025\n\n이 저장소를 포크로 콕 찍어서 내 저장소로 가져올 수 있을까? (마치 좋아하는 음식을 가져오는 것처럼)"
+  },
+  {
+    "objectID": "posts/day1.html#코드스페이스에-quarto-설치",
+    "href": "posts/day1.html#코드스페이스에-quarto-설치",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "17 코드스페이스에 quarto 설치",
+    "text": "17 코드스페이스에 quarto 설치\n- 포크한 저장소를 기반으로 새로운 코드스페이스 생성\n- quarto 다운로드: https://quarto.org/docs/download/\n- 아래를 실행 (하면 안될걸?)\ndpkg -i quarto-1.6.39-linux-amd64.deb \n\n왜? https://imgs.xkcd.com/comics/sandwich.png\n\n- quarto-1.6.39-linux-amd64.deb 삭제"
+  },
+  {
+    "objectID": "posts/day1.html#깃헙추가기능1-블로그-업로드",
+    "href": "posts/day1.html#깃헙추가기능1-블로그-업로드",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "18 깃헙추가기능1: 블로그 업로드",
+    "text": "18 깃헙추가기능1: 블로그 업로드\n- 깃헙과 구글드라이브의 두번째 차이: 깃헙은 단순한 저장소를 넘어 추가기능이 있음. 구체적으로 GitHub 레포지토리는 블로그 게시물을 자동으로 발행(publish)할 수 있는 기능을 지원함.\n- 코드스페이스에 quarto 설치 에서 명령어 수정하고, 그림삽입하여 업로드하자.\nquarto render \ngit add .\ngit commit -m .\ngit push\n- 깃헙에서 아래를 설정 – /docs 옆에 Save를 눌러야함\n\n- 꾸미기: 아래를 수정하자..\n\n_quarto.yml 수정\nauthor: \"최규빈\" 수정\nindex.qmd 수정\n\n\n\n\n\n\n\nImportant\n\n\n\n깃헙에 대한 좀 더 깊은 이해 (저장소의 의미, 구글드라이버와 차이점) 를 위해서 구성한 강의노트"
+  },
+  {
+    "objectID": "posts/day1.html#리눅스명령어-hw",
+    "href": "posts/day1.html#리눅스명령어-hw",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "19 리눅스명령어 – hw",
+    "text": "19 리눅스명령어 – hw\n- 숙제: hw1.txt 파일 열어서 풀어보세요\n- 공부한것을 바탕으로 포스트작성.\n---\ntitle: \"hw1 -- 여러가지 리눅스 명령어\"\nauthor: \"최규빈\"\ndate: \"12/26/2024\"\n---"
+  },
+  {
+    "objectID": "posts/day1.html#sh",
+    "href": "posts/day1.html#sh",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "20 .sh",
+    "text": "20 .sh\n- 블로그에 업로드할때마다..\nquarto render \ngit add .\ngit commit -m .\ngit push \n하는것 귀찮죠?\n- 자동화하는 방법.\n\npublish.sh 파일을 만든다.\nquarto render, git add ., git commit -m ., git push를 순서대로 친다.\n저장한다.\n터미널에서 bash publish.sh 실행"
+  },
+  {
+    "objectID": "posts/day1.html#vi-벼락치기",
+    "href": "posts/day1.html#vi-벼락치기",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "21 vi 벼락치기",
+    "text": "21 vi 벼락치기\n- 이건 꼭 알아야함\n\nvi를 이용하여 파일만들기\n편집모드 \\(\\leftrightarrow\\) 명령모드: i/a \\(\\leftrightarrow\\) esc\nvi를 이용하여 파일수정하기\nvi에서 편집후 저장 후 종료, 그냥 종료, 강제종료\n찾기: /asdf \\(\\to\\) 엔터 \\(\\to\\) n / shift+n\n\n- 이걸 알면 편리함 (은근히 손에 착착 붙음)\n\ndd: 줄삭제\n\n\n\n\n\n\n\nImportant\n\n\n\n여기까지는 리눅스에 대한 이해를 돕기 위해서 만들었습니다."
+  },
+  {
+    "objectID": "posts/day1.html#잔소리",
+    "href": "posts/day1.html#잔소리",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "22 잔소리",
+    "text": "22 잔소리\n- 솔직히 리눅스 배우기 귀찮죠?\n- 리눅스 못하는 사람이 데이터분석하면 어떤 느낌이냐면.. 핸드폰으로 엑셀시트 정리하는 느낌??\n# 예제1 – 코랩에서 해보세요\n아래의 경로에서 데이터를 다운받아 df 로 저장하라.\n\nhttps://raw.githubusercontent.com/guebin/DV2023/main/posts/titanic.csv\n\n#\n# 예제2 – 아래의 코드를 실행하여 ucf101 dataset을 다운로드하라.\nfile_path = huggingface_hub.hf_hub_download(\n    repo_id=\"sayakpaul/ucf101-subset\",\n    filename=\"UCF101_subset.tar.gz\",\n    repo_type=\"dataset\"\n)\n아래를 코드를 변형하여 압축해제하라.\ntar -xvf UCF101_subset.tar.gz\n데이터를 살펴보라.\n\nref: https://guebin.github.io/MP2024/posts/06wk-1.html\n\n#"
+  },
+  {
+    "objectID": "posts/day1.html#깃헙추가기능2-패키지-배포",
+    "href": "posts/day1.html#깃헙추가기능2-패키지-배포",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "23 깃헙추가기능2: 패키지 배포",
+    "text": "23 깃헙추가기능2: 패키지 배포\n- 깃헙과 구글드라이브의 두번째 차이: 깃헙은 단순한 저장소를 넘어 추가기능이 있음. 예를 들어, GitHub 레포지토리는 소프트웨어 패키지를 배포하는 데 활용될 수 있음.\n\n아래의 내용은 가급적 터미널로 해보세요\n\n1 저장소만들기\n\n저장소이름은 asdf로 하자. (대충 만들겠다는 의미)\n\n2 저장소에서 대충 아래와 같은 구조로 파일 및 디렉터리를 만든다.\nasdf/                  # GitHub 저장소 이름\n│\n├── pkg1226/           # Python에서 import할 때 사용하는 이름\n│   └── __init__.py    # 반드시 이 이름으로 작성해야 함\n│\n├── README.md          # 선택 사항 (없어도 무방)\n├── setup.py           # 패키지 설치 및 배포를 정의하는 파일로 반드시 이 이름이어야 함\n– __init__.py 파일내용\n\n\nasdf/mymodule/__init__.py\n\ndef hello_world():\n    return \"Hello from pkg1226!\"\n\n– setup.py 파일내용\n\n\nasdf/setup.py\n\nfrom setuptools import setup, find_packages\nsetup(\n        name=\"mypkg\", # pip install 할 때 사용되는이름\n        version=\"0.1.0\",\n        packages=find_packages(),\n)\n\n3. 반영사항을 저장소로 push 한다.\ngit add .\ngit commit -m .\ngit push \n4. 코랩 등 다른 환경으로 가서 방금 만든 패키지를 설치한다.\npip install git+https://github.com/miruetoto/asdf.git\n5. 테스트한다.\nimport pkg1226\npkg1226.hello_world()\n\n\n\n\n\n\nImportant\n\n\n\n패키지배포 경험해보고.. 리눅스 명령어로만 파일, 폴더를 구성하면서 리눅스 명령어에 익숙해졌으면 해서 구성한 강의노트입니다."
+  },
+  {
+    "objectID": "posts/day1.html#ssh-우회하기",
+    "href": "posts/day1.html#ssh-우회하기",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "24 ssh 우회하기",
+    "text": "24 ssh 우회하기\n\n24.1 기본상태\n- 내부와이파이에서 182 접속해보기 – 성공\nssh toolbox@210.117.173.182\n# 비밀번호는 jbnu\n- 내부와이파이에서 183 접속해보기 – 성공\nssh guebin@210.117.173.183\n# 비밀번호는 jbnu\n- 외부와이파이에서 182 접속해보기 – 실패\nssh toolbox@210.117.173.182\n# 비밀번호는 jbnu\n- 외부와이파이에서 183 접속해보기 – 실패\nssh guebin@210.117.173.183\n# 비밀번호는 jbnu\n\n\n24.2 182 - 포트변경\n- 포트변경 – 실습X\n\n\n\n\n\n\nNote\n\n\n\n포트가뭐야?\n\n네트워크로 데이터가 드나드는 문\n네트워크로 데이터를 옮겨야 하는 경우 무조건 port를 이용해야한다.\n프로그램마다 암묵적으로 애용하는 포트가 있음!!\n\n아래는 well-known port 임\n\n\n\n\n\n\n\n\n프로그램\n포트 번호\n설명\n\n\n\n\nSSH\n22\n원격 접속 및 파일 전송 (보안)\n\n\nSMTP\n25\n이메일 전송\n\n\nDNS\n53\n도메인 이름 해석\n\n\nHTTP\n80\n웹사이트 전송\n\n\nPOP3\n110\n이메일 수신\n\n\nIMAP\n143\n이메일 수신 (POP3보다 발전된 방식)\n\n\nHTTPS\n443\n보안 웹사이트 전송\n\n\nMySQL\n3306\n데이터베이스\n\n\n리그 오브 레전드\n5223\nPVP.net 클라이언트\n\n\n리그 오브 레전드\n2099, 5222\n게임 데이터 전송\n\n\n스타크래프트\n6112\n배틀넷 및 게임 데이터 전송\n\n\n마인크래프트\n25565\n서버 호스팅 및 클라이언트 통신\n\n\nZoom\n8801-8802\n화상 회의\n\n\nJupyter\n8888\n데이터 분석\n\n\nRStudio\n8787\n데이터 분석\n\n\n\n\n\nvi /etc/ssh/sshd_config\n...\nPort 1226\n...\nservice ssh restart\n\n\n24.3 포트변경 이후\n- 내부와이파이에서 182접속하기 – 실패\nssh toolbox@210.117.173.182\n# 비밀번호는 jbnu\n- 내부와이파이에서 182접속하기 – 성공, (문법이 조금 바뀌었네?)\nssh toolbox@210.117.173.182 -p 1226 \n# 비밀번호는 jbnu\n- 외부와이파이에서 182접속하기 – 성공!!\nssh toolbox@210.117.173.182 -p 1226\n# 비밀번호는 jbnu\n- 내부와이파이에서 183접속하기 – 성공 (이건 원래 되던거였음)\nssh guebin@210.117.173.183\n# 비밀번호는 jbnu\n- 외부와이파이에서 183접속하기 (?? 못하지않나??)\nssh guebin@210.117.173.183\n# 비밀번호는 jbnu\n\n그런데 할 수 있어요"
+  },
+  {
+    "objectID": "posts/day1.html#서버셋팅",
+    "href": "posts/day1.html#서버셋팅",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "25 183 서버셋팅",
+    "text": "25 183 서버셋팅\n\n25.1 ssh 연결\n- 183번 컴퓨터에 접속하기\nssh guebin@210.117.173.183 \n\n\n25.2 password 변경\n- 아래를 실행하여 비밀번호를 바꿀 것\npasswd\n- 이후 ssh로 접속할때 바뀐 pw를 입력한다.\nssh guebin@210.117.173.183\n\n\n25.3 아나콘다 설치\n- https://www.anaconda.com/download\n\n아나콘다를 다운받을 수 있는 주소 get // Linux 64-Bit (x86) Installer\nwget 으로 다운로드\nbash 로 실행\n동의할 내용 동의하고 설치 (글을 넘길때는 space이용)\n\n- 설치다하면 exit 하고 재접속.. 맨앞에 (base) 가 보이면 올바르게 설치된것임\n\n\n25.4 주피터랩 설치 및 실행\n- 가상환경 셋팅\nconda create -n first # 가상환경생성 \nconda activate first # 가상환경 활성화 \nconda install -c conda-forge notebook # 주피터랩설치\n- 접속하는 방법1: 토큰으로 접속\njupyter lab --ip \"0.0.0.0\" --port {8,학번끝3자리}\n이후에\n\nhttp://127.0.0.1:8052/lab?token=????\n\n와 같은 주소 형식을\n\nhttp://210.117.173.183:8052/lab?token=????\n\n와 같이 바꾸고 들어오세요\n- 접속하는 방법2: password로 접속\njupyter notebook password\n를 이용하여 passwd를 설정한 뒤 다시 아래를 실행\njupyter lab --ip \"0.0.0.0\" --port {8,학번끝3자리}\n\n\n\n\n\n\nImportant\n\n\n\n학과서버셋팅 연습을 위한 내용"
+  },
+  {
+    "objectID": "posts/day1.html#학과서버셋팅-starstarstar-hw",
+    "href": "posts/day1.html#학과서버셋팅-starstarstar-hw",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "26 학과서버셋팅 (\\(\\star\\star\\star\\)) – hw",
+    "text": "26 학과서버셋팅 (\\(\\star\\star\\star\\)) – hw\n\n26.1 ssh 연결\n- 186 컴퓨터에 접속하기\nssh root@210.117.173.186 -p {학번끝5자리}\n\n\n26.2 password 변경\n- 아래를 실행하여 비밀번호를 바꿀 것\npasswd root\n- 이후 ssh로 접속할때 바뀐 pw를 입력한다.\nssh root@210.117.173.186 -p {학번끝5자리}\n\n\n26.3 아나콘다 설치\n\n\n26.4 주피터랩 설치 및 실행\n- 가상환경 셋팅\nconda create -n first # 가상환경생성 \nconda activate first # 가상환경 활성화 \nconda install -c conda-forge notebook # 주피터랩설치\n- password 설정\njupyter notebook password\n- 실행\njupyter lab --ip=\"0.0.0.0\" --port={MY-PORT} --no-browser --allow-root\n\n\n\n\n\n\nNote\n\n\n\nport는 자신의 학번을 기준으로, 십의자리와 만의자리를 바꾸며 사용할 수 있음. 예를들어 학번끝 5자리가 43052라면\n만의자리변경\n\n23052\n33052\n53052\n\n십의자리변경\n\n43002\n43012\n43022\n43032\n43042\n43062\n43072\n43082\n43092\n\n에 해당하는 port번호를 쓸 수 있음.\n\n\n\n\n\n\n\n\nImportant\n\n\n\n사실 이 부분이 가장 실용적인 내용입니다. 이해할 것은 없지만.."
+  },
+  {
+    "objectID": "posts/day1.html#폴더와-파일의-표현",
+    "href": "posts/day1.html#폴더와-파일의-표현",
+    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
+    "section": "27 폴더와 파일의 표현",
+    "text": "27 폴더와 파일의 표현\n\n많이 쓰다보면 눈치껏 알게되는데요, 한번 정리하는게 좋습니다.\n\n- 아래가 의미하는것은?\n. \n.. \nasdf\nasdf/\n.asdf \n.asdf/\n~\n/\n- 응용편: 아래가 의미하는것은?\n./asdf/\n../asdf/ \nasdf/mysum.py\n.asdf/mysum.py\n\n\n\n\n\n\nImportant\n\n\n\n외우세요"
+  },
+  {
     "objectID": "posts/day2.html",
     "href": "posts/day2.html",
     "title": "Day2: 파이썬 버전확인하기 - jupyterlab-desktop",
@@ -259,202 +616,6 @@
     "text": "Footnotes\n\n\n4학년쯤에는 이미 (base) 가 손쓸 수 없는 상태로 깨져있는 경우가 허다함. 공부를 열심히 한 학생일수록 그러함. 이럴경우 소생가능성이 없음↩︎"
   },
   {
-    "objectID": "posts/day1.html",
-    "href": "posts/day1.html",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "",
-    "text": "강의영상 요청하기\n\nhttps://drive.google.com/drive/folders/1Nde8iX3TEEKb1RxlULlTWuwhRYUlDKnK?usp=sharing"
-  },
-  {
-    "objectID": "posts/day1.html#터미널의-이해",
-    "href": "posts/day1.html#터미널의-이해",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "1 터미널의 이해",
-    "text": "1 터미널의 이해\n- 윈도우 컴퓨터에서 아래의 명령어가 뭘 의미하는지 살펴보자.\nls\nmkdir asdf\ncd asdf \ncd.. \nrmdir asdf\n\n외우세요: 터미널을 열어준다 = 컴퓨터에 대한 제어권을 준다\n\n\n\n\n\n\n\nImportant\n\n\n\n터미널명령어 숙지의 중요성을 이해했으면 해서 만들었어요.."
-  },
-  {
-    "objectID": "posts/day1.html#터미널에서-조작하기",
-    "href": "posts/day1.html#터미널에서-조작하기",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "2 터미널에서 조작하기",
-    "text": "2 터미널에서 조작하기\n- 복사하기 & 붙여넣기\n\n복사하기: 드래그 + 우클릭\n붙여넣기: 우클릭\n\n- 자동완성: 탭!!\n\n\n\n\n\n\nImportant\n\n\n\n복붙하기 이거 작년에 많이 헤메시더라고요?? 익숙해져야합니당"
-  },
-  {
-    "objectID": "posts/day1.html#파이썬-설치방법-조사",
-    "href": "posts/day1.html#파이썬-설치방법-조사",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "3 파이썬 설치방법 조사",
-    "text": "3 파이썬 설치방법 조사\n- 파이썬 배우는 초보자에게 가장 어려운것!\n\n선생님마다 설치하는 방법이 모두 다름\n\n- 왜 저렇게 설치방법이 다른가? 왜 다른 방법으로 각각 파이썬을 실행하는가? 이런것이 너무 어려움\n\n방법1: 파이썬프로그램 다운로드 -&gt; 시작버튼 눌러서 설치\n방법2: 아나콘다 설치 (그럼 자동으로 파이썬이 설치됨)\n방법3: 아나콘다 설치 + 가상환경\n…\n\n- 심지어 실행하는것도 다름\n\n방법1: 파이썬 프롬프트\n방법2: .py를 이용하여 실행?\n방법3: IDLE\n방법4: 파이참\n방법5: 스파이더\n방법6: Visual Studio Code\n방법7: 주피터노트북, 주피터랩\n\n가상환경을 만들어서 해라..\n아나콘다 네비게이터에 주피터가 있다..\n\n…\n\n- 머리아프니까 colab을 쓰라는 사람도 있음. 아니면 도커이미지를 줄테니까 그걸 쓰라는 사람도 있음. AWS를 쓰라는 사람도 있음..\n- 핵심: 그냥 (1) 컴퓨터에 (2) 파이썬을 깔아서 (3) 실행하는 것임\n- 의문: 그런데 방법이 왜이렇게 많은가? 엑셀처럼 프로그램 설치하고 아이콘 더블클릭하면 끝나는 식으로 만들어야 하는것 아닌가?"
-  },
-  {
-    "objectID": "posts/day1.html#python-실행하고-살펴보기",
-    "href": "posts/day1.html#python-실행하고-살펴보기",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "4 python 실행하고 살펴보기",
-    "text": "4 python 실행하고 살펴보기\n- 윈도우에서 anaconda prompt 실행 -&gt; python\n(base) C:\\Users\\python&gt;python\nPython 3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n&gt;&gt;&gt; [1,2,3]+[4]\n[1, 2, 3, 4]\n&gt;&gt;&gt; a=[1,2,3]+[4]\n&gt;&gt;&gt; a\n[1, 2, 3, 4]\n- 2개를 실행할 수도 있음. (두 환경은 각각 서로 독립적인 파이썬, 변수가 공유되지 않음) \\(\\star\\)\n- 아쉬운점: `?list’와 같이 도움말 기능이 동작하지 않음\n&gt;&gt;&gt; ?list\n  File \"&lt;stdin&gt;\", line 1\n    ?list\n    ^\nSyntaxError: invalid syntax\n&gt;&gt;&gt;"
-  },
-  {
-    "objectID": "posts/day1.html#python-으로-코딩하기-최악",
-    "href": "posts/day1.html#python-으로-코딩하기-최악",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "5 python 으로 코딩하기 (최악)",
-    "text": "5 python 으로 코딩하기 (최악)\n- 1부터 10까지 합을 구하는 프로그램을 만들고 싶음\n- 시도1: python을 키고 아래와 같이 실행\n(base) C:\\Users\\python&gt;python\nPython 3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n&gt;&gt;&gt; total = 0\n&gt;&gt;&gt; for i in range(10):\n...     total=total+i\n...\n&gt;&gt;&gt; total\n45\n&gt;&gt;&gt;\n- 반성: 정답은 55인데 45가 출력되었다! \\(\\to\\) range(10)을 range(1,11)으로 바꿔야겠다!\n- 시도2: range(1,11)을 바꿔야겠다고 생각하고 다시 입력하다가 오타가 발생\n&gt;&gt;&gt; total =0\n&gt;&gt;&gt; for i in range(1,11):\n...     total = totla +i\n...\n\n앗 totla이라고 잘못쳤다.\n\n- 반성: 다음에는 정신을 똑바로 차려야겠다."
-  },
-  {
-    "objectID": "posts/day1.html#ipython-실행하고-살펴보기",
-    "href": "posts/day1.html#ipython-실행하고-살펴보기",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "6 ipython 실행하고 살펴보기",
-    "text": "6 ipython 실행하고 살펴보기\n- 윈도우에서 anaconda prompt 실행 -&gt; ipython\n(base) C:\\Users\\python&gt;ipython\nPython 3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]\nType 'copyright', 'credits' or 'license' for more information\nIPython 7.29.0 -- An enhanced Interactive Python. Type '?' for help.\n\nIn [1]: a=[1,2,3]\n\nIn [2]: a\nOut[2]: [1, 2, 3]\n\nIn [3]: a+[4]\nOut[3]: [1, 2, 3, 4]\n- list?가 가능\nIn [4]: list?\nInit signature: list(iterable=(), /)\nDocstring:\nBuilt-in mutable sequence.\n\nIf no argument is given, the constructor creates a new empty list.\nThe argument must be an iterable if specified.\nType:           type\nSubclasses:     _HashedSeq, StackSummary, DeferredConfigList, SList, _ImmutableLineList, FormattedText, NodeList, _ExplodedList, Stack, _Accumulator, ...\n- 색깔이 알록달록해서 문법을 보기 편하다. (구문강조)"
-  },
-  {
-    "objectID": "posts/day1.html#ipython-으로-코딩하기",
-    "href": "posts/day1.html#ipython-으로-코딩하기",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "7 ipython 으로 코딩하기",
-    "text": "7 ipython 으로 코딩하기\n- ipython을 사용한 프로그래머는 좀더 상황이 낫다\n(base) C:\\Users\\python&gt;ipython\nPython 3.9.7 (default, Sep 16 2021, 16:59:28) [MSC v.1916 64 bit (AMD64)]\nType 'copyright', 'credits' or 'license' for more information\nIPython 7.29.0 -- An enhanced Interactive Python. Type '?' for help.\n\nIn [1]: total = 0\n\nIn [2]: for i in range(1,11):\n   ...:     total = total + i\n   ...:\n\nIn [3]: total\nOut[3]: 55"
-  },
-  {
-    "objectID": "posts/day1.html#메모장-python",
-    "href": "posts/day1.html#메모장-python",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "8 메모장 + python",
-    "text": "8 메모장 + python\n- 메모장을 키고 아래의 내용을 적는다.\ntotal = 0 \nfor i in range(1,11): \n    total = total + i\nprint(total)\n- 파일이름을 mysum.py로 저장한다.\n- anaconda prompt에서 mysum.py파일이 저장된 폴더로 이동 -&gt; 실행\n(base) C:\\Users\\python&gt;cd Desktop\n\n(base) C:\\Users\\python\\Desktop&gt;dir\n C 드라이브의 볼륨에는 이름이 없습니다.\n 볼륨 일련 번호: 9AFD-A05F\n\n C:\\Users\\python\\Desktop 디렉터리\n\n2022-03-27  오전 11:32    &lt;DIR&gt;          .\n2022-03-27  오전 11:32    &lt;DIR&gt;          ..\n2022-03-27  오전 12:01             2,306 Chrome.lnk\n2022-03-26  오후 08:32             2,332 Microsoft Edge.lnk\n2022-03-27  오전 11:33                71 mysum.py\n               3개 파일               4,709 바이트\n               2개 디렉터리  743,643,467,776 바이트 남음\n\n(base) C:\\Users\\python\\Desktop&gt;python mysum.py\n55\n\n(base) C:\\Users\\python\\Desktop&gt;\n- 소감\n\n편한점1: 마우스를 이용하여 이동가능\n편한점2: 내가 작업한 내용은 바탕화면의 메모장에 저장이 되어있음\n아쉬운점: ipython의 장점은 활용못함 (구문강조, 도움말기능)"
-  },
-  {
-    "objectID": "posts/day1.html#메모장-ipython",
-    "href": "posts/day1.html#메모장-ipython",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "9 메모장 + ipython",
-    "text": "9 메모장 + ipython\n- 전체적인 개발방식\n\n메모장: 코드를 편집, 저장\nipython: anaconda prompt처럼 메모장의 코드를 실행하고 결과를 확인 + 구문강조, 도움말확인기능 등을 이용하여 짧은 코드를 빠르게 작성\n\n- 기능\n\nipython에서 !python mysum.py를 입력하면 anaconda prompt에서 python mysum.py를 입력한 것과 같은 효과\nipython에서 %run mysum을 입력하면 메모장에서 mysum.py에 입력된 내용을 복사해서 ipython에 붙여넣어 실행한것과 같은 효과\n\n\n! 는 터미널 명령을 훔쳐쓰는 기능. % 는 ipython 에서 제공하는 마법같은 기능. 이 두개를 잘 쓰면 ipynb에서 작업하기 매우 편리함."
-  },
-  {
-    "objectID": "posts/day1.html#jupyterlab",
-    "href": "posts/day1.html#jupyterlab",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "10 Jupyterlab",
-    "text": "10 Jupyterlab\n- 메모장과 ipython을 하나로 통합한 프로그램이 등장!\n\njupyter notebook, jupyter lab\nspyder\nidle\nVScode\n…\n\n- 주피터노트북, 혹은 주피터랩을 켜보자.\n(base) C:\\Users\\python&gt;jupyter lab \n\n셀에서 1+1 수행\n셀에서 !dir 등의 명령어 실행\n\n- 주피터의 트릭 (실제로 주피터는 ipython에 기생할 뿐 아무런 역할도 안해요)\n\n주피터를 실행\n새 노트북을 생성\n\n컴퓨터는 내부적으로 ipython을 실행하고 그 ipython이랑 여러분이 방금만든 그 노트북과 연결\n\n처음보이는 cell에 1+1을 입력 -&gt; 쉬프트엔터 -&gt; 결과2가 출력\n\n처음보이는 cell하나 = 자동으로 열린 하나의 메모장\ncell 1+1을 입력 = 메모장에 1+1을 적음\n쉬프트+엔터후 결과2를 출력 = cell의 내용을 복사 -&gt; ipython에 붙여넣음 -&gt; ipython 계산된 결과를 복사 -&gt; cell로 돌아와 붙여넣기\n\n새로운 cell을 추가하고 2+2을 입력 -&gt; 쉬프트엔터 -&gt; 결과4가 출력\n\n새로운 cell을 추가 = 새로운 메모장 추가\ncell 2+2을 입력 = 새로운 메모장에 2+2를 적음\n쉬프트+엔터후 결과4를 출력 = cell의 내용을 복사 -&gt; ipython에 붙여넣음 -&gt; ipython 계산된 결과를 복사 -&gt; cell로 돌아와 붙여넣기\n\n\n- 중요한 사실들\n\nIDE는 내부적으로 연산을 수행하는 능력이 없다. (생각해볼것: 왜 R을 꼭 설치하고 Rstudio를 설치해야 했을까?)\n주피터에서 커널을 재시작한다는 의미는 메모장이 열린채로 ipython을 껐다가 다시 실행한다는 의미\n주피터는 단순히 ’메모장의 내용을 복사하여 붙여넣는 기계’라고 볼 수 있다. 이렇게 생각하면 주피터는 꼭 ipython에 연결할 이유는 없다. 실제로 주피터에 R을 연결해서 쓸 수 있다. 즉 하나의 IDE가 여러개의 언어와 연결될 수 있다.\nJupyterlab이라는 프로그램은 크롬에 있는 내용과 ipython간의 통신을 제어하는 프로그램일 뿐이다.\n\n\n\n\n\n\n\nImportant\n\n\n\nLanguage, Kernel, IDE 의 차이점을 이해하는게 중요함"
-  },
-  {
-    "objectID": "posts/day1.html#원격클라우드-컴퓨터",
-    "href": "posts/day1.html#원격클라우드-컴퓨터",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "11 원격/클라우드 컴퓨터",
-    "text": "11 원격/클라우드 컴퓨터\n- 지금까지는 ipython이 실행되는 컴퓨터와 크롬이 실행되는 컴퓨터가 동일하다는 전제였음.\n- 생각해보니까 어차피 ipython이 실행된 컴퓨터에서 내가 크롬에 입력한 명령 “전달”되기만 하면 되므로 꼭 같은 컴퓨터일 필요는 없다.\n\n11.1 모델1 – 원격컴퓨터 (일대일)\n- 준비상태\n\n학과서버: ipython을 실행 + 이 컴퓨터는 인터넷 연결이 되어있어야함\n규빈노트북: 크롬실행 + 이 컴퓨터도 인터넷이 연결되어 있어야함\n\n- 명령입력\n\n규빈노트북의 크롬에서 1+1을 입력하고 쉬프트 엔터를 누름\n\n- 규빈노트북 -&gt; 학과서버\n\n규빈노트북의 내부의 어떤프로그램은 1+1이라는 명령을 복사하여 카카오톡으로 학과서버에 전달\n학과서버 내부의 어떤프로그램은 1+1이라는 명령을 카톡으로 받아서 그것을 ipython에게 전달\n\n- 학과서버 -&gt; 규빈노트북\n\n학과서버 내부의 ipython은 2라는 출력결과를 계산함\n학과서버 내부의 어떤프로그램은 계산결과를 카톡으로 규빈노트북에 알려줌\n규빈은 본인 노트북에서 편하게 계산결과를 받아볼 수 있다.\n\n\n\n11.2 모델2 – 원격컴퓨터 (일대다)\n- 개념: 2개 이상의 ipython 커널을 각각 다른 메모장에 연결가능.\n- 확장개념:\n\n2개 ipython 커널을 생성. 편의상 각각을 커널A,커널B라고 하자.\n커널A는 규빈노트북의 메모장에 커널B는 영미노트북의 메모장에 연결한다.\n영미와 규빈은 각각 독립적으로 작업가능\n\n- 의문?\n\n규빈은 python==3.10 을 쓰고 싶고 영미는 python==3.12 를 쓰고 싶다면??\n학과서버에 python==3.10 과 python==3.12 가 동시에 깔려야함.\n원래는 불가능하지만 “가상환경” 이라는 개념을 도입하면 가능하다. \\(\\to\\) 아나콘다의 등장\n\n\n\n11.3 모델3 – 클라우드 컴퓨터 (google colab)\n- 구글코랩\n\n구글에 여러가지 성능을 가진 컴퓨터가 \\(n\\)대 있음. 이 컴퓨터들을 연결하여 하나의 거대한 컴퓨터처럼 동작하게 만듦.\n이 컴퓨터는 학과서버처럼 동작함. 즉 여러명에게 컴퓨팅 자원을 분배함.\n\n- 구글코랩과 비슷한 방식으로 코드스페이스가 있음."
-  },
-  {
-    "objectID": "posts/day1.html#원격제어-맥북",
-    "href": "posts/day1.html#원격제어-맥북",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "12 원격제어 (맥북)",
-    "text": "12 원격제어 (맥북)\n- ssh를 이용한 접속\n- 질문: 여기서 파이썬을 키면? 어떤 컴퓨터 spec으로 계산될까?\n- 한계점: ssh는 동일네트워크내에서만 동작한다. (진짜?)"
-  },
-  {
-    "objectID": "posts/day1.html#local-remote",
-    "href": "posts/day1.html#local-remote",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "13 local / remote",
-    "text": "13 local / remote\n- local: 물리적으로 가까이 있음 + 네트워크 없이 접근\n\n강의실에 있는 윈도우 컴퓨터\n여러분이 가지고 있는 노트북\n\n- remote: 물리적으로 멀리 있음 + 네트워크를 통해 접근\n\n제서버1 (210.???.???.???)\n제서버2 (210.???.???.???)\n학과서버 (210.???.???.???)\n구글코랩\ncodespace\ngithub, google drive\n\n- 구분이 딱 떨어지는건 아님.. 그냥 아래의 정도로 이해하면 좋음\n\nlocal = 가까이\nremote = 멀리"
-  },
-  {
-    "objectID": "posts/day1.html#코드스페이스-켜보기",
-    "href": "posts/day1.html#코드스페이스-켜보기",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "14 코드스페이스 켜보기",
-    "text": "14 코드스페이스 켜보기\n\n우리의 두 번째 리눅스 서버 얻기 (첫 서버는 코랩아닐까요?)\n\n- 단계1: 실습실컴퓨터로 깃헙에 로그인\n\n깃헙이란? 그냥 구글드라이브 같이 파일을 저장하는 기능을 한다고 이해하자.. (틀린 설명입니다!)\n\n- 단계2: New repository 를 이용하여 새로운 저장소를 만들자. 저장소 이름은 아무거나..\n\n저장소란?? 말그대로 파일,폴더들을 저장할 수 있는 것\n쉽게 생각하면 그냥 “큰” 폴더임.\n윈도우로 치면 downloada, desktop, 이런폴더들..\n\n\n- 단계3: 만들어진 저장소를 기반으로 codespace 생성\n\nlocal = 실습실컴퓨터\nremote = codespace\n\n- 단계4: codespace에서 아래의 명렁어들을 순서대로 실행하고 무엇을 의미하는지 공부하자.\nls\nls -a \nls .\nls .. \nls sample\nmkdir asdf \nwget https://raw.githubusercontent.com/guebin/DV2023/main/posts/titanic.csv\ncp titanic.csv ./asdf \nls ./asdf \nrm titanic.csv \nrm -rf asdf \n명령어들을 linux_commands.txt에 저장하자.\n- 단계5: 개인노트북으로 깃헙로그인\n\nlocal = 개인노트북\nremote = codespace\n\n- 단계6: 다시 코드스페이스에 접근하여 study_list.ipynb 주피터노트북을 만들자. 리스트만드는 방법을 공부하자.\nlst = [1,2,3] \n- 단계7: study_dict.py파일을 만들자. dict만드는 방법을 공부하자.\n# 방법1\ndct1 = {'a':1, 'b':2, 'c':3}\n\n# 방법2\ndct2 = dict(a=1,b=2,c=3)\n# 퀴즈1: 다시 코드스페이스에 접근하여 test.ipynb 주피터노트북을 만들고 아래 경로에 존재하는 파일을 다운로드하라.\nhttps://raw.githubusercontent.com/guebin/DV2023/main/posts/titanic.csv\n현재폴더에서 asdf폴더를 만들고 다운로드한 파일을 asdf 폴더로 옮겨라.\n(풀이1)\n!wget ~ \n!mkdir ~\n!cp ~\n!rm ~\n(풀이2)\n!wget ~ \n!mkdir ~\n!mv ~\n(풀이3) – 사실 이거는 “asdf 폴더를 만들고 그안에 다운로드하는 방식”이라 문제에서 요구하는 동작이랑 좀 다르긴해요 (결과는 똑같지만)\n!mkdir ~\n!wget ~ \n#"
-  },
-  {
-    "objectID": "posts/day1.html#코드스페이스-rightarrow-깃헙-rightarrow-코랩",
-    "href": "posts/day1.html#코드스페이스-rightarrow-깃헙-rightarrow-코랩",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "15 코드스페이스 \\(\\rightarrow\\) 깃헙 \\(\\rightarrow\\) 코랩",
-    "text": "15 코드스페이스 \\(\\rightarrow\\) 깃헙 \\(\\rightarrow\\) 코랩\n- 코드스페이스에서 공부한 내용을 코랩에서 이어서 하고싶다.\n- 단계1: 코드스페이스에 접근\n\nlocal = 개인노트북\nremote = codespace\n\n- 단계2: 코드스페이스 \\(\\to\\) 깃헙 레포지토리\n\nlocal = codespace\nremote = github\n\n- 단계3: 코랩 \\(\\leftarrow\\) 깃헙 레포지토리\n\nlocal = colab\nremote = github\n\n!wget ~~~~~\n\n코랩에서 공부한 내용을 나중에 codespace에서 이어하려면 “코랩 \\(\\to\\) 깃헙” 의 과정이 가능해야함. 이건 다루지 않음.\n\n\n\n\n\n\n\nImportant\n\n\n\nlocal/remote 의 개념을 이해"
-  },
-  {
-    "objectID": "posts/day1.html#블로그카피-fork",
-    "href": "posts/day1.html#블로그카피-fork",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "16 블로그카피 (Fork)",
-    "text": "16 블로그카피 (Fork)\n- 깃헙과 구글드라이브의 첫번째 차이: 깃헙은 기본적으로 “공개” 되어 있음.\n- !!! 생각해보니까 이 강의노트도 깃헙으로 만들지 않았을까??\n\n강의노트의 내용들은 깃헙 (=공개된 구글드라이브) 어딘가에 저장되어있을거야\n그걸 찾아내면? 강의노트를 힘들게 따라칠 필요가 없었잖아?\n\n- 여기있어요: https://github.com/guebin/DSTBX2025\n\n이 저장소를 포크로 콕 찍어서 내 저장소로 가져올 수 있을까? (마치 좋아하는 음식을 가져오는 것처럼)"
-  },
-  {
-    "objectID": "posts/day1.html#코드스페이스에-quarto-설치",
-    "href": "posts/day1.html#코드스페이스에-quarto-설치",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "17 코드스페이스에 quarto 설치",
-    "text": "17 코드스페이스에 quarto 설치\n- 포크한 저장소를 기반으로 새로운 코드스페이스 생성\n- quarto 다운로드: https://quarto.org/docs/download/\n- 아래를 실행 (하면 안될걸?)\ndpkg -i quarto-1.6.39-linux-amd64.deb \n\n왜? https://imgs.xkcd.com/comics/sandwich.png\n\n- quarto-1.6.39-linux-amd64.deb 삭제"
-  },
-  {
-    "objectID": "posts/day1.html#깃헙추가기능1-블로그-업로드",
-    "href": "posts/day1.html#깃헙추가기능1-블로그-업로드",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "18 깃헙추가기능1: 블로그 업로드",
-    "text": "18 깃헙추가기능1: 블로그 업로드\n- 깃헙과 구글드라이브의 두번째 차이: 깃헙은 단순한 저장소를 넘어 추가기능이 있음. 구체적으로 GitHub 레포지토리는 블로그 게시물을 자동으로 발행(publish)할 수 있는 기능을 지원함.\n- 코드스페이스에 quarto 설치 에서 명령어 수정하고, 그림삽입하여 업로드하자.\nquarto render \ngit add .\ngit commit -m .\ngit push\n- 깃헙에서 아래를 설정 – /docs 옆에 Save를 눌러야함\n\n- 꾸미기: 아래를 수정하자..\n\n_quarto.yml 수정\nauthor: \"최규빈\" 수정\nindex.qmd 수정\n\n\n\n\n\n\n\nImportant\n\n\n\n깃헙에 대한 좀 더 깊은 이해 (저장소의 의미, 구글드라이버와 차이점) 를 위해서 구성한 강의노트"
-  },
-  {
-    "objectID": "posts/day1.html#리눅스명령어-hw",
-    "href": "posts/day1.html#리눅스명령어-hw",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "19 리눅스명령어 – hw",
-    "text": "19 리눅스명령어 – hw\n- 숙제: hw1.txt 파일 열어서 풀어보세요\n- 공부한것을 바탕으로 포스트작성.\n---\ntitle: \"hw1 -- 여러가지 리눅스 명령어\"\nauthor: \"최규빈\"\ndate: \"12/26/2024\"\n---"
-  },
-  {
-    "objectID": "posts/day1.html#sh",
-    "href": "posts/day1.html#sh",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "20 .sh",
-    "text": "20 .sh\n- 블로그에 업로드할때마다..\nquarto render \ngit add .\ngit commit -m .\ngit push \n하는것 귀찮죠?\n- 자동화하는 방법.\n\npublish.sh 파일을 만든다.\nquarto render, git add ., git commit -m ., git push를 순서대로 친다.\n저장한다.\n터미널에서 bash publish.sh 실행"
-  },
-  {
-    "objectID": "posts/day1.html#vi-벼락치기",
-    "href": "posts/day1.html#vi-벼락치기",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "21 vi 벼락치기",
-    "text": "21 vi 벼락치기\n- 이건 꼭 알아야함\n\nvi를 이용하여 파일만들기\n편집모드 \\(\\leftrightarrow\\) 명령모드: i/a \\(\\leftrightarrow\\) esc\nvi를 이용하여 파일수정하기\nvi에서 편집후 저장 후 종료, 그냥 종료, 강제종료\n찾기: /asdf \\(\\to\\) 엔터 \\(\\to\\) n / shift+n\n\n- 이걸 알면 편리함 (은근히 손에 착착 붙음)\n\ndd: 줄삭제\n\n\n\n\n\n\n\nImportant\n\n\n\n여기까지는 리눅스에 대한 이해를 돕기 위해서 만들었습니다."
-  },
-  {
-    "objectID": "posts/day1.html#잔소리",
-    "href": "posts/day1.html#잔소리",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "22 잔소리",
-    "text": "22 잔소리\n- 솔직히 리눅스 배우기 귀찮죠?\n- 리눅스 못하는 사람이 데이터분석하면 어떤 느낌이냐면.. 핸드폰으로 엑셀시트 정리하는 느낌??\n# 예제1 – 코랩에서 해보세요\n아래의 경로에서 데이터를 다운받아 df 로 저장하라.\n\nhttps://raw.githubusercontent.com/guebin/DV2023/main/posts/titanic.csv\n\n#\n# 예제2 – 아래의 코드를 실행하여 ucf101 dataset을 다운로드하라.\nfile_path = huggingface_hub.hf_hub_download(\n    repo_id=\"sayakpaul/ucf101-subset\",\n    filename=\"UCF101_subset.tar.gz\",\n    repo_type=\"dataset\"\n)\n아래를 코드를 변형하여 압축해제하라.\ntar -xvf UCF101_subset.tar.gz\n데이터를 살펴보라.\n\nref: https://guebin.github.io/MP2024/posts/06wk-1.html\n\n#"
-  },
-  {
-    "objectID": "posts/day1.html#깃헙추가기능2-패키지-배포",
-    "href": "posts/day1.html#깃헙추가기능2-패키지-배포",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "23 깃헙추가기능2: 패키지 배포",
-    "text": "23 깃헙추가기능2: 패키지 배포\n- 깃헙과 구글드라이브의 두번째 차이: 깃헙은 단순한 저장소를 넘어 추가기능이 있음. 예를 들어, GitHub 레포지토리는 소프트웨어 패키지를 배포하는 데 활용될 수 있음.\n\n아래의 내용은 가급적 터미널로 해보세요\n\n1 저장소만들기\n\n저장소이름은 asdf로 하자. (대충 만들겠다는 의미)\n\n2 저장소에서 대충 아래와 같은 구조로 파일 및 디렉터리를 만든다.\nasdf/                  # GitHub 저장소 이름\n│\n├── pkg1226/           # Python에서 import할 때 사용하는 이름\n│   └── __init__.py    # 반드시 이 이름으로 작성해야 함\n│\n├── README.md          # 선택 사항 (없어도 무방)\n├── setup.py           # 패키지 설치 및 배포를 정의하는 파일로 반드시 이 이름이어야 함\n– __init__.py 파일내용\n\n\nasdf/mymodule/__init__.py\n\ndef hello_world():\n    return \"Hello from pkg1226!\"\n\n– setup.py 파일내용\n\n\nasdf/setup.py\n\nfrom setuptools import setup, find_packages\nsetup(\n        name=\"mypkg\", # pip install 할 때 사용되는이름\n        version=\"0.1.0\",\n        packages=find_packages(),\n)\n\n3. 반영사항을 저장소로 push 한다.\ngit add .\ngit commit -m .\ngit push \n4. 코랩 등 다른 환경으로 가서 방금 만든 패키지를 설치한다.\npip install git+https://github.com/miruetoto/asdf.git\n5. 테스트한다.\nimport pkg1226\npkg1226.hello_world()\n\n\n\n\n\n\nImportant\n\n\n\n패키지배포 경험해보고.. 리눅스 명령어로만 파일, 폴더를 구성하면서 리눅스 명령어에 익숙해졌으면 해서 구성한 강의노트입니다."
-  },
-  {
-    "objectID": "posts/day1.html#ssh-우회하기",
-    "href": "posts/day1.html#ssh-우회하기",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "24 ssh 우회하기",
-    "text": "24 ssh 우회하기\n\n24.1 기본상태\n- 내부와이파이에서 182 접속해보기 – 성공\nssh toolbox@210.117.173.182\n# 비밀번호는 jbnu\n- 내부와이파이에서 183 접속해보기 – 성공\nssh guebin@210.117.173.183\n# 비밀번호는 jbnu\n- 외부와이파이에서 182 접속해보기 – 실패\nssh toolbox@210.117.173.182\n# 비밀번호는 jbnu\n- 외부와이파이에서 183 접속해보기 – 실패\nssh guebin@210.117.173.183\n# 비밀번호는 jbnu\n\n\n24.2 182 - 포트변경\n- 포트변경 – 실습X\n\n\n\n\n\n\nNote\n\n\n\n포트가뭐야?\n\n네트워크로 데이터가 드나드는 문\n네트워크로 데이터를 옮겨야 하는 경우 무조건 port를 이용해야한다.\n프로그램마다 암묵적으로 애용하는 포트가 있음!!\n\n아래는 well-known port 임\n\n\n\n\n\n\n\n\n프로그램\n포트 번호\n설명\n\n\n\n\nSSH\n22\n원격 접속 및 파일 전송 (보안)\n\n\nSMTP\n25\n이메일 전송\n\n\nDNS\n53\n도메인 이름 해석\n\n\nHTTP\n80\n웹사이트 전송\n\n\nPOP3\n110\n이메일 수신\n\n\nIMAP\n143\n이메일 수신 (POP3보다 발전된 방식)\n\n\nHTTPS\n443\n보안 웹사이트 전송\n\n\nMySQL\n3306\n데이터베이스\n\n\n리그 오브 레전드\n5223\nPVP.net 클라이언트\n\n\n리그 오브 레전드\n2099, 5222\n게임 데이터 전송\n\n\n스타크래프트\n6112\n배틀넷 및 게임 데이터 전송\n\n\n마인크래프트\n25565\n서버 호스팅 및 클라이언트 통신\n\n\nZoom\n8801-8802\n화상 회의\n\n\nJupyter\n8888\n데이터 분석\n\n\nRStudio\n8787\n데이터 분석\n\n\n\n\n\nvi /etc/ssh/sshd_config\n...\nPort 1226\n...\nservice ssh restart\n\n\n24.3 포트변경 이후\n- 내부와이파이에서 182접속하기 – 실패\nssh toolbox@210.117.173.182\n# 비밀번호는 jbnu\n- 내부와이파이에서 182접속하기 – 성공, (문법이 조금 바뀌었네?)\nssh toolbox@210.117.173.182 -p 1226 \n# 비밀번호는 jbnu\n- 외부와이파이에서 182접속하기 – 성공!!\nssh toolbox@210.117.173.182 -p 1226\n# 비밀번호는 jbnu\n- 내부와이파이에서 183접속하기 – 성공 (이건 원래 되던거였음)\nssh guebin@210.117.173.183\n# 비밀번호는 jbnu\n- 외부와이파이에서 183접속하기 (?? 못하지않나??)\nssh guebin@210.117.173.183\n# 비밀번호는 jbnu\n\n그런데 할 수 있어요"
-  },
-  {
-    "objectID": "posts/day1.html#서버셋팅",
-    "href": "posts/day1.html#서버셋팅",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "25 183 서버셋팅",
-    "text": "25 183 서버셋팅\n\n25.1 ssh 연결\n- 183번 컴퓨터에 접속하기\nssh guebin@210.117.173.183 \n\n\n25.2 password 변경\n- 아래를 실행하여 비밀번호를 바꿀 것\npasswd\n- 이후 ssh로 접속할때 바뀐 pw를 입력한다.\nssh guebin@210.117.173.183\n\n\n25.3 아나콘다 설치\n- https://www.anaconda.com/download\n\n아나콘다를 다운받을 수 있는 주소 get // Linux 64-Bit (x86) Installer\nwget 으로 다운로드\nbash 로 실행\n동의할 내용 동의하고 설치 (글을 넘길때는 space이용)\n\n- 설치다하면 exit 하고 재접속.. 맨앞에 (base) 가 보이면 올바르게 설치된것임\n\n\n25.4 주피터랩 설치 및 실행\n- 가상환경 셋팅\nconda create -n first # 가상환경생성 \nconda activate first # 가상환경 활성화 \nconda install -c conda-forge notebook # 주피터랩설치\n- 접속하는 방법1: 토큰으로 접속\njupyter lab --ip \"0.0.0.0\" --port {8,학번끝3자리}\n이후에\n\nhttp://127.0.0.1:8052/lab?token=????\n\n와 같은 주소 형식을\n\nhttp://210.117.173.183:8052/lab?token=????\n\n와 같이 바꾸고 들어오세요\n- 접속하는 방법2: password로 접속\njupyter notebook password\n를 이용하여 passwd를 설정한 뒤 다시 아래를 실행\njupyter lab --ip \"0.0.0.0\" --port {8,학번끝3자리}\n\n\n\n\n\n\nImportant\n\n\n\n학과서버셋팅 연습을 위한 내용"
-  },
-  {
-    "objectID": "posts/day1.html#학과서버셋팅-starstarstar-hw",
-    "href": "posts/day1.html#학과서버셋팅-starstarstar-hw",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "26 학과서버셋팅 (\\(\\star\\star\\star\\)) – hw",
-    "text": "26 학과서버셋팅 (\\(\\star\\star\\star\\)) – hw\n\n26.1 ssh 연결\n- 186 컴퓨터에 접속하기\nssh root@210.117.173.186 -p {학번끝5자리}\n\n\n26.2 password 변경\n- 아래를 실행하여 비밀번호를 바꿀 것\npasswd root\n- 이후 ssh로 접속할때 바뀐 pw를 입력한다.\nssh root@210.117.173.186 -p {학번끝5자리}\n\n\n26.3 아나콘다 설치\n\n\n26.4 주피터랩 설치 및 실행\n- 가상환경 셋팅\nconda create -n first # 가상환경생성 \nconda activate first # 가상환경 활성화 \nconda install -c conda-forge notebook # 주피터랩설치\n- password 설정\njupyter notebook password\n- 실행\njupyter lab --ip=\"0.0.0.0\" --port={MY-PORT} --no-browser --allow-root\n\n\n\n\n\n\nNote\n\n\n\nport는 자신의 학번을 기준으로, 십의자리와 만의자리를 바꾸며 사용할 수 있음. 예를들어 학번끝 5자리가 43052라면\n만의자리변경\n\n23052\n33052\n53052\n\n십의자리변경\n\n43002\n43012\n43022\n43032\n43042\n43062\n43072\n43082\n43092\n\n에 해당하는 port번호를 쓸 수 있음.\n\n\n\n\n\n\n\n\nImportant\n\n\n\n사실 이 부분이 가장 실용적인 내용입니다. 이해할 것은 없지만.."
-  },
-  {
-    "objectID": "posts/day1.html#폴더와-파일의-표현",
-    "href": "posts/day1.html#폴더와-파일의-표현",
-    "title": "Day1: 터미널의 이해 - 학과서버셋팅",
-    "section": "27 폴더와 파일의 표현",
-    "text": "27 폴더와 파일의 표현\n\n많이 쓰다보면 눈치껏 알게되는데요, 한번 정리하는게 좋습니다.\n\n- 아래가 의미하는것은?\n. \n.. \nasdf\nasdf/\n.asdf \n.asdf/\n~\n/\n- 응용편: 아래가 의미하는것은?\n./asdf/\n../asdf/ \nasdf/mysum.py\n.asdf/mysum.py\n\n\n\n\n\n\nImportant\n\n\n\n외우세요"
-  },
-  {
     "objectID": "posts/day3-4.html",
     "href": "posts/day3-4.html",
     "title": "Day3-4: vscode 설치 – 리소스관리",
@@ -536,7 +697,7 @@
     "href": "posts/day3-4.html#bash-커널",
     "title": "Day3-4: vscode 설치 – 리소스관리",
     "section": "11 bash 커널",
-    "text": "11 bash 커널\n# 예제1\necho hello \n#\n# 예제2\na=askdf\na\n$a\necho $a\n#\n\na = asdf 라고 입력하면 오류가 발생한다.\n\n# 예제3\na=(상민 다빈)\necho $a \necho ${a}\necho ${a[0]}\necho ${a[1]}\necho ${a[@]}\n#\n# 예제4\ncmd_list=(ls \"ls -a\") \n${cmd_list}\n${cmd_list[0]}\n${cmd_list[1]}\n#\n\n\n\n\n\n\nImportant\n\n\n\nterminal도 커널이었음!!"
+    "text": "11 bash 커널\n# 예제1\necho hello \n#\n# 예제2\na=askdf\na\n$a\necho $a\n#\n\na = asdf 라고 입력하면 오류가 발생한다.\n\n# 예제3\na=(상민 다빈)\necho $a \necho ${a}\necho ${a[0]}\necho ${a[1]}\necho ${a[@]}\n#\n# 예제4\ncmd_list=(ls \"ls -a\") \n${cmd_list}\n${cmd_list[0]}\n${cmd_list[1]}\n#\n\n\n\n\n\n\nImportant\n\n\n\nbash도 커널이었음!!"
   },
   {
     "objectID": "posts/day3-4.html#export",
@@ -595,167 +756,6 @@
     "text": "19 리소스관리\n- 메모리, CPU 사용량 체크\ntop\n테스트코드\n## 1. Imports \nimport numpy as np\nimport time \n\n## 2. 개념설명\nn = 5\nx = np.array(range(n))\ndist1 = np.zeros([n,n])\nfor i in range(n):\n    for j in range(n):\n        dist1[i,j]=(x[i]-x[j])**2\nprint(dist1)\nx1=x.reshape(n,1).astype(dtype=np.float64)\nx2=x.reshape(1,n).astype(dtype=np.float64)\ndist2=(x1-x2)**2\nprint(dist2)\n\n## 3. CPU vs MEM\nn = 10000\nx = np.array(range(n))\nt1 = time.time()\ndist1 = np.zeros([n,n])\nfor i in range(n):\n    for j in range(n):\n        dist1[i,j]=(x[i]-x[j])**2\nt2 = time.time()\nprint(t2-t1)\nt1 = time.time()\nx1=x.reshape(n,1).astype(dtype=np.float64)\nx2=x.reshape(1,n).astype(dtype=np.float64)\ndist2=(x1-x2)**2\nt2 = time.time()\nprint(t2-t1)\n\n## 4. MEM 사용량증가 \nn = 100000\nx = np.array(range(n))\n# t1 = time.time()\n# dist1 = np.zeros([n,n])\n# for i in range(n):\n#     for j in range(n):\n#         dist1[i,j]=(x[i]-x[j])**2\n# t2 = time.time()\n# print(t2-t1)\nt1 = time.time()\nx1=x.reshape(n,1).astype(dtype=np.float64)\nx2=x.reshape(1,n).astype(dtype=np.float64)\ndist2=(x1-x2)**2\nt2 = time.time()\nprint(t2-t1)\n- GPU 사용량 체크\nnvidia-smi\nwatch -n 1 nvidia-smi\ntest code\nimport torch\nx = torch.randn([50000,10000])\nx.to(\"cuda:0\")\n- 하드디스크 용량체크: 아래를 반복적으로 치면서 찾아보자.\ndu -sh *\n- 휴지통비우기"
   },
   {
-    "objectID": "posts/day5.html",
-    "href": "posts/day5.html",
-    "title": "Day5: html – template",
-    "section": "",
-    "text": "강의영상 요청하기\n\nhttps://drive.google.com/drive/folders/1dAC8P0yNIzH7NbXKFU2HvFHdZUmn1CPV?usp=sharing"
-  },
-  {
-    "objectID": "posts/day5.html#html",
-    "href": "posts/day5.html#html",
-    "title": "Day5: html – template",
-    "section": "1 *.html",
-    "text": "1 *.html\n- 일반적으로 html은 “볼 수 있다”\n- 강의노트를 저장하는 방법?\n\nhttps://guebin.github.io/DL2024/posts/01wk-1.html 저장해보기\n\n- 네이버저장해보기\n\nhttps://www.naver.com/ 저장해보기\n거의 하드에 네이버가 깔린 느낌임.\n저장된 html은 인터넷이 없어도 open 가능.\n\n- html는 pdf와 같이 읽을 수 있는 문서의 형태임\n\n웹에서 보이는것은 보통 html 형식으로 재 저장할 수 있음.\n\n- pdf와의 차이점? HTML은 다른문서와의 연결성을 더 강조한다.\n\nHTML의 HT는 HyperText 를 의미함.\n하이퍼텍스트란 문서 내에서 다른 문서로의 링크를 포함한 텍스트를 의미함."
-  },
-  {
-    "objectID": "posts/day5.html#홈페이지-통째로-html화",
-    "href": "posts/day5.html#홈페이지-통째로-html화",
-    "title": "Day5: html – template",
-    "section": "2 홈페이지 통째로 html화",
-    "text": "2 홈페이지 통째로 html화\n- MP2024 를 다운로드해보자.\n\nhttps://github.com/guebin/MP2024 접속\nZIP으로 다운로드\n\n- docs 폴더를 제외하고 모두 삭제\n- docs 폴더를 탐색하기\n- 수정해보기: 퀴즈1의 점수는 학점에 포함하지 않습니다 \\(\\to\\) 퀴즈111의 점수는 학점에 포함하지 않습니다.\n- 코드(?)형태의 text를 예쁘게 보여주는 변환기 역할을 브라우저 (크롬, 사파리,…) 가 담당한다."
-  },
-  {
-    "objectID": "posts/day5.html#개념-블로그-생성",
-    "href": "posts/day5.html#개념-블로그-생성",
-    "title": "Day5: html – template",
-    "section": "3 개념: 블로그 생성",
-    "text": "3 개념: 블로그 생성\n- 블로그의 생성은 아래의 3가지 요소가 결합되어야 한다.\n\n컨텐츠 생성\n컨텐츠를 html화 (=컨텐츠를 보기좋게 만들어주고 link를 정의)\n2의 결과가 local 이 아니라 remote 에 존재해야 함.\n\n- 이게 가능하면 사용자가 인터넷이 켜진상태에서 블로그를 보는 행위는 아래의 과정으로 이해할 수 있다.\n\n특정주소에 접속한다.\n그 주소에 대응하는 ?.html파일이 remote의 하드에 존재할텐데 그것의 download를 요청한다.\n다운로드한다.\n내 컴퓨터 (local)의 어딘가에 존재하는 임시폴더에 ?.html이 있을텐데 그것을 크롬으로 연다.\n\n\n브라우징이 빠를려면 (1) remote의 처리속도 (2) remote의 인터넷속도 (3) local의 인터넷속도 (4) local의 렌더링속도 등이 모두 좋아야함. // 의외로 (4)는 local의 복합적인 능력을 요구한다. (4)의 과정이 원활하게 되려면 local의 cpu, gpu의 처리속도가 빨라야하며 local의 메모리도 충분해야한다."
-  },
-  {
-    "objectID": "posts/day5.html#학과서버에서-docs-보기",
-    "href": "posts/day5.html#학과서버에서-docs-보기",
-    "title": "Day5: html – template",
-    "section": "4 학과서버에서 docs 보기",
-    "text": "4 학과서버에서 docs 보기\n- docs 폴더를 remote에 upload\n- Live Preview 확장프로그램 설치\n- 탐색\n- docs 삭제"
-  },
-  {
-    "objectID": "posts/day5.html#quarto-의-설치",
-    "href": "posts/day5.html#quarto-의-설치",
-    "title": "Day5: html – template",
-    "section": "5 quarto 의 설치",
-    "text": "5 quarto 의 설치\n- quarto 를 설치\n\nhttps://quarto.org/docs/download/"
-  },
-  {
-    "objectID": "posts/day5.html#quarto-create",
-    "href": "posts/day5.html#quarto-create",
-    "title": "Day5: html – template",
-    "section": "6 quarto – create",
-    "text": "6 quarto – create\n- terminal에서 아래를 입력\nquarto create\n- project 선택\n@miruetoto ➜ /workspaces/blog-test (main) $ quarto create \n? Create\n❯ project\n  extension\n- blog 선택\n@miruetoto ➜ /workspaces/blog-test (main) $ quarto create \n? Create › project\n? Type\n  default\n  website\n❯ blog\n  manuscript\n  book\n  confluence\n- directory 선택 – 현재디렉토리 선택\n@miruetoto ➜ /workspaces/blog-test (main) $ quarto create \n? Create › project\n? Type › blog\n? Directory › .\n- Blog title 설정 – tttt 로 설정\n@miruetoto ➜ /workspaces/blog-test (main) $ quarto create \n? Create › project\n? Type › blog\n? Directory › .\n? Title (blog) › tttt"
-  },
-  {
-    "objectID": "posts/day5.html#quarto.yml-수정",
-    "href": "posts/day5.html#quarto.yml-수정",
-    "title": "Day5: html – template",
-    "section": "7 _quarto.yml 수정",
-    "text": "7 _quarto.yml 수정\n- _quarto.yml 열기 – 메모장\n\n\n_quarto.yml\n\nproject:\n  type: website\n\nwebsite:\n  title: \"tttt\"\n  navbar:\n    right:\n      - about.qmd\n      - icon: github\n        href: https://github.com/\n      - icon: twitter\n        href: https://twitter.com\nformat:\n  html:\n    theme: cosmo\n    css: styles.css\n\n- _quarto.yml – 수정하기 // output-dir: docs를 추가하기\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs\n\nwebsite:\n  title: \"tttt\"\n  navbar:\n    right:\n      - about.qmd\n      - icon: github\n        href: https://github.com/\n      - icon: twitter\n        href: https://twitter.com\nformat:\n  html:\n    theme: cosmo\n    css: styles.css"
-  },
-  {
-    "objectID": "posts/day5.html#quarto-render",
-    "href": "posts/day5.html#quarto-render",
-    "title": "Day5: html – template",
-    "section": "8 quarto render",
-    "text": "8 quarto render\n- 아래를 실행\nquarto render \n\n실행하면 docs 폴더가 생성됨!"
-  },
-  {
-    "objectID": "posts/day5.html#posts-비우기",
-    "href": "posts/day5.html#posts-비우기",
-    "title": "Day5: html – template",
-    "section": "9 posts 비우기",
-    "text": "9 posts 비우기\n- 아래의 폴더를 삭제\n\npost-with-code\nwelcome\n\n- 아래를 실행후 결과 관찰\nquarto render"
-  },
-  {
-    "objectID": "posts/day5.html#test.qmd-생성",
-    "href": "posts/day5.html#test.qmd-생성",
-    "title": "Day5: html – template",
-    "section": "10 test.qmd 생성",
-    "text": "10 test.qmd 생성\n- posts에 test.qmd 생성하고 아래를 만든다.\n---\ntitle: \"test\"\nauthor: \"최규빈\"\ndate: \"01/02/2025\"\n---\n\n첫 포스트!\n- 아래를 실행후 결과 관찰\nquarto render"
-  },
-  {
-    "objectID": "posts/day5.html#preview",
-    "href": "posts/day5.html#preview",
-    "title": "Day5: html – template",
-    "section": "11 preview",
-    "text": "11 preview\n- 아래를 실행후 결과 관찰\nquarto preview \n- test.qmd 수정해보기~"
-  },
-  {
-    "objectID": "posts/day5.html#index.qmd-수정",
-    "href": "posts/day5.html#index.qmd-수정",
-    "title": "Day5: html – template",
-    "section": "12 index.qmd 수정",
-    "text": "12 index.qmd 수정\n- 홈페이지 접속시 보이는 화면\n- 인사해보기"
-  },
-  {
-    "objectID": "posts/day5.html#quarto.yml-수정2",
-    "href": "posts/day5.html#quarto.yml-수정2",
-    "title": "Day5: html – template",
-    "section": "13 _quarto.yml 수정2",
-    "text": "13 _quarto.yml 수정2\n- 타이틀 수정하기\n- 테마를 minty로 수정"
-  },
-  {
-    "objectID": "posts/day5.html#github으로-push",
-    "href": "posts/day5.html#github으로-push",
-    "title": "Day5: html – template",
-    "section": "14 github으로 push",
-    "text": "14 github으로 push\n- preview 중단\n- github에서 비밀번호 얻어야함\n\nhttps://github.com/settings/tokens\n\n- 아래를 실행\nquarto render \ngit add .\ngit commit -m test.qmd\ngit push \n- 이후의 작업을 편하게 하기 위해서..\ngit config credential.helper store\ngit add .\ngit commit -m .\ngit push"
-  },
-  {
-    "objectID": "posts/day5.html#github-에서-설정",
-    "href": "posts/day5.html#github-에서-설정",
-    "title": "Day5: html – template",
-    "section": "15 github 에서 설정",
-    "text": "15 github 에서 설정\n- github 에 로그인하여 setting \\(\\to\\) pages 에 이동, 그리고 Build and deployment 에서 /docs를 설정!"
-  },
-  {
-    "objectID": "posts/day5.html#pororo.qmd",
-    "href": "posts/day5.html#pororo.qmd",
-    "title": "Day5: html – template",
-    "section": "16 pororo.qmd",
-    "text": "16 pororo.qmd\n- pororo.qmd 를 만들고 두번째 포스트를 만들자.\n\n\npororo.qmd\n\n---\ntitle: \"뽀롱뽀롱\"\nauthor: \"최다호\"\ndate: \"01/02/2025\"\n---\n\nref: &lt;https://home.ebs.co.kr/pororo/etc/1/cast&gt;\n\n## 뽀로로사진\n\n![](https://static.ebs.co.kr/images/public/lectures/2014/06/19/10/bhpImg/44deb98d-1c50-4073-9bd7-2c2c28d65f9e.jpg)\n\n## 패티사진\n\n![](https://static.ebs.co.kr/images/ebs/WAS-HOME/portal/upload/img/programinfo/person/per/1242723588618_dphGgSgOAp.jpg)\n\n## 표만들기\n\n| 캐릭터 | 설명 |\n|-------|------|\n| **PORORO (뽀로로)** | 호기심이 많은 꼬마 펭귄. 신기한 물건을 발견하면 왕성한 호기심이 발동하고, 하고 싶은 것은 꼭 하고야 만다. 하늘을 날 수 있을 거라는 의지를 실천에 옮기려는 좌충우돌형에 장난기가 넘치는 사고뭉칠 꼬마이지만 숲속 마을에는 없어선 안되는 분위기 메이커입니다. |\n| **PETTY (패티)** | 뽀롱뽀롱 숲 속 마을에 새로 이사 온 활달하고 사고성이 좋은 소녀 펭귄. 예쁘고 깜찍한 성격으로 친구들의 관심을 받는 새로운 친구로 등장합니다. 귀엽고 예쁜 외모와는 달리 털털한 성격에, 축구, 달리기, 수영, 무술 운동에도 뛰어나 친구들의 부러움을 사지만 요리만은 서툽니다. |\n\n## 준비됐나요?\n\n:::{.callout-important}\n\n### 옜날\n준비됐나요? -&gt; 준비됐어요~\n:::\n\n:::{.callout-important}\n\n### 요즘\n준비됐나요? -&gt; 네네, 선생님!\n:::\n\n- upload"
-  },
-  {
-    "objectID": "posts/day5.html#code.ipynb",
-    "href": "posts/day5.html#code.ipynb",
-    "title": "Day5: html – template",
-    "section": "17 code.ipynb",
-    "text": "17 code.ipynb\n- code.ipynb를 만들고 아래를 해보자.\n---\ntitle: \"code\"\nauthor: \"장하니\"\ndate: \"01/02/2025\"\n---\nimport numpy as np\nimport matplotlib.pyplot as plt \nx = np.random.randn(100)\nplt.plot(x)\n- upload"
-  },
-  {
-    "objectID": "posts/day5.html#france.ipynb",
-    "href": "posts/day5.html#france.ipynb",
-    "title": "Day5: html – template",
-    "section": "18 france.ipynb",
-    "text": "18 france.ipynb\n- france.ipynb 파일을 만들자.\n---\ntitle: \"프랑스혁명\"\nauthor: \"최규빈\"\ndate: \"01/02/2025\"\n---\n- 아래의 내용을 공부하자.\n\nhttps://ko.wikipedia.org/wiki/프랑스_혁명"
-  },
-  {
-    "objectID": "posts/day5.html#quarto-github-의-역할",
-    "href": "posts/day5.html#quarto-github-의-역할",
-    "title": "Day5: html – template",
-    "section": "19 quarto, github 의 역할",
-    "text": "19 quarto, github 의 역할\n- 실질적으로 우리가 quarto + github 을 이용하여 publish 하는 과정은 아래와 같다.\n\nlocal에서 .qmd, .ipynb 파일들을 생성하여 작업한다.\nquarto render를 입력하여 .ipynb 파일들을 .html 파일로 바꾸고 “연결성”을 정의한다. 이러한 연결성은 local에서 완벽하게 동작한다.\n연결성+link가 종합적으로 저장된 폴더 (우리의 경우는 docs) 를 github 에 업로드한다.\ngithub은 docs폴더를 바탕으로 웹사이트를 구축한다.\n\n- 블로그의 생성은 아래의 3가지 요소가 결합되어야 한다고 했었다.\n\n컨텐츠 생성\n컨텐츠를 html화 (=컨텐츠를 보기좋게 만들어주고 link를 정의)\n2의 결과가 local 이 아니라 remote 에 존재해야 함.\n\n이중에서 1은 사용자가 하고, 2는 quarto가 하고, 3은 github이 한다."
-  },
-  {
-    "objectID": "posts/day5.html#mb-충돌",
-    "href": "posts/day5.html#mb-충돌",
-    "title": "Day5: html – template",
-    "section": "20 100MB 충돌",
-    "text": "20 100MB 충돌\n- fashion-mnist.ipynb 에 아래의 코드를 작성\n---\ntitle: \"fashion-mnist\"\nauthor: \"장하니\"\ndate: \"01/02/2025\"\n---\nimport pandas as pd\n!wget https://media.githubusercontent.com/media/guebin/PP2023/main/posts/fashion-mnist_train.csv\ndf = pd.read_csv(\"fashion-mnist_train.csv\")\nplt.imshow(df.iloc[1,1:].to_numpy().reshape(28,28),cmap=\"gray\")\n- upload – 아래의 메시지 확인\n@miruetoto ➜ /workspaces/blog-test (main) $ git push \nEnumerating objects: 13, done.\nCounting objects: 100% (13/13), done.\nDelta compression using up to 2 threads\nCompressing objects: 100% (8/8), done.\nWriting objects: 100% (10/10), 32.41 MiB | 2.45 MiB/s, done.\nTotal 10 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)\nremote: Resolving deltas: 100% (3/3), completed with 3 local objects.\nremote: error: Trace: 6994b81c2ea821341c951bbca38f8f734c40af004fbc73f4d154cd73eb69eb32\nremote: error: See https://gh.io/lfs for more information.\nremote: error: File fashion-mnist_train.csv is 126.88 MB; this exceeds GitHub's file size limit of 100.00 MB\nremote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.\nTo https://github.com/miruetoto/blog-test\n ! [remote rejected] main -&gt; main (pre-receive hook declined)\nerror: failed to push some refs to 'https://github.com/miruetoto/blog-test'\n- fashion-mnist_train.csv 를 삭제해도 안된다..\n@miruetoto ➜ /workspaces/blog-test (main) $ git add .\n@miruetoto ➜ /workspaces/blog-test (main) $ git commit -m \"fashion-mnist.csv 삭제\"\n[main f17cb1f] fashion-mnist.csv 삭제\n 1 file changed, 60001 deletions(-)\n delete mode 100644 fashion-mnist_train.csv\n@miruetoto ➜ /workspaces/blog-test (main) $ git push\nEnumerating objects: 15, done.\nCounting objects: 100% (15/15), done.\nDelta compression using up to 2 threads\nCompressing objects: 100% (10/10), done.\nWriting objects: 100% (12/12), 32.41 MiB | 2.33 MiB/s, done.\nTotal 12 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)\nremote: Resolving deltas: 100% (4/4), completed with 3 local objects.\nremote: error: Trace: a2a9e6b3dfd49b2aa8afeb13aae04ba1684311239c0abc06f49f4236f30f5a62\nremote: error: See https://gh.io/lfs for more information.\nremote: error: File fashion-mnist_train.csv is 126.88 MB; this exceeds GitHub's file size limit of 100.00 MB\nremote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.\nTo https://github.com/miruetoto/blog-test\n ! [remote rejected] main -&gt; main (pre-receive hook declined)\nerror: failed to push some refs to 'https://github.com/miruetoto/blog-test'"
-  },
-  {
-    "objectID": "posts/day5.html#해결-삭제clone",
-    "href": "posts/day5.html#해결-삭제clone",
-    "title": "Day5: html – template",
-    "section": "21 해결 – 삭제/clone",
-    "text": "21 해결 – 삭제/clone"
-  },
-  {
-    "objectID": "posts/day5.html#template",
-    "href": "posts/day5.html#template",
-    "title": "Day5: html – template",
-    "section": "22 template",
-    "text": "22 template\n\n\n\ntype\nrepo\nwebsite\n\n\n\n\n블로그\nhttps://github.com/guebin/DSTBX2025\nhttps://guebin.github.io/DSTBX2025/\n\n\n슬라이드\nhttps://github.com/guebin/qslides-template\nhttps://guebin.github.io/qslides-template\n\n\n대시보드\nhttps://github.com/guebin/DV2023-DASH\nhttps://guebin.github.io/DV2023-DASH\n\n\n–\n–\n–\n\n\n대시보드\n??\nhttps://ivelasq.github.io/mortgage-dashboard/\n\n\n강의노트\n??\nhttps://sta210-s22.github.io/website/\n\n\n책\nhttps://github.com/hadley/r4ds\nhttps://r4ds.hadley.nz/\n\n\n\n\n?? 를 찾아내세요\n\n- 여기에 가면 많아요\n\nhttps://quarto.org/docs/gallery/"
-  },
-  {
     "objectID": "supp/quarto-blog.html",
     "href": "supp/quarto-blog.html",
     "title": "Quarto를 이용한 과학기술 교육컨텐츠 개발",
@@ -802,21 +802,21 @@
     "href": "supp/quarto-blog.html#diagrams-1",
     "title": "Quarto를 이용한 과학기술 교육컨텐츠 개발",
     "section": "2.5 Diagrams (1)",
-    "text": "2.5 Diagrams (1)\n\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result1]\n  C --&gt; E[Result2]"
+    "text": "2.5 Diagrams (1)\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result1]\n  C --&gt; E[Result2]"
   },
   {
     "objectID": "supp/quarto-blog.html#diagrams-2",
     "href": "supp/quarto-blog.html#diagrams-2",
     "title": "Quarto를 이용한 과학기술 교육컨텐츠 개발",
     "section": "2.6 Diagrams (2)",
-    "text": "2.6 Diagrams (2)\n\n\n\n\n\nsequenceDiagram\n  participant Alice\n  participant Bob\n  Alice-&gt;&gt;John: Hello John, how are you?\n  loop Healthcheck\n    John-&gt;&gt;John: Fight against hypochondria\n  end\n  Note right of John: Rational thoughts &lt;br/&gt;prevail!\n  John--&gt;&gt;Alice: Great!\n  John-&gt;&gt;Bob: How about you?\n  Bob--&gt;&gt;John: Jolly good!"
+    "text": "2.6 Diagrams (2)\n\n\n\n\nsequenceDiagram\n  participant Alice\n  participant Bob\n  Alice-&gt;&gt;John: Hello John, how are you?\n  loop Healthcheck\n    John-&gt;&gt;John: Fight against hypochondria\n  end\n  Note right of John: Rational thoughts &lt;br/&gt;prevail!\n  John--&gt;&gt;Alice: Great!\n  John-&gt;&gt;Bob: How about you?\n  Bob--&gt;&gt;John: Jolly good!"
   },
   {
     "objectID": "supp/quarto-blog.html#diagrams-3",
     "href": "supp/quarto-blog.html#diagrams-3",
     "title": "Quarto를 이용한 과학기술 교육컨텐츠 개발",
     "section": "2.7 Diagrams (3)",
-    "text": "2.7 Diagrams (3)\n\n\n\n\n\n\n\nG\n\n\n\nrun\n\nrun\n\n\n\nintr\n\nintr\n\n\n\nrun--intr\n\n\n\n\nkernel\n\nkernel\n\n\n\nrun--kernel\n\n\n\n\nrunbl\n\nrunbl\n\n\n\nintr--runbl\n\n\n\n\nrunbl--run\n\n\n\n\nzombie\n\nzombie\n\n\n\nkernel--zombie\n\n\n\n\nsleep\n\nsleep\n\n\n\nkernel--sleep\n\n\n\n\nrunmem\n\nrunmem\n\n\n\nkernel--runmem\n\n\n\n\nsleep--runmem\n\n\n\n\nswap\n\nswap\n\n\n\nsleep--swap\n\n\n\n\nrunswap\n\nrunswap\n\n\n\nswap--runswap\n\n\n\n\nrunswap--runmem\n\n\n\n\nnew\n\nnew\n\n\n\nrunswap--new\n\n\n\n\nnew--runmem"
+    "text": "2.7 Diagrams (3)\n\n\n\n\n\n\nG\n\n\n\nrun\n\nrun\n\n\n\nintr\n\nintr\n\n\n\nrun--intr\n\n\n\n\nkernel\n\nkernel\n\n\n\nrun--kernel\n\n\n\n\nrunbl\n\nrunbl\n\n\n\nintr--runbl\n\n\n\n\nrunbl--run\n\n\n\n\nzombie\n\nzombie\n\n\n\nkernel--zombie\n\n\n\n\nsleep\n\nsleep\n\n\n\nkernel--sleep\n\n\n\n\nrunmem\n\nrunmem\n\n\n\nkernel--runmem\n\n\n\n\nsleep--runmem\n\n\n\n\nswap\n\nswap\n\n\n\nsleep--swap\n\n\n\n\nrunswap\n\nrunswap\n\n\n\nswap--runswap\n\n\n\n\nrunswap--runmem\n\n\n\n\nnew\n\nnew\n\n\n\nrunswap--new\n\n\n\n\nnew--runmem"
   },
   {
     "objectID": "supp/quarto-blog.html#footnotes",
@@ -858,7 +858,7 @@
     "href": "supp/quarto-blog.html#figures-2",
     "title": "Quarto를 이용한 과학기술 교육컨텐츠 개발",
     "section": "2.13 Figures (2)",
-    "text": "2.13 Figures (2)\n#| layout-ncol: 2\n#| fig-cap: \n#|   - \"Fig1: Scatter Plot\"\n#|   - \"Fig2: Dot-connected Plot\"\n\nimport matplotlib.pyplot as plt\nplt.plot([1,2,4,3],'ro'); plt.show()\nplt.plot([1,2,4,3],'--ro'); plt.show()\nimport matplotlib.pyplot as plt\nplt.plot([1,2,4,3],'ro');plt.show()\nplt.plot([1,2,4,3],'--ro');plt.show()\n\n\n\n\n\n\nFig1: Scatter Plot\n\n\n\n\n\n\n\n\n\nFig2: Dot-connected Plot"
+    "text": "2.13 Figures (2)\n#| layout-ncol: 2\n#| fig-cap: \n#|   - \"Fig1: Scatter Plot\"\n#|   - \"Fig2: Dot-connected Plot\"\n\nimport matplotlib.pyplot as plt\nplt.plot([1,2,4,3],'ro'); plt.show()\nplt.plot([1,2,4,3],'--ro'); plt.show()\nimport matplotlib.pyplot as plt\nplt.plot([1,2,4,3],'ro');plt.show()\nplt.plot([1,2,4,3],'--ro');plt.show()\n\n\n\n\n\nFig1: Scatter Plot\n\n\n\n\n\nFig2: Dot-connected Plot"
   },
   {
     "objectID": "supp/quarto-blog.html#layout-1",
